@@ -19,7 +19,7 @@ const Services = ({ sectionDetails = true }) => {
             <div className="block max-lg:text-center lg:flex">
               <h2 className=" max-lg:mb-5">
                 The world&rsquo;s best companies <br />
-                trust aplio.
+                trust Protool.
               </h2>
               <p className="max-w-[520px] lg:ml-auto">
                 Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not

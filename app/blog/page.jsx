@@ -7,7 +7,7 @@ const Blog = () => {
   const blogs = getMarkDownData('data/blogs')
   return (
     <>
-      <PageHero subtitle="BLOG GRID" title="Recent blogs created <br/> by aplio" />
+      <PageHero subtitle="BLOG GRID" title="Recent blogs created <br/> by Protool" />
       <BlogFeatures featureBlog={blogs} />
       <BlogGrid blogItemData={blogs} />
     </>

@@ -8,7 +8,7 @@ import { AboutFeaturesData } from '@/data/data'
 const Career = () => {
   return (
     <>
-      <PageHero subtitle="CAREER PAGE" title="Become a part of the <br/> aplio team" />
+      <PageHero subtitle="CAREER PAGE" title="Become a part of the <br/> Protool team" />
       <CareerDetails />
       <PaymentFeatures
         features={AboutFeaturesData}

@@ -132,7 +132,7 @@ const WhyUs = () => {
 
             <h2 className="mb-8">
               Manage your money <br />
-              with aplio.
+              with Protool.
             </h2>
             <p className="mb-11">
               Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After

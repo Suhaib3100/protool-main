@@ -103,7 +103,7 @@ const Integration = () => {
             <div className="align-center relative mx-auto flex h-150 w-150 flex-row justify-center rounded-full bg-white shadow-nav dark:bg-dark-200">
               <div className="align-center absolute left-1/2 top-1/2 mx-auto flex h-[122px] w-[122px] -translate-x-1/2 -translate-y-1/2  flex-row justify-center rounded-full bg-primary-100 dark:bg-[#2B2D2A]">
                 <span className="inline-block px-[25px] py-[46px] text-[30px] font-semibold leading-none text-primary">
-                  aplio
+                  Protool
                 </span>
               </div>
             </div>

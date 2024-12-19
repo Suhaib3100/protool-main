@@ -14,15 +14,15 @@ const About = () => {
   return (
     <>
       <PageHero
-        subtitle="ABOUT COMPANY"
-        title="The future of business is being <br> shaped by aplio"
-        paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
+        subtitle="ABOUT PROTOOL"
+        title="Leading the Future of Web Development and Digital Marketing"
+        paragraph="Protool, founded by Suhaib S Z, is dedicated to transforming businesses through innovative web solutions and strategic digital marketing."
       />
       <AboutDetails />
       <PaymentFeatures
         features={AboutFeaturesData}
-        sectionTag={'OUR VALUE'}
-        sectionTitle={'Our business is steered by our core values'}
+        sectionTag={'OUR VALUES'}
+        sectionTitle={'Driven by Innovation and Excellence'}
         spacing={'max-md:py-25 py-150 bg-white dark:bg-dark-300 relative max-md:overflow-hidden'}
       />
       <AboutValue />

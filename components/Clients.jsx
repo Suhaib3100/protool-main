@@ -15,7 +15,7 @@ const Clients = ({
       <div className="container overflow-hidden max-lg:!px-0">
         {sectionTitle && (
           <div className=" px-10px mx-auto max-w-[550px] text-center max-lg:px-2.5">
-            <h2 className="mb-10">The world&rsquo;s best companies trust aplio.</h2>
+            <h2 className="mb-10">The world&rsquo;s best companies trust Protool.</h2>
             <p className="text-light mb-15">Trusted by thousands of companies across 50+ countries</p>
           </div>
         )}

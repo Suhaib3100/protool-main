@@ -49,7 +49,7 @@ const MembersCounter = ({ border = true }) => {
               </div>
               <h3 className="leading-8 ">
                 People <br />
-                of aplio bank
+                of Protool bank
               </h3>
             </div>
           </div>

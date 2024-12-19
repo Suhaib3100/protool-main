@@ -1,6 +1,6 @@
-# Aplio
+# Protool
 
-Aplio Nextjs Theme Development Structure.
+Protool Nextjs Theme Development Structure.
 
 ## Getting Started
 
@@ -13,4 +13,4 @@ Aplio Nextjs Theme Development Structure.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-`Note`: For more details, read the full documenation [here](https://docs.staticmania.com/aplio/nextjs/introduction).
+`Note`: For more details, read the full documenation [here](https://docs.staticmania.com/Protool/nextjs/introduction).

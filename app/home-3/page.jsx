@@ -16,7 +16,7 @@ const HomepageThree = () => {
     <>
       <PageHero
         subtitle="MONITOR YOUR MONEY"
-        title="The future of business is being <br> shaped by aplio"
+        title="The future of business is being <br> shaped by Protool"
         paragraph="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it"
       />
       <BankingDetails />
@@ -24,7 +24,7 @@ const HomepageThree = () => {
       <PaymentFeatures
         features={BankingServicesData}
         sectionTag={'Our Services'}
-        sectionTitle={"The world's best companies trust aplio."}
+        sectionTitle={"The world's best companies trust Protool."}
         spacing={'bg-white dark:bg-dark-300 py-150 max-md:py-25 relative max-md:overflow-hidden'}
       />
       <AboutBanking />
