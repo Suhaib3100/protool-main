@@ -3,7 +3,7 @@ import { menuData } from '@/data/data'
 import { cn } from '@/utils/cn'
 import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
+
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'

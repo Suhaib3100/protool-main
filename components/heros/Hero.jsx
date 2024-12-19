@@ -2,15 +2,6 @@
 import { fadeUpAnimation } from '@/data/animation'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import heroChartDark from '../../public/images/hero/hero-chart-dark.png'
-import heroChartLight from '../../public/images/hero/hero-chart.png'
-import heroCircleDark from '../../public/images/hero/hero-circle-dark.png'
-import heroCircleLight from '../../public/images/hero/hero-circle.png'
-import heroPolicyDark from '../../public/images/hero/hero-policy-dark.png'
-import heroPolicyLight from '../../public/images/hero/hero-policy.png'
-import heroRatingDark from '../../public/images/hero/hero-rating-dark.png'
-import heroRatingLight from '../../public/images/hero/hero-rating.png'
-
 const Hero = () => {
   return (
     <section

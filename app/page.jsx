@@ -6,7 +6,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-    <HomePageTwo />
+      <HomePageTwo />
       {/* <Hero />
       <Clients />
       <Services />
