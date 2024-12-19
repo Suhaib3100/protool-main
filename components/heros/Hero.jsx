@@ -1,7 +1,6 @@
 'use client'
 import { fadeUpAnimation } from '@/data/animation'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 const Hero = () => {
   return (
     <section
