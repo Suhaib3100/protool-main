@@ -747,13 +747,13 @@ export const BankingServicesData = [
 export const teamData = [
   {
     id: 1,
-    name: 'Rehan Gull',
-    designation: 'COO',
+    name: 'Amit',
+    designation: 'CTO',
     fbLink: '#',
     dribbleInLink: '#',
     gitHubLink: '#',
     linkedInLink: '#',
-    image: '/images/team/team1.png',
+    image: '/images/team/amit.png',
     details:
       'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
     email: 'team@gmail.com',
@@ -761,32 +761,34 @@ export const teamData = [
   },
   {
     id: 2,
-    name: 'Suhaib S Z',
+    name: 'Suhaib S. Z.',
     designation: 'Founder and CEO',
     fbLink: '#',
     dribbleInLink: 'https://suhaib.protool.co.in',
     gitHubLink: 'https://github.com/Suhaib3100',
     linkedInLink: 'https://in.linkedin.com/in/suhaib-sz',
     image: '/images/team/team1.png',
-    details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
-    email: 'team@gmail.com',
-    phone: '+3 230 705 5448',
-  },
-  {
-    id: 3,
-    name: 'Anuraag R',
-    designation: 'Chief Marketing Officer',
-    fbLink: '#',
-    dribbleInLink: '#',
-    gitHubLink: '#',
-    linkedInLink: '#',
-    image: '/images/team/team3.png',
-    details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
-    email: 'team@gmail.com',
-    phone: '+3 230 705 5448',
-  },
+    details: 'A young and aspiring individual, Founder of Protool, dedicated to development.',
+    email: 'ceo@protool.co.in',
+    phone: '+91 8310090539',
+},
+
+{
+  id: 3,
+  name: 'Anuraag R.',
+  designation: 'Chief Marketing Officer',
+  fbLink: '#',
+  dribbleInLink: '#',
+  gitHubLink: '#',
+  linkedInLink: '#',
+  image: '/images/team/anuraag.png',
+  details: `
+    An experienced marketing strategist with a proven track record of driving growth and innovation. Focused on creating impactful campaigns and building strong brand identities.
+  `,
+  email: 'anuraag@protool.co.in',
+  phone: '+91 81471 48708',
+}
+
   // {
   //   id: 4,
   //   name: 'Wade Wareen',
