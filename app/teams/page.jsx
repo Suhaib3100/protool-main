@@ -1,14 +1,14 @@
-'use client'
-import Counter from '@/components/Counter'
-import FaqFullLayout from '@/components/FaqFullLayout'
-import NewsLetter from '@/components/NewsLetter'
-import PageHero from '@/components/heros/PageHero'
-import TestimonialSlider from '@/components/TestimonialSlider'
-import { teamData } from '@/data/data'
-import Image from 'next/image'
-import Link from 'next/link'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
+'use client';
+import Counter from '@/components/Counter';
+import FaqFullLayout from '@/components/FaqFullLayout';
+import NewsLetter from '@/components/NewsLetter';
+import PageHero from '@/components/heros/PageHero';
+import TestimonialSlider from '@/components/TestimonialSlider';
+import { teamData } from '@/data/data';
+import Image from 'next/image';
+import Link from 'next/link';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
 const Teams = () => {
   return (
     <>
@@ -33,7 +33,8 @@ const Teams = () => {
                   key={member.id}
                   initial="initial"
                   animate="animate"
-                  variants={fadeUpAnimation}>
+                  variants={fadeUpAnimation}
+                >
                   <div className="mb-6 rounded-medium bg-white p-2.5 dark:bg-dark-200">
                     <div className=" overflow-hidden rounded bg-gray-100 dark:bg-[#30302F]">
                       <Image
@@ -49,19 +50,23 @@ const Teams = () => {
                     <Link href={`/teams/${member.id}`}>
                       <h3 className="mb-2">{member.name}</h3>
                     </Link>
-                    <p className="mb-6 text-sm font-medium leading-[1.5]">{member.designation}</p>
+                    <p className="mb-6 text-sm font-medium leading-[1.5]">
+                      {member.designation}
+                    </p>
                     <ul className="flex items-center justify-center gap-x-2.5">
                       <li>
                         <Link
                           href={member.fbLink}
-                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                        >
                           <svg
                             width="40"
                             height="40"
                             viewBox="0 0 40 40"
                             fill=""
                             xmlns="http://www.w3.org/2000/svg"
-                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                          >
                             <rect
                               x="0.5"
                               y="0.5"
@@ -83,14 +88,16 @@ const Teams = () => {
                       <li>
                         <Link
                           href={member.dribbleInLink}
-                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                        >
                           <svg
                             width="40"
                             height="40"
                             viewBox="0 0 40 40"
                             fill=""
                             xmlns="http://www.w3.org/2000/svg"
-                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                          >
                             <rect
                               x="0.5"
                               y="0.5"
@@ -114,14 +121,16 @@ const Teams = () => {
                       <li>
                         <Link
                           href={member.gitHubLink}
-                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                        >
                           <svg
                             width="40"
                             height="40"
                             viewBox="0 0 40 40"
                             fill=""
                             xmlns="http://www.w3.org/2000/svg"
-                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                          >
                             <rect
                               x="0.5"
                               y="0.5"
@@ -143,14 +152,16 @@ const Teams = () => {
                       <li>
                         <Link
                           href={member.linkedInLink}
-                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                          className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                        >
                           <svg
                             width="40"
                             height="40"
                             viewBox="0 0 40 40"
                             fill=""
                             xmlns="http://www.w3.org/2000/svg"
-                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                            className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                          >
                             <rect
                               x="0.5"
                               y="0.5"
@@ -181,7 +192,7 @@ const Teams = () => {
       <FaqFullLayout />
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default Teams
+export default Teams;

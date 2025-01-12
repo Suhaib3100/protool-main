@@ -1,35 +1,34 @@
-'use client'
-import { menuData } from '@/data/data'
-import { cn } from '@/utils/cn'
-import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useEffect, useState } from 'react'
-import { createPortal } from 'react-dom'
-import SearchOption from '../SearchOption'
-import TopBar from './TopBar'
+'use client';
+import { menuData } from '@/data/data';
+import { cn } from '@/utils/cn';
+import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+import SearchOption from '../SearchOption';
+import TopBar from './TopBar';
 
 const SecondaryNavbar = () => {
-  const pathname = usePathname()
-  const [showSearch, setShowSearch] = useState(false)
-  const [innerMobileMenu, setInnerMobileMenu] = useState(false)
-  const [sticky, setSticky] = useState(false)
+  const pathname = usePathname();
+  const [showSearch, setShowSearch] = useState(false);
+  const [innerMobileMenu, setInnerMobileMenu] = useState(false);
+  const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
     if (window.scrollY >= 20) {
-      setSticky(true)
+      setSticky(true);
     } else {
-      setSticky(false)
+      setSticky(false);
     }
-  }
+  };
   useEffect(() => {
-    window.addEventListener('scroll', handleStickyNavbar)
+    window.addEventListener('scroll', handleStickyNavbar);
 
     return () => {
-      window.removeEventListener('scroll', handleStickyNavbar)
-    }
-  }, [])
+      window.removeEventListener('scroll', handleStickyNavbar);
+    };
+  }, []);
 
   return (
     <header>
@@ -38,23 +37,32 @@ const SecondaryNavbar = () => {
         className={cn(
           'fixed left-0 top-12 z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]',
           sticky ? 'nav-sticky' : '',
-        )}>
+        )}
+      >
         <nav className="container flex items-center">
           <div className="nav-logo">
             <Link href="/">
-              <Image src={menuData.logoLight} alt="logo" className="dark:hidden" width={70} height={29} />
-              <Image
-                src={menuData.logoDark}
-                alt="logo dark version"
-                className="hidden dark:inline-block"
-                width={70}
-                height={29}
-              />
+              <span className="mb-6 inline-block dark:hidden text-4xl mt-8 font-bold text-[#000000]">
+                Protool
+              </span>
+
+              {/* Dark mode logo (visible in dark mode) */}
+              <span
+                className="mb-6 hidden dark:inline-block text-4xl font-extrabold text-[#e9eaea] mt-8 
+                bg-gradient-to-r from-[#fdffff] via-[#ffffff] to-[#17dc0d] 
+                text-transparent bg-clip-text 
+                shadow-lg transform transition-all hover:scale-110 hover:rotate-3"
+              >
+                Protool
+              </span>
             </Link>
           </div>
           <ul className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
-              <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
+              <li
+                className={`${menuItem.path ? '' : 'group relative'}`}
+                key={menuItem.id}
+              >
                 {menuItem.path ? (
                   <>
                     <Link
@@ -62,7 +70,8 @@ const SecondaryNavbar = () => {
                       className={cn(
                         'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         pathname === menuItem.path ? 'active' : '',
-                      )}>
+                      )}
+                    >
                       {menuItem.title}
                     </Link>
                   </>
@@ -70,7 +79,8 @@ const SecondaryNavbar = () => {
                   <>
                     <Link
                       href="/"
-                      className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
+                      className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5"
+                    >
                       {menuItem.title}
                       <FontAwesomeIcon
                         icon={faAngleDown}
@@ -81,7 +91,8 @@ const SecondaryNavbar = () => {
                       {menuItem.submenu.map((submenuItem) => (
                         <li
                           className="relative overflow-hidden pb-2.5 text-base capitalize text-paragraph duration-500 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
-                          key={submenuItem.id}>
+                          key={submenuItem.id}
+                        >
                           <Link href={submenuItem.path} className="flex">
                             {submenuItem.title}
                           </Link>
@@ -99,8 +110,15 @@ const SecondaryNavbar = () => {
               <button
                 onClick={() => setShowSearch(!showSearch)}
                 className="rounded-full bg-white p-2.5 dark:bg-dark-200 "
-                id="open-btn">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                id="open-btn"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -119,14 +137,16 @@ const SecondaryNavbar = () => {
             <li className="max-lg:inline-block lg:hidden ">
               <button
                 className="mobile-menu-button relative h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
-                onClick={() => setInnerMobileMenu(!innerMobileMenu)}>
+                onClick={() => setInnerMobileMenu(!innerMobileMenu)}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="14"
                   viewBox="0 0 22 14"
                   fill="none"
-                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                  className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+                >
                   <path
                     d="M0 1C0 0.447715 0.447715 0 1 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H1C0.447716 2 0 1.55228 0 1Z"
                     fill=""
@@ -147,15 +167,21 @@ const SecondaryNavbar = () => {
             </li>
           </ul>
 
-          <div className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? 'open' : ''}`}>
+          <div
+            className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? 'open' : ''}`}
+          >
             <button
               className=" navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
-              onClick={() => setInnerMobileMenu(!innerMobileMenu)}>
+              onClick={() => setInnerMobileMenu(!innerMobileMenu)}
+            >
               <FontAwesomeIcon icon={faTimes} />
             </button>
             <ul className="nav-list flex w-full max-w-[500px] flex-col gap-5 landscape:h-full">
               {menuData.menuContent.map((menuItem) => (
-                <li className={`${menuItem.path ? '' : 'group relative'}`} key={menuItem.id}>
+                <li
+                  className={`${menuItem.path ? '' : 'group relative'}`}
+                  key={menuItem.id}
+                >
                   {menuItem.path ? (
                     <>
                       <Link
@@ -164,7 +190,8 @@ const SecondaryNavbar = () => {
                           'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                           pathname === menuItem.path ? 'active' : '',
                         )}
-                        onClick={() => setInnerMobileMenu(!innerMobileMenu)}>
+                        onClick={() => setInnerMobileMenu(!innerMobileMenu)}
+                      >
                         {menuItem.title}
                       </Link>
                     </>
@@ -172,7 +199,8 @@ const SecondaryNavbar = () => {
                     <>
                       <Link
                         href="#"
-                        className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5">
+                        className="flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5"
+                      >
                         {menuItem.title}
                         <FontAwesomeIcon
                           icon={faAngleDown}
@@ -183,11 +211,15 @@ const SecondaryNavbar = () => {
                         {menuItem.submenu.map((submenuItem) => (
                           <li
                             className="relative overflow-hidden pb-2.5 text-base capitalize text-paragraph duration-500 before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white"
-                            key={submenuItem.id}>
+                            key={submenuItem.id}
+                          >
                             <Link
                               href={submenuItem.path}
                               className="flex"
-                              onClick={() => setInnerMobileMenu(!innerMobileMenu)}>
+                              onClick={() =>
+                                setInnerMobileMenu(!innerMobileMenu)
+                              }
+                            >
                               {submenuItem.title}
                             </Link>
                           </li>
@@ -207,9 +239,13 @@ const SecondaryNavbar = () => {
           </div>
         </nav>
       </div>
-      {showSearch && createPortal(<SearchOption onClose={() => setShowSearch(false)} />, document.body)}
+      {showSearch &&
+        createPortal(
+          <SearchOption onClose={() => setShowSearch(false)} />,
+          document.body,
+        )}
     </header>
-  )
-}
+  );
+};
 
-export default SecondaryNavbar
+export default SecondaryNavbar;

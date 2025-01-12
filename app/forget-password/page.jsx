@@ -1,12 +1,12 @@
-'use client'
-import NewsLetter from '@/components/NewsLetter'
-import { fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import { motion } from 'framer-motion'
-import { useRef } from 'react'
+'use client';
+import NewsLetter from '@/components/NewsLetter';
+import { fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
 const ForgetPassword = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <>
       <section className="relative mb-150 pt-[200px] max-md:pt-25">
@@ -16,7 +16,8 @@ const ForgetPassword = () => {
           ref={ref}
           initial="initial"
           animate={controlAnimation}
-          variants={fadeUpAnimation}>
+          variants={fadeUpAnimation}
+        >
           <div className="mx-auto mb-12 max-w-[475px] text-center">
             <p className="section-tagline">Reset Password</p>
             <h2>Provide a new password Password</h2>
@@ -34,7 +35,8 @@ const ForgetPassword = () => {
                     <div className="col-span-full">
                       <label
                         htmlFor="newpassword"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         New Password
                       </label>
                       <input
@@ -48,7 +50,8 @@ const ForgetPassword = () => {
                     <div className="col-span-full">
                       <label
                         htmlFor="confirmpassword"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         Confirm Password
                       </label>
                       <input
@@ -60,7 +63,9 @@ const ForgetPassword = () => {
                       />
                     </div>
                     <div className="col-span-full ">
-                      <button className="btn block w-full">Reset Password</button>
+                      <button className="btn block w-full">
+                        Reset Password
+                      </button>
                     </div>
                   </div>
                 </form>
@@ -71,7 +76,7 @@ const ForgetPassword = () => {
       </section>
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default ForgetPassword
+export default ForgetPassword;

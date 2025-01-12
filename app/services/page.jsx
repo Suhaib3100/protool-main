@@ -1,12 +1,13 @@
-import PageHero from '@/components/heros/PageHero'
-import NewsLetter from '@/components/NewsLetter'
-import Services from '@/components/Services'
-import MembersCounter from '@/components/MembersCounter'
-import Pricing from '@/components/Pricing'
+import PageHero from '@/components/heros/PageHero';
+import NewsLetter from '@/components/NewsLetter';
+import Services from '@/components/Services';
+import MembersCounter from '@/components/MembersCounter';
+import Pricing from '@/components/Pricing';
 export const metadata = {
   title: 'Protool Services',
-  description: 'Protool - Your All-in-One Agency for Web Development and Digital Marketing',
-}
+  description:
+    'Protool - Your All-in-One Agency for Web Development and Digital Marketing',
+};
 export default function ServicePage() {
   return (
     <>
@@ -20,5 +21,5 @@ export default function ServicePage() {
       <Pricing spacing={'pt-150 max-md:pt-20'} />
       <NewsLetter />
     </>
-  )
+  );
 }

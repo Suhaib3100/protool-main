@@ -1,10 +1,10 @@
-'use client'
-import { TestimonialData } from '@/data/data'
-import Image from 'next/image'
-import { Pagination } from 'swiper/modules'
+'use client';
+import { TestimonialData } from '@/data/data';
+import Image from 'next/image';
+import { Pagination } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { RatingStars } from './Rating'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { RatingStars } from './Rating';
 const TestimonialSlider = ({ spacing = 'pt-0' }) => {
   return (
     <section className={`relative pb-150 ${spacing} max-md:overflow-hidden`}>
@@ -37,29 +37,27 @@ const TestimonialSlider = ({ spacing = 'pt-0' }) => {
                 spaceBetween: 45,
               },
             }}
-            className="swiper !py-16 md:!px-6">
+            className="swiper !py-16 md:!px-6"
+          >
             {TestimonialData.slice(0, 5).map((testimonial) => (
               <SwiperSlide
                 key={testimonial.id}
-                className="swiper-slide rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200">
+                className="swiper-slide rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
+              >
                 <div className=" h-full rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark ">
-                  <Image
-                    src={testimonial.logoLight}
-                    alt="service logo"
-                    className="mb-6 inline-block dark:hidden"
-                    width={120}
-                    height={35}
-                  />
-                  <Image
-                    src={testimonial.logoDark}
-                    alt="service logo"
-                    className="mb-6 hidden dark:inline-block"
-                    width={110}
-                    height={35}
-                  />
+                  <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
+                    Protool
+                  </span>
+
+                  {/* Dark mode logo (visible in dark mode) */}
+                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#eeeeee]">
+                    Protool
+                  </span>
+
                   <blockquote className="mb-5 italic leading-[1.75] text-paragraph dark:text-white">
-                    “Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not
-                    Latin though it looks like it, and it actually says nothing.”
+                    “Until recently, the prevailing view assumed lorem ipsum was
+                    born as a nonsense text. It&rsquo;s not Latin though it
+                    looks like it, and it actually says nothing.”
                   </blockquote>
                   <div className="mb-7">
                     <RatingStars
@@ -91,7 +89,7 @@ const TestimonialSlider = ({ spacing = 'pt-0' }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

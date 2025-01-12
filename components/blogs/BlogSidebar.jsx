@@ -1,39 +1,41 @@
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from 'next/image'
-import Link from 'next/link'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const BlogSidebar = ({ blogSidebarData, setActive, search, setSearch }) => {
   function getUniqueCategories(array) {
-    const uniqueCategories = []
+    const uniqueCategories = [];
     for (let i = 0; i < array.length; i++) {
-      const categories = array[i].data.categories
+      const categories = array[i].data.categories;
 
-      const isExistCategories = uniqueCategories.find((blog) => blog.data.categories === categories)
+      const isExistCategories = uniqueCategories.find(
+        (blog) => blog.data.categories === categories,
+      );
 
       if (!isExistCategories) {
-        uniqueCategories.push(array[i])
+        uniqueCategories.push(array[i]);
       }
     }
-    return uniqueCategories
+    return uniqueCategories;
   }
-  const uniqueCategories = getUniqueCategories(blogSidebarData)
+  const uniqueCategories = getUniqueCategories(blogSidebarData);
 
   function getUniqueTags(array) {
-    const uniqueTags = []
+    const uniqueTags = [];
     for (let i = 0; i < array.length; i++) {
-      const tags = array[i].data.tags
+      const tags = array[i].data.tags;
 
-      const isExistTags = uniqueTags.find((blog) => blog.data.tags === tags)
+      const isExistTags = uniqueTags.find((blog) => blog.data.tags === tags);
 
       if (!isExistTags) {
-        uniqueTags.push(array[i])
+        uniqueTags.push(array[i]);
       }
     }
-    return uniqueTags
+    return uniqueTags;
   }
 
-  const uniqueTags = getUniqueTags(blogSidebarData)
+  const uniqueTags = getUniqueTags(blogSidebarData);
 
   return (
     <div className="self-start max-lg:col-span-5 max-md:order-1 max-md:col-span-full lg:col-span-4 ">
@@ -44,7 +46,13 @@ const BlogSidebar = ({ blogSidebarData, setActive, search, setSearch }) => {
             <label className="relative block">
               <span className="sr-only">Search</span>
               <span className="absolute inset-y-0 left-0 flex items-center pl-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -73,9 +81,13 @@ const BlogSidebar = ({ blogSidebarData, setActive, search, setSearch }) => {
                   className={`group relative flex items-center justify-between py-5 font-jakarta_sans text-lg font-medium before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform  before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:before:bg-white ${
                     setActive == category.data.categories ? 'blogActive' : ''
                   } `}
-                  key={index}>
+                  key={index}
+                >
                   {category.data.categories}
-                  <FontAwesomeIcon icon={faAngleRight} className="hidden group-[.blogActive]:block" />
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    className="hidden group-[.blogActive]:block"
+                  />
                 </Link>
               ))}
             </div>
@@ -97,7 +109,9 @@ const BlogSidebar = ({ blogSidebarData, setActive, search, setSearch }) => {
                   </div>
                   <div className="col-span-8">
                     <Link href={`/blog/${blogs.slug}`}>
-                      <h5 className="mb-2 text-xl">{blogs.data.title.slice(0, 30)} ...</h5>
+                      <h5 className="mb-2 text-xl">
+                        {blogs.data.title.slice(0, 30)} ...
+                      </h5>
                     </Link>
                     <p>{blogs.data.date}</p>
                   </div>
@@ -111,10 +125,14 @@ const BlogSidebar = ({ blogSidebarData, setActive, search, setSearch }) => {
 
             <div className="flex w-full flex-wrap gap-3 ">
               {uniqueTags.map((item, index) => (
-                <div key={index} className={`${setActive == item.data.tags ? 'tagActive group' : ''}`}>
+                <div
+                  key={index}
+                  className={`${setActive == item.data.tags ? 'tagActive group' : ''}`}
+                >
                   <Link
                     href={`/tags/${item.data.tags}`}
-                    className="btn-outline btn-sm group-[.tagActive]:bg-paragraph group-[.tagActive]:text-white dark:group-[.tagActive]:bg-primary dark:group-[.tagActive]:text-paragraph">
+                    className="btn-outline btn-sm group-[.tagActive]:bg-paragraph group-[.tagActive]:text-white dark:group-[.tagActive]:bg-primary dark:group-[.tagActive]:text-paragraph"
+                  >
                     {item.data.tags}
                   </Link>
                 </div>
@@ -124,7 +142,7 @@ const BlogSidebar = ({ blogSidebarData, setActive, search, setSearch }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogSidebar
+export default BlogSidebar;

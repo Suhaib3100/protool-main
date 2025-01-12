@@ -1,14 +1,14 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
-import { ServiceData } from '@/data/data'
-import Image from 'next/image'
-import Link from 'next/link'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import { ServiceData } from '@/data/data';
+import Image from 'next/image';
+import Link from 'next/link';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const Services = ({ sectionDetails = true }) => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <section className="relative bg-white pb-150 dark:bg-dark-300 sm:overflow-hidden">
       <div className="absolute left-0 right-0 top-25 h-full w-full bg-[url('/images/service-bg.png')] bg-cover bg-center bg-no-repeat opacity-70  sm:hidden"></div>
@@ -22,8 +22,9 @@ const Services = ({ sectionDetails = true }) => {
                 trust Protool.
               </h2>
               <p className="max-w-[520px] lg:ml-auto">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not
-                Latin, though it looks like it
+                Until recently, the prevailing view assumed lorem ipsum was born
+                as a nonsense text. It&rsquo;s not Latin, though it looks like
+                it
               </p>
             </div>
           </div>
@@ -40,11 +41,13 @@ const Services = ({ sectionDetails = true }) => {
             ref={ref}
             initial="initial"
             animate={controlAnimation}
-            variants={fadeUpAnimation}>
+            variants={fadeUpAnimation}
+          >
             {ServiceData?.map((items) => (
               <div
                 className="relative scale-100 rounded-medium bg-white p-2.5 shadow-nav transition-transform duration-500 hover:scale-105 hover:transition-transform hover:duration-500 dark:bg-dark-200"
-                key={items.id}>
+                key={items.id}
+              >
                 <div className="h-full rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark max-lg:p-5">
                   <Image
                     src={items.iconLight}
@@ -64,7 +67,10 @@ const Services = ({ sectionDetails = true }) => {
                     <h3 className="mb-2.5">{items.title}</h3>
                   </Link>
                   <p className="mb-6">{items.excerpt}</p>
-                  <Link href={`/services/${items.slug}`} className="btn-outline btn-sm">
+                  <Link
+                    href={`/services/${items.slug}`}
+                    className="btn-outline btn-sm"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -74,7 +80,7 @@ const Services = ({ sectionDetails = true }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

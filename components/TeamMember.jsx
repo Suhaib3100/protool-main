@@ -1,20 +1,21 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { useRef } from 'react'
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useRef } from 'react';
 
 const TeamMember = ({ image }) => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <motion.div
       className="self-start rounded-medium bg-white p-2.5  shadow-box dark:bg-dark-200"
       ref={ref}
       initial="initial"
       animate={controlAnimation}
-      variants={fadeUpAnimation}>
+      variants={fadeUpAnimation}
+    >
       <div className=" rounded bg-gray-100 dark:bg-[#30302F]">
         <Image
           src={image}
@@ -25,7 +26,7 @@ const TeamMember = ({ image }) => {
         />
       </div>
     </motion.div>
-  )
-}
+  );
+};
 
-export default TeamMember
+export default TeamMember;

@@ -1,14 +1,17 @@
-import CareerDetails from '@/components/CareerDetails'
-import CareerList from '@/components/CareerList'
-import NewsLetter from '@/components/NewsLetter'
-import PaymentFeatures from '@/components/PaymentFeatures'
-import PageHero from '@/components/heros/PageHero'
-import { AboutFeaturesData } from '@/data/data'
+import CareerDetails from '@/components/CareerDetails';
+import CareerList from '@/components/CareerList';
+import NewsLetter from '@/components/NewsLetter';
+import PaymentFeatures from '@/components/PaymentFeatures';
+import PageHero from '@/components/heros/PageHero';
+import { AboutFeaturesData } from '@/data/data';
 
 const Career = () => {
   return (
     <>
-      <PageHero subtitle="CAREER PAGE" title="Become a part of the <br/> Protool team" />
+      <PageHero
+        subtitle="CAREER PAGE"
+        title="Become a part of the <br/> Protool team"
+      />
       <CareerDetails />
       <PaymentFeatures
         features={AboutFeaturesData}
@@ -19,7 +22,7 @@ const Career = () => {
       <CareerList />
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default Career
+export default Career;

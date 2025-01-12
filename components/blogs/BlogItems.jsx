@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
 
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 
 const BlogItems = ({ slug, blogData, content, column }) => {
   return column ? (
@@ -22,13 +22,27 @@ const BlogItems = ({ slug, blogData, content, column }) => {
               {blogData.tags}
             </Link>
             <Link href={`/blog/${slug}`} className="block">
-              <h3 className="mb-3 font-semibold leading-[1.33]">{blogData.title}</h3>
+              <h3 className="mb-3 font-semibold leading-[1.33]">
+                {blogData.title}
+              </h3>
             </Link>
             <div className="mb-4 flex items-center gap-x-2 ">
               <p>{blogData.author}</p>
               <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                  <circle cx="2.5" cy="3" r="2.5" fill="" className="fill-[#D8DBD0] dark:fill-[#3B3C39]" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="6"
+                  viewBox="0 0 5 6"
+                  fill="none"
+                >
+                  <circle
+                    cx="2.5"
+                    cy="3"
+                    r="2.5"
+                    fill=""
+                    className="fill-[#D8DBD0] dark:fill-[#3B3C39]"
+                  />
                 </svg>
               </span>
               <p>{blogData.date}</p>
@@ -53,13 +67,27 @@ const BlogItems = ({ slug, blogData, content, column }) => {
             {blogData.tags}
           </Link>
           <Link href={`/blog/${slug}`} className="block">
-            <h3 className="mb-3 font-semibold leading-[1.33]">{blogData.title}</h3>
+            <h3 className="mb-3 font-semibold leading-[1.33]">
+              {blogData.title}
+            </h3>
           </Link>
           <div className="mb-4 flex items-center gap-x-2 ">
             <p>{blogData.author}</p>
             <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                <circle cx="2.5" cy="3" r="2.5" fill="" className="fill-[#D8DBD0] dark:fill-[#3B3C39]" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="5"
+                height="6"
+                viewBox="0 0 5 6"
+                fill="none"
+              >
+                <circle
+                  cx="2.5"
+                  cy="3"
+                  r="2.5"
+                  fill=""
+                  className="fill-[#D8DBD0] dark:fill-[#3B3C39]"
+                />
               </svg>
             </span>
             <p>{blogData.date}</p>
@@ -68,7 +96,7 @@ const BlogItems = ({ slug, blogData, content, column }) => {
         </div>
       </div>
     </article>
-  )
-}
+  );
+};
 
-export default BlogItems
+export default BlogItems;

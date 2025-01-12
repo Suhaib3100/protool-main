@@ -1,7 +1,7 @@
-'use client'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
+'use client';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 const SearchOption = ({ onClose }) => {
   return (
@@ -11,13 +11,18 @@ const SearchOption = ({ onClose }) => {
           <div className=" rounded border border-dashed border-gray-100 p-10 dark:border-borderColor-dark ">
             <div className="bg flex items-center justify-between border-b border-dashed border-b-borderColor pb-5 dark:border-borderColor-dark">
               <h3 className="text-paragraph dark:text-white">Search</h3>
-              <button onClick={onClose} className="text-paragraph dark:text-white" id="ok-btn">
+              <button
+                onClick={onClose}
+                className="text-paragraph dark:text-white"
+                id="ok-btn"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
                   fill="currentColor"
-                  viewBox="0 0 256 256">
+                  viewBox="0 0 256 256"
+                >
                   <rect width="256" height="256" fill="none"></rect>
                   <circle
                     cx="128"
@@ -26,7 +31,8 @@ const SearchOption = ({ onClose }) => {
                     fill="none"
                     stroke="currentColor"
                     strokeMiterlimit="10"
-                    strokeWidth="16"></circle>
+                    strokeWidth="16"
+                  ></circle>
                   <line
                     x1="160"
                     y1="96"
@@ -36,7 +42,8 @@ const SearchOption = ({ onClose }) => {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="16"></line>
+                    strokeWidth="16"
+                  ></line>
                   <line
                     x1="160"
                     y1="160"
@@ -46,7 +53,8 @@ const SearchOption = ({ onClose }) => {
                     stroke="currentColor"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth="16"></line>
+                    strokeWidth="16"
+                  ></line>
                 </svg>
               </button>
             </div>
@@ -72,18 +80,27 @@ const SearchOption = ({ onClose }) => {
               <h3 className="mb-1">Search Result</h3>
               <ul className="[&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed  [&>*:not(:last-child)]:border-gray-100  dark:[&>*:not(:last-child)]:border-borderColor-dark">
                 <li className="group ">
-                  <Link className="  flex items-center justify-between py-5 font-medium" href="/services">
+                  <Link
+                    className="  flex items-center justify-between py-5 font-medium"
+                    href="/services"
+                  >
                     Investment Banks
                     <FontAwesomeIcon icon={faAngleRight} />
                   </Link>
                 </li>
                 <li className="group">
-                  <Link href="/services" className="  flex items-center justify-between py-5 font-medium">
+                  <Link
+                    href="/services"
+                    className="  flex items-center justify-between py-5 font-medium"
+                  >
                     Financial Analysis <FontAwesomeIcon icon={faAngleRight} />
                   </Link>
                 </li>
                 <li className="group">
-                  <Link href="/services" className="flex items-center justify-between py-5 font-medium">
+                  <Link
+                    href="/services"
+                    className="flex items-center justify-between py-5 font-medium"
+                  >
                     Sales & Trading <FontAwesomeIcon icon={faAngleRight} />
                   </Link>
                 </li>
@@ -93,7 +110,7 @@ const SearchOption = ({ onClose }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SearchOption
+export default SearchOption;

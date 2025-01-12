@@ -1,8 +1,8 @@
-import NewsLetter from '@/components/NewsLetter'
-import GetMarkDownData from '@/utils/getMarkDownData'
-import ReactMarkdown from 'react-markdown'
+import NewsLetter from '@/components/NewsLetter';
+import GetMarkDownData from '@/utils/getMarkDownData';
+import ReactMarkdown from 'react-markdown';
 const TermsCondition = () => {
-  const terms = GetMarkDownData('data/terms')
+  const terms = GetMarkDownData('data/terms');
   return (
     <>
       <section className="relative overflow-hidden pb-150 pt-[250px] max-md:pt-150">
@@ -15,7 +15,9 @@ const TermsCondition = () => {
           </div>
 
           <div className="singlePage">
-            <h2 className="mb-3 max-w-[650px] font-semibold leading-[1.33]">Terms & Conditions</h2>
+            <h2 className="mb-3 max-w-[650px] font-semibold leading-[1.33]">
+              Terms & Conditions
+            </h2>
           </div>
           <div className="singlePage">
             {terms.map((item, i) => (
@@ -29,7 +31,7 @@ const TermsCondition = () => {
 
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default TermsCondition
+export default TermsCondition;

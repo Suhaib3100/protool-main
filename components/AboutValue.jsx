@@ -1,19 +1,19 @@
-'use client'
-import Image from 'next/image'
-import React from 'react'
-import imageOnlineValue from '../public/images/about/onlinePayment.png'
-import imageOnlineValueDark from '../public/images/about/onlinePayment-dark.png'
-import imageShape from '../public/images/about/onlinePayment-shape.png'
-import imageShapeDark from '../public/images/about/onlinePayment-shape-dark.png'
-import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import imageOnlineValue from '../public/images/about/onlinePayment.png';
+import imageOnlineValueDark from '../public/images/about/onlinePayment-dark.png';
+import imageShape from '../public/images/about/onlinePayment-shape.png';
+import imageShapeDark from '../public/images/about/onlinePayment-shape-dark.png';
+import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const AboutValue = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
-  const ref2 = useRef(null)
-  const controlAnimation2 = useWhileInView(ref2)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
+  const ref2 = useRef(null);
+  const controlAnimation2 = useWhileInView(ref2);
   return (
     <section className=" relative overflow-hidden pb-150  max-md:pb-25 ">
       <div className="container relative z-10">
@@ -23,7 +23,8 @@ const AboutValue = () => {
             ref={ref}
             initial="initial"
             animate={controlAnimation}
-            variants={fadeUpAnimation}>
+            variants={fadeUpAnimation}
+          >
             <Image
               src={imageOnlineValue}
               alt="banking image"
@@ -39,9 +40,18 @@ const AboutValue = () => {
               ref={ref2}
               initial="initial"
               animate={controlAnimation2}
-              variants={fadeFromRightAnimation}>
-              <Image src={imageShape} alt="banking image" className="dark:hidden" />
-              <Image src={imageShapeDark} alt="banking image" className="hidden dark:inline-block " />
+              variants={fadeFromRightAnimation}
+            >
+              <Image
+                src={imageShape}
+                alt="banking image"
+                className="dark:hidden"
+              />
+              <Image
+                src={imageShapeDark}
+                alt="banking image"
+                className="hidden dark:inline-block "
+              />
             </motion.div>
 
             <div className="absolute bottom-8 left-0 right-auto top-auto max-w-[180px] md:max-w-[250px] xl:max-w-[344px]"></div>
@@ -50,16 +60,30 @@ const AboutValue = () => {
           <div>
             <p className="section-tagline">Core Value</p>
 
-            <h2 className=" mb-8 max-md:mb-4">The philosophy that underpins our organization.</h2>
+            <h2 className=" mb-8 max-md:mb-4">
+              The philosophy that underpins our organization.
+            </h2>
             <p className="mb-11  max-md:mb-6">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After
-              magazine.
+              Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text nothing Before & After magazine.
             </p>
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 max-md:[&>*:not(:last-child)]:mb-4">
               <li className="flex items-center gap-x-2 ">
                 <span className=" shadow-icon  item-center relative flex justify-center gap-6 rounded-full bg-white dark:bg-dark-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <circle cx="15" cy="15" r="14" fill="" className="fill-[#E6FFB1] dark:fill-[#3B3C39]" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <circle
+                      cx="15"
+                      cy="15"
+                      r="14"
+                      fill=""
+                      className="fill-[#E6FFB1] dark:fill-[#3B3C39]"
+                    />
                     <path
                       d="M15 0C6.75 0 0 6.75 0 15C0 23.25 6.75 30 15 30C23.25 30 30 23.25 30 15C30 6.75 23.25 0 15 0ZM16.125 1.25C20.5 1.625 24.25 4 26.5 7.5H12.375L16.125 1.25ZM18.375 8.75L22.125 15L18.375 21.25H11.5L7.875 14.75L11.625 8.75H18.375ZM14.75 1.25L7.25 13.5L3.625 7.25C6.125 3.75 10.125 1.375 14.75 1.25ZM1.25 15C1.25 12.625 1.875 10.375 2.875 8.5L10.125 21.25H2.75C1.75 19.375 1.25 17.25 1.25 15ZM13.875 28.75C9.5 28.375 5.75 26 3.5 22.5H17.625L13.875 28.75ZM15.375 28.75L23 16.25L26.75 22.375C24.25 26.125 20.125 28.625 15.375 28.75ZM19.875 8.75H27.25C28.25 10.625 28.75 12.75 28.75 15C28.75 17.125 28.25 19.25 27.375 21L19.875 8.75Z"
                       fill=""
@@ -67,11 +91,20 @@ const AboutValue = () => {
                     />
                   </svg>
                 </span>
-                <span className="dark:text-white"> Income and expenses tracker </span>
+                <span className="dark:text-white">
+                  {' '}
+                  Income and expenses tracker{' '}
+                </span>
               </li>
               <li className="flex items-center gap-x-2">
                 <span className=" shadow-icon  item-center relative flex justify-center rounded-full bg-white dark:bg-dark-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="30"
+                    viewBox="0 0 28 30"
+                    fill="none"
+                  >
                     <path
                       d="M11 1.5C12.2 0.7 13.5 0.5 14 0.5C14.8 0.5 15.6667 0.833333 16 1C18 2.16667 22.5 4.8 24.5 6C26.5 7.2 27.3333 9.16667 27.5 10V19C27.5 21.4 26.1667 23 25.5 23.5C23.5 24.6667 19 27.3 17 28.5C15 29.7 12.8333 29.3333 12 29C9.33333 27.5 3.7 24.3 2.5 23.5C1.3 22.7 0.666667 20.5 0.5 19.5V10.5C0.5 8.9 1.83333 7.16667 2.5 6.5C4.83333 5.16667 9.8 2.3 11 1.5Z"
                       fill=""
@@ -88,7 +121,13 @@ const AboutValue = () => {
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className=" shadow-icon  item-center relative flex justify-center rounded-full bg-white dark:bg-dark-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="30"
+                    viewBox="0 0 28 30"
+                    fill="none"
+                  >
                     <path
                       d="M9.99965 3C11.5997 1 13.333 0.5 13.9997 0.5C15.5996 0.5 16.9997 1.83333 17.4998 2.5C19.8331 5 24.8998 10.6 26.4998 13C28.0998 15.4 27.1664 17.6667 26.4998 18.5C23.9998 21.1667 18.4998 26.9 16.4998 28.5C14.4998 30.1 12.6664 29.5 11.9998 29C9.16639 26.5 3.09965 20.9 1.49965 18.5C-0.100346 16.1 0.832987 13.8333 1.49965 13C3.66632 10.5 8.39965 5 9.99965 3Z"
                       fill=""
@@ -109,7 +148,7 @@ const AboutValue = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutValue
+export default AboutValue;

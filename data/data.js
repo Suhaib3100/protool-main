@@ -1,34 +1,16 @@
-import { Behance, Facebook, Github, LinkedIn } from './svgImages'
+import { Behance, Facebook, Github, LinkedIn } from './svgImages';
 
 // Navbar Data
 export const menuData = {
-  logoLight: '/images/logo.svg',
-  logoDark: '/images/logo-light.svg',
-  btnLlink: '/request-demo',
+  logoLight: 'Protool', // Text logo for light mode
+  logoDark: 'Protool', // Text logo for dark mode
+  btnLink: '/request-demo',
   menuContent: [
     {
       id: 1,
       title: 'Home',
-      submenu: [
-        {
-          id: 1.1,
-          title: 'Home 1',
-          path: '/',
-          newTab: false,
-        },
-        {
-          id: 1.2,
-          title: 'Home 2',
-          path: '/home-2',
-          newTab: false,
-        },
-        {
-          id: 1.3,
-          title: 'Home 3',
-          path: '/home-3',
-          newTab: false,
-        },
-      ],
+      path: '/', // Only one home link now
+      newTab: false,
     },
     {
       id: 2,
@@ -44,17 +26,17 @@ export const menuData = {
     },
     {
       id: 4,
-      title: 'Pages',
+      title: 'Core Sections',
       submenu: [
         {
           id: 4.1,
-          title: 'Team',
+          title: 'Our Team',
           path: '/teams',
           newTab: false,
         },
         {
           id: 4.2,
-          title: 'Team details',
+          title: 'Team Details',
           path: '/teams/1',
           newTab: false,
         },
@@ -66,7 +48,7 @@ export const menuData = {
         },
         {
           id: 4.4,
-          title: 'Integration',
+          title: 'Integrations',
           path: '/integration',
           newTab: false,
         },
@@ -84,19 +66,19 @@ export const menuData = {
         },
         {
           id: 4.7,
-          title: 'Career',
+          title: 'Career Opportunities',
           path: '/career',
           newTab: false,
         },
         {
           id: 4.8,
-          title: 'Career Single',
+          title: 'Job Detail - Business Administrator',
           path: '/career/business-administrator',
           newTab: false,
         },
         {
           id: 4.9,
-          title: 'login',
+          title: 'Login',
           path: '/login',
           newTab: false,
         },
@@ -106,40 +88,34 @@ export const menuData = {
           path: '/signup',
           newTab: false,
         },
-        {
-          id: 4.12,
-          title: '404',
-          path: '/not-found',
-          newTab: false,
-        },
       ],
     },
     {
       id: 5,
-      title: 'News',
+      title: 'News & Insights',
       submenu: [
         {
           id: 5.1,
-          title: 'blog grid',
+          title: 'Blog Grid',
           path: '/blog',
           newTab: false,
         },
         {
           id: 5.2,
-          title: 'Blog list',
+          title: 'Blog List',
           path: '/blog-list',
           newTab: false,
         },
         {
           id: 5.3,
-          title: 'Blog categories',
-          path: '/categories/Marketing',
+          title: 'Blog Categories',
+          path: '/categories',
           newTab: false,
         },
         {
           id: 5.4,
-          title: 'Blog tags',
-          path: '/tags/Benefits',
+          title: 'Blog Tags',
+          path: '/tags',
           newTab: false,
         },
       ],
@@ -151,7 +127,7 @@ export const menuData = {
       newTab: false,
     },
   ],
-}
+};
 // Clients
 export const ClientData = [
   {
@@ -184,14 +160,15 @@ export const ClientData = [
     imageLight: '/images/clients/mfinity.svg',
     imageDark: '/images/clients/mfinity-dark.svg',
   },
-]
+];
 
 export const ServiceData = [
   {
     id: 1,
     slug: 'investment-bank',
     title: 'Investment Banks',
-    excerpt: 'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
+    excerpt:
+      'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/investment.svg',
     iconDark: '/images/services/investment-dark.svg',
     featureImage: '/images/services/service-single1.png',
@@ -229,7 +206,8 @@ export const ServiceData = [
     id: 2,
     slug: 'sales',
     title: 'Sales & Trading',
-    excerpt: 'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
+    excerpt:
+      'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/sales.svg',
     iconDark: '/images/services/sales-dark.svg',
     featureImage: '/images/services/service-single1.png',
@@ -267,7 +245,8 @@ export const ServiceData = [
     id: 3,
     slug: 'mortage-loan',
     title: 'Mortgage Loans',
-    excerpt: 'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
+    excerpt:
+      'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/loan.svg',
     iconDark: '/images/services/loan-dark.svg',
     featureImage: '/images/services/service-single1.png',
@@ -305,7 +284,8 @@ export const ServiceData = [
     id: 4,
     slug: 'finance-analyse',
     title: 'Finance Analysis',
-    excerpt: 'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
+    excerpt:
+      'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/finance.svg',
     iconDark: '/images/services/finance-dark.svg',
     featureImage: '/images/services/service-single1.png',
@@ -343,7 +323,8 @@ export const ServiceData = [
     id: 5,
     slug: 'effeciency',
     title: 'Increased Efficiency',
-    excerpt: 'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
+    excerpt:
+      'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/effeciency.svg',
     iconDark: '/images/services/effeciency-dark.svg',
     featureImage: '/images/services/service-single1.png',
@@ -381,7 +362,8 @@ export const ServiceData = [
     id: 6,
     slug: 'fund',
     title: 'Fundraising Advice',
-    excerpt: 'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
+    excerpt:
+      'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/fund.svg',
     iconDark: '/images/services/fund-dark.svg',
     featureImage: '/images/services/service-single1.png',
@@ -415,7 +397,7 @@ export const ServiceData = [
       },
     ],
   },
-]
+];
 
 export const CounterData = [
   {
@@ -436,46 +418,52 @@ export const CounterData = [
     rightIcon: 'K',
     text: 'Satisfied Clients',
   },
-]
+];
 
 export const FAQData = [
   {
     id: 1,
     type: ['general', 'changelog'],
     question: 'What is a business agency?',
-    answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
+    answer:
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
   },
   {
     id: 2,
     type: ['general'],
     question: 'What services does a business agency provide?',
-    answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
+    answer:
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
   },
   {
     id: 3,
     type: ['general', 'changelog'],
     question: 'How often should I update my website?',
-    answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
+    answer:
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
   },
   {
     id: 4,
     type: ['general', 'terms'],
     question: 'How do subscriptions work?',
-    answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
+    answer:
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
   },
   {
     id: 5,
     type: ['changelog', 'terms'],
     question: 'What other services are you compatible with?',
-    answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
+    answer:
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
   },
   {
     id: 6,
     type: ['general', 'terms'],
     question: 'What other services are you compatible with?',
-    answer: "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
+    answer:
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin.",
   },
-]
+];
 
 export const TestimonialData = [
   {
@@ -556,7 +544,7 @@ export const TestimonialData = [
       image: '/images/testimonial/avatar6.png',
     },
   },
-]
+];
 
 export const PaymentRatingData = [
   {
@@ -577,52 +565,51 @@ export const PaymentRatingData = [
     name: 'Trustpilot',
     desc: 'Top Payment Company',
   },
-]
-
+];
 export const CoreFeatures = [
   {
     id: 1,
-    title: 'Useful Features',
+    title: 'Custom Web & App Development',
     iconLight: '/images/payment/invoice.svg',
     iconDark: '/images/payment/invoice-dark.svg',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'We offer tailor-made solutions for websites and mobile apps that cater to your business needs and drive success.',
   },
   {
     id: 2,
-    title: 'Insights and Reports',
+    title: 'Data-Driven Insights & Reports',
     iconLight: '/images/payment/insight.svg',
     iconDark: '/images/payment/insight-dark.svg',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Our advanced analytics and reporting help businesses make informed decisions based on data-driven insights.',
   },
   {
     id: 3,
-    title: 'Managing Inventory',
+    title: 'Inventory & Product Management',
     iconLight: '/images/payment/inventory.svg',
     iconDark: '/images/payment/inventory-dark.svg',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Streamline your business operations with our effective inventory management systems for smooth tracking and control.',
   },
   {
     id: 4,
-    title: 'Organized Expense',
+    title: 'Optimized Expense Management',
     iconLight: '/images/payment/expens.svg',
     iconDark: '/images/payment/expens-dark.svg',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Manage and track your business expenses effectively with our automated expense management solutions.',
   },
   {
     id: 5,
-    title: 'Organize Receipts',
+    title: 'Seamless Receipt Organization',
     iconLight: '/images/payment/receipts.svg',
     iconDark: '/images/payment/receipts-dark.svg',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Keep all your business receipts organized and accessible with our user-friendly receipt management system.',
   },
   {
     id: 6,
-    title: 'Mobile App',
+    title: 'Mobile App for Business',
     iconLight: '/images/payment/app.svg',
     iconDark: '/images/payment/app-dark.svg',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Enhance customer engagement and streamline business operations with our fully customized mobile applications.',
   },
-]
+];
 
 export const PaymentFeaturesData = [
   {
@@ -630,45 +617,45 @@ export const PaymentFeaturesData = [
     iconLight: '/images/payment/paymentFeature.svg',
     iconDark: '/images/payment/paymentFeature-dark.svg',
     title: 'Useful Features',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Protool offers a variety of essential features to streamline your financial management, making processes efficient and user-friendly.',
   },
   {
     id: 2,
     iconLight: '/images/payment/payementSecure.svg',
     iconDark: '/images/payment/payementSecure-dark.svg',
     title: '100% Secure',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'With Protool, your financial data is completely secure with top-of-the-line encryption and security measures in place.',
   },
   {
     id: 3,
     iconLight: '/images/payment/paymentCashback.svg',
     iconDark: '/images/payment/paymentCashback-dark.svg',
     title: 'Cashback Program',
-    desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    desc: 'Take advantage of Protool’s cashback program, which rewards you for your transactions and helps you save more.',
   },
-]
+];
 
 export const PricingData = [
   {
     id: 1,
     featured: false,
-    title: 'Basic',
-    desc: 'The prevailing view assumed lorem ipsum was born as a nonsense text.',
-    priceMonthly: '19.00',
-    priceYearly: '230.00',
+    title: 'Starter Plan',
+    desc: 'Ideal for small businesses looking to get online with a professional website.',
+    priceMonthly: '₹1,577.00', // Monthly INR
+    priceYearly: '₹19,090.00', // Yearly INR
     save: '',
     priceList: [
       {
-        name: 'Track income & expenses',
+        name: 'Custom Website Design',
       },
       {
-        name: 'Send custom invoices & quotes',
+        name: 'Responsive Layout',
       },
       {
-        name: 'Connect your bank',
+        name: 'Basic SEO Optimization',
       },
       {
-        name: 'Insights & reports',
+        name: '1 Year Hosting Included',
       },
     ],
   },
@@ -676,22 +663,28 @@ export const PricingData = [
     id: 2,
     featured: true,
     title: 'Standard',
-    desc: 'The prevailing view assumed lorem ipsum was born as a nonsense text.',
-    priceMonthly: '32.00',
-    priceYearly: '350.00',
+    desc: 'Perfect for growing businesses that need advanced features and marketing support.',
+    priceMonthly: '₹2,656.00', // Monthly INR
+    priceYearly: '₹29,050.00', // Yearly INR
     save: '40%',
     priceList: [
       {
-        name: 'Track income & expenses',
+        name: 'Custom Website Design',
       },
       {
-        name: 'Send custom invoices & quotes',
+        name: 'Responsive Layout',
       },
       {
-        name: 'Connect your bank',
+        name: 'Advanced SEO Optimization',
       },
       {
-        name: 'Insights & reports',
+        name: '1 Year Hosting & Maintenance',
+      },
+      {
+        name: 'Social Media Integration',
+      },
+      {
+        name: 'Basic Digital Marketing Strategy',
       },
     ],
   },
@@ -699,26 +692,35 @@ export const PricingData = [
     id: 3,
     featured: false,
     title: 'Premium',
-    desc: 'The prevailing view assumed lorem ipsum was born as a nonsense text.',
-    priceMonthly: '48.00',
-    priceYearly: '530.00',
+    desc: 'For businesses that require cutting-edge designs, advanced functionality, and a full suite of marketing services.',
+    priceMonthly: '₹3,984.00', // Monthly INR
+    priceYearly: '₹44,030.00', // Yearly INR
     save: '',
     priceList: [
       {
-        name: 'Track income & expenses',
+        name: 'Custom Website Design & Development',
       },
       {
-        name: 'Send custom invoices & quotes',
+        name: 'Fully Responsive Layout',
       },
       {
-        name: 'Connect your bank',
+        name: 'Advanced SEO Optimization & Content Marketing',
       },
       {
-        name: 'Insights & reports',
+        name: '2 Years Hosting & Maintenance',
+      },
+      {
+        name: 'Full Social Media Strategy & Integration',
+      },
+      {
+        name: 'Paid Ad Campaign Management',
+      },
+      {
+        name: 'Branding & Graphic Design Support',
       },
     ],
   },
-]
+];
 
 export const BankingServicesData = [
   {
@@ -742,7 +744,7 @@ export const BankingServicesData = [
     title: 'Low Interest',
     desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
-]
+];
 
 export const teamData = [
   {
@@ -756,7 +758,7 @@ export const teamData = [
     image: '/images/team/team1.png',
     details:
       'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
-    email: 'rehan@gmail.com',
+    email: 'rehan@protool.co.in',
     phone: '+3 230 705 5448',
   },
   {
@@ -829,7 +831,7 @@ export const teamData = [
   //   email: 'team@gmail.com',
   //   phone: '+3 230 705 5448',
   // },
-]
+];
 
 export const AboutFeaturesData = [
   {
@@ -853,7 +855,7 @@ export const AboutFeaturesData = [
     title: 'Our Mission',
     desc: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
-]
+];
 
 export const AboutImages = [
   {
@@ -868,54 +870,66 @@ export const AboutImages = [
     id: 3,
     image: '/images/about/about3.png',
   },
-]
+];
 
 export const IntegrationData = [
   {
     id: 1,
     image: '/images/figma.svg',
     title: 'Figma',
-    details: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    details:
+      'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
   {
     id: 2,
     image: '/images/dropbox.svg',
     title: 'Dropbox',
-    details: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    details:
+      'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
   {
     id: 3,
     image: '/images/twitter.svg',
     title: 'Twitter/X',
-    details: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    details:
+      'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
   {
     id: 4,
     image: '/images/slack.svg',
     title: 'Slack',
-    details: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    details:
+      'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
   {
     id: 5,
     image: '/images/google-drive.svg',
     title: 'Google Drive',
-    details: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    details:
+      'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
   {
     id: 6,
     image: '/images/asana.svg',
     title: 'Asana',
-    details: 'The prevailing view asumed lorem ipsum was born as nonsense text.',
+    details:
+      'The prevailing view asumed lorem ipsum was born as nonsense text.',
   },
-]
+];
 
 export const FooterData = {
   logo: '/images/logo.svg',
-  logoDark: '/images/logo-light.svg',
-  footerText: 'Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.',
+  logoDark: '/images/logo-dark-1.svg',
+  footerText:
+    'Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.',
   copyright: `${new Date().getFullYear()} Protool. All Rights Reserved`,
-  email: 'info@example.com',
-  phone: '+3 230 705 5448',
+  email: 'suhaib@protool.co.in',
+  phone: '+91 8310090539',
+  logoDarkStyle: {
+    width: '200px', // Set your desired width
+    height: '60px', // Set your desired height
+  },
+
   expolre: [
     {
       id: 1,
@@ -1013,4 +1027,4 @@ export const FooterData = {
       link: '#',
     },
   ],
-}
+};

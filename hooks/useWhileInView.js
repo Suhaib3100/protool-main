@@ -1,16 +1,16 @@
-import { useAnimation, useInView } from 'framer-motion'
-import { useEffect } from 'react'
+import { useAnimation, useInView } from 'framer-motion';
+import { useEffect } from 'react';
 
 const useWhileInView = (ref) => {
-  const inInView = useInView(ref, { once: true })
-  const controlAnimation = useAnimation()
+  const inInView = useInView(ref, { once: true });
+  const controlAnimation = useAnimation();
 
   useEffect(() => {
     if (inInView) {
-      controlAnimation.start('animate')
+      controlAnimation.start('animate');
     }
-  }, [inInView, controlAnimation])
-  return controlAnimation
-}
+  }, [inInView, controlAnimation]);
+  return controlAnimation;
+};
 
-export default useWhileInView
+export default useWhileInView;

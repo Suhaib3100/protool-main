@@ -1,11 +1,13 @@
-import getMarkDownData from '@/utils/getMarkDownData'
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
+import getMarkDownData from '@/utils/getMarkDownData';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 const FinancialBlog = () => {
-  const blogs = getMarkDownData('data/blogs')
+  const blogs = getMarkDownData('data/blogs');
 
-  const FinancialBlogItems = blogs.filter((blog) => blog.data.tags === 'Finance')
+  const FinancialBlogItems = blogs.filter(
+    (blog) => blog.data.tags === 'Finance',
+  );
 
   return (
     <section className="relative bg-white pt-150 dark:bg-dark-300 max-md:pb-0 max-md:pt-25 lg:pb-[140px]">
@@ -16,8 +18,9 @@ const FinancialBlog = () => {
           <div className="md:flex md:gap-10 ">
             <h2 className="md:shrink-0">Our recent news & insights</h2>
             <p className="ml-auto  max-w-[600px]">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin
-              though it looks like nothing.
+              Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text. It&rsquo;s not Latin though it looks like
+              nothing.
             </p>
           </div>
         </div>
@@ -30,27 +33,52 @@ const FinancialBlog = () => {
           </div>
           <div className=" grid grid-cols-3 gap-8 max-md:grid-cols-1">
             {FinancialBlogItems.map((blogItems, index) => (
-              <article className="rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200" key={index}>
+              <article
+                className="rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
+                key={index}
+              >
                 <div className="rounded border border-dashed border-gray-100 p-6 dark:border-borderColor-dark ">
-                  <Link href={`/tags/${blogItems.data.tags}`} className="badge badge-primary">
+                  <Link
+                    href={`/tags/${blogItems.data.tags}`}
+                    className="badge badge-primary"
+                  >
                     {blogItems.data.tags}
                   </Link>
                   <Link href={`/blog/${blogItems.slug}`}>
-                    <h3 className="mb-3 font-semibold leading-[1.33]">{blogItems.data.title}</h3>
+                    <h3 className="mb-3 font-semibold leading-[1.33]">
+                      {blogItems.data.title}
+                    </h3>
                   </Link>
                   <div className="mb-4 flex items-center gap-x-2 ">
                     <p>{blogItems.data.author}</p>
                     <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                        <circle cx="2.5" cy="3" r="2.5" fill="" className="fill-[#D8DBD0] dark:fill-[#3B3C39]" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="5"
+                        height="6"
+                        viewBox="0 0 5 6"
+                        fill="none"
+                      >
+                        <circle
+                          cx="2.5"
+                          cy="3"
+                          r="2.5"
+                          fill=""
+                          className="fill-[#D8DBD0] dark:fill-[#3B3C39]"
+                        />
                       </svg>
                     </span>
                     <p>{blogItems.data.date}</p>
                   </div>
 
-                  <ReactMarkdown className="mb-6">{blogItems.content.slice(0, 40)}</ReactMarkdown>
+                  <ReactMarkdown className="mb-6">
+                    {blogItems.content.slice(0, 40)}
+                  </ReactMarkdown>
 
-                  <Link href={`/blog/${blogItems.slug}`} className="btn-outline  btn-sm">
+                  <Link
+                    href={`/blog/${blogItems.slug}`}
+                    className="btn-outline  btn-sm"
+                  >
                     Learn More
                   </Link>
                 </div>
@@ -60,7 +88,7 @@ const FinancialBlog = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FinancialBlog
+export default FinancialBlog;
