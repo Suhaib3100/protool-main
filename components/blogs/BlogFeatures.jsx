@@ -19,7 +19,7 @@ const BlogFeatures = ({ featureBlog }) => {
             <div className="-ml-[170px] rounded-full  bg-primary-200/25 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
             <div className="-ml-[170px] rounded-full  bg-primary-200/20 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
           </div>
-
+{/* Just a comment  what ra u*/}
           <Swiper
             modules={[Pagination]}
             spaceBetween={50}
