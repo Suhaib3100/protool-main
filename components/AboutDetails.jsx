@@ -1,6 +1,6 @@
-'use client'
-import { AboutImages } from '@/data/data'
-import Image from 'next/image'
+"use client";
+import { AboutImages } from "@/data/data";
+import Image from "next/image";
 
 const AboutDetails = () => {
   return (
@@ -14,8 +14,17 @@ const AboutDetails = () => {
         </div>
         <div className="mb-[160px] grid grid-cols-3 items-center gap-10  max-md:mb-25 max-md:grid-cols-1">
           {AboutImages.map((items) => (
-            <div className="overflow-hidden rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200" key={items.id}>
-              <Image src={items.image} alt="about images" className="h-auto w-full rounded" width={383} height={494} />
+            <div
+              className="overflow-hidden rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
+              key={items.id}
+            >
+              <Image
+                src={items.image}
+                alt="about images"
+                className="h-auto w-full rounded"
+                width={383}
+                height={494}
+              />
             </div>
           ))}
         </div>
@@ -29,19 +38,22 @@ const AboutDetails = () => {
           </div>
           <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
             <p>
-              At Protool, we bring over a decade of expertise in building powerful websites, apps, and digital marketing
-              strategies. Our team is dedicated to providing you with the tools and support to drive your business forward
-              with scalable and secure solutions.
+              At Protool, we bring over a decade of expertise in building
+              powerful websites, apps, and digital marketing strategies. Our
+              team is dedicated to providing you with the tools and support to
+              drive your business forward with scalable and secure solutions.
               <br />
               <br />
-              Our focus is on delivering impactful results with cutting-edge technologies and ensuring a seamless experience 
-              for our clients. Let us help you unlock new possibilities and elevate your digital presence.
+              Our focus is on delivering impactful results with cutting-edge
+              technologies and ensuring a seamless experience for our clients.
+              Let us help you unlock new possibilities and elevate your digital
+              presence.
             </p>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutDetails
+export default AboutDetails;

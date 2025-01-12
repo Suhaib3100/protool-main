@@ -1,12 +1,12 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
+"use client";
+import { fadeUpAnimation } from "@/data/animation";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import useWhileInView from "@/hooks/useWhileInView";
+import { useRef } from "react";
 const Signup = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <>
       <section className="relative mb-150 pt-[200px]">
@@ -16,7 +16,8 @@ const Signup = () => {
           ref={ref}
           initial="initial"
           animate={controlAnimation}
-          variants={fadeUpAnimation}>
+          variants={fadeUpAnimation}
+        >
           <div className="mx-auto mb-12 max-w-[475px] text-center">
             <p className="section-tagline">Sign up</p>
 
@@ -38,7 +39,8 @@ const Signup = () => {
                     <div className="col-span-12">
                       <label
                         htmlFor="name"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         Your Name
                       </label>
                       <input
@@ -52,7 +54,8 @@ const Signup = () => {
                     <div className="col-span-12">
                       <label
                         htmlFor="email"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         Email
                       </label>
                       <input
@@ -66,7 +69,8 @@ const Signup = () => {
                     <div className="col-span-full">
                       <label
                         htmlFor="password"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         Password
                       </label>
                       <input
@@ -90,7 +94,13 @@ const Signup = () => {
                 </div>
                 <div className="mb-8">
                   <button className=" group mb-6 flex w-full items-center justify-center gap-2  rounded-[30px] border border-borderColor bg-white  px-[30px] py-3.5 font-jakarta_sans text-sm font-medium -tracking-[0.3px] text-paragraph dark:border-borderColor-dark dark:bg-transparent dark:text-white max-md:px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
                       <path
                         d="M21.7502 12.216C21.7502 11.4143 21.6839 10.8293 21.5402 10.2227H12.1992V13.8409H17.6822C17.5717 14.7401 16.9747 16.0943 15.6482 17.0043L15.6296 17.1254L18.583 19.3676L18.7876 19.3877C20.6669 17.6868 21.7502 15.1843 21.7502 12.216Z"
                         fill="#4285F4"
@@ -108,23 +118,36 @@ const Signup = () => {
                         fill="#EB4335"
                       />
                     </svg>
-                    <span className="font-jakarta_sans font-medium  "> Continue with Google </span>
+                    <span className="font-jakarta_sans font-medium  ">
+                      {" "}
+                      Continue with Google{" "}
+                    </span>
                   </button>
                   <button className="group flex w-full items-center justify-center gap-2 rounded-[30px]  border border-borderColor bg-white px-[30px]  py-3.5 font-jakarta_sans text-sm font-medium -tracking-[0.3px] text-paragraph dark:border-borderColor-dark dark:bg-transparent dark:text-white max-md:px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
                       <path
                         d="M22.5 12.0642C22.5 6.22974 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.22974 1.5 12.0642C1.5 17.337 5.33968 21.7075 10.3594 22.5V15.1179H7.69336V12.0642H10.3594V9.73675C10.3594 7.08911 11.927 5.62663 14.3254 5.62663C15.4738 5.62663 16.6758 5.83296 16.6758 5.83296V8.43274H15.3518C14.0475 8.43274 13.6406 9.24713 13.6406 10.0834V12.0642H16.5527L16.0872 15.1179H13.6406V22.5C18.6603 21.7075 22.5 17.337 22.5 12.0642Z"
                         fill="#0C63D4"
                       />
                     </svg>
-                    <span className="font-jakarta_sans text-sm font-medium "> Continue with Facebook </span>
+                    <span className="font-jakarta_sans text-sm font-medium ">
+                      {" "}
+                      Continue with Facebook{" "}
+                    </span>
                   </button>
                 </div>
                 <p className="ont-jakarta_sans text-center text-sm font-medium leading-[24px] ">
                   Already Have an account?
                   <Link
                     href="/login"
-                    className="relative inline-block overflow-hidden align-bottom font-jakarta_sans text-sm font-medium leading-[24px] text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                    className="relative inline-block overflow-hidden align-bottom font-jakarta_sans text-sm font-medium leading-[24px] text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                  >
                     login
                   </Link>
                 </p>
@@ -134,7 +157,7 @@ const Signup = () => {
         </motion.div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;

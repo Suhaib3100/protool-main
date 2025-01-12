@@ -1,13 +1,13 @@
-'use client'
-import NewsLetter from '@/components/NewsLetter'
-import Link from 'next/link'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
+"use client";
+import NewsLetter from "@/components/NewsLetter";
+import Link from "next/link";
+import { fadeUpAnimation } from "@/data/animation";
+import { motion } from "framer-motion";
+import useWhileInView from "@/hooks/useWhileInView";
+import { useRef } from "react";
 const Login = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <>
       <section className="relative mb-150 pt-[200px] max-md:mb-25">
@@ -17,7 +17,8 @@ const Login = () => {
           ref={ref}
           initial="initial"
           animate={controlAnimation}
-          variants={fadeUpAnimation}>
+          variants={fadeUpAnimation}
+        >
           <div className="mx-auto mb-12 max-w-[475px] text-center">
             <p className="section-tagline">Login</p>
 
@@ -36,7 +37,13 @@ const Login = () => {
               <div className="rounded border border-dashed border-gray-100 bg-white p-12 dark:border-borderColor-dark dark:bg-dark-200 max-md:px-5 max-md:py-7">
                 <div>
                   <button className=" group mb-6 flex w-full items-center justify-center gap-2  rounded-[30px] border border-borderColor bg-white  px-[30px] py-3.5 font-jakarta_sans text-sm font-medium -tracking-[0.3px] text-paragraph dark:border-borderColor-dark dark:bg-transparent dark:text-white max-md:px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
                       <path
                         d="M21.7502 12.216C21.7502 11.4143 21.6839 10.8293 21.5402 10.2227H12.1992V13.8409H17.6822C17.5717 14.7401 16.9747 16.0943 15.6482 17.0043L15.6296 17.1254L18.583 19.3676L18.7876 19.3877C20.6669 17.6868 21.7502 15.1843 21.7502 12.216Z"
                         fill="#4285F4"
@@ -54,22 +61,34 @@ const Login = () => {
                         fill="#EB4335"
                       />
                     </svg>
-                    <span className="font-jakarta_sans font-medium  "> Continue with Google </span>
+                    <span className="font-jakarta_sans font-medium  ">
+                      {" "}
+                      Continue with Google{" "}
+                    </span>
                   </button>
                   <button className=" group flex w-full items-center justify-center gap-2 rounded-[30px]  border border-borderColor bg-white px-[30px]  py-3.5 font-jakarta_sans text-sm font-medium -tracking-[0.3px] text-paragraph dark:border-borderColor-dark dark:bg-transparent dark:text-white max-md:px-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
                       <path
                         d="M22.5 12.0642C22.5 6.22974 17.799 1.5 12 1.5C6.20101 1.5 1.5 6.22974 1.5 12.0642C1.5 17.337 5.33968 21.7075 10.3594 22.5V15.1179H7.69336V12.0642H10.3594V9.73675C10.3594 7.08911 11.927 5.62663 14.3254 5.62663C15.4738 5.62663 16.6758 5.83296 16.6758 5.83296V8.43274H15.3518C14.0475 8.43274 13.6406 9.24713 13.6406 10.0834V12.0642H16.5527L16.0872 15.1179H13.6406V22.5C18.6603 21.7075 22.5 17.337 22.5 12.0642Z"
                         fill="#0C63D4"
                       />
                     </svg>
-                    <span className="font-jakarta_sans text-sm font-medium "> Continue with Facebook </span>
+                    <span className="font-jakarta_sans text-sm font-medium ">
+                      {" "}
+                      Continue with Facebook{" "}
+                    </span>
                   </button>
                 </div>
                 <div className="relative py-8 after:absolute after:top-1/2 after:h-[1px] after:w-full after:-translate-y-1/2 after:border after:border-dashed after:border-borderColor dark:after:border-borderColor-dark">
                   <span className=" absolute left-1/2 top-1/2 z-10 inline-block w-10 -translate-x-1/2 -translate-y-1/2 bg-white text-center dark:bg-dark-200">
-                    {' '}
-                    Or{' '}
+                    {" "}
+                    Or{" "}
                   </span>
                 </div>
                 <form>
@@ -77,7 +96,8 @@ const Login = () => {
                     <div className="col-span-12">
                       <label
                         htmlFor="email"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         Email
                       </label>
                       <input
@@ -91,7 +111,8 @@ const Login = () => {
                     <div className="col-span-full">
                       <label
                         htmlFor="email"
-                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                        className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                      >
                         Password
                       </label>
                       <input
@@ -103,8 +124,15 @@ const Login = () => {
                       />
                     </div>
                     <div className="col-span-full flex items-center justify-between">
-                      <label htmlFor="remember-me" className="flex items-center gap-x-3">
-                        <input id="remember-me" type="checkbox" className="peer sr-only" />
+                      <label
+                        htmlFor="remember-me"
+                        className="flex items-center gap-x-3"
+                      >
+                        <input
+                          id="remember-me"
+                          type="checkbox"
+                          className="peer sr-only"
+                        />
                         <div className=" relative h-5 w-5 cursor-pointer rounded-full border border-borderColor after:absolute after:left-1/2 after:top-1/2 after:h-2.5 after:w-2.5 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:bg-primary after:opacity-0 peer-checked:border-primary peer-checked:after:opacity-100 dark:border-borderColor-dark dark:peer-checked:border-primary"></div>
 
                         <span className="block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
@@ -113,19 +141,23 @@ const Login = () => {
                       </label>
                       <Link
                         href="/forget-password"
-                        className="relative inline-block overflow-hidden align-bottom font-jakarta_sans text-sm font-medium leading-[24px] text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                        className="relative inline-block overflow-hidden align-bottom font-jakarta_sans text-sm font-medium leading-[24px] text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                      >
                         Forget Password
                       </Link>
                     </div>
                     <div className="col-span-full ">
-                      <button className="btn block w-full font-medium">Login</button>
+                      <button className="btn block w-full font-medium">
+                        Login
+                      </button>
                     </div>
                     <div className="col-span-full ">
                       <p className="text-center font-jakarta_sans text-sm font-medium leading-[24px]">
                         Not registered yet?
                         <Link
                           href="/signup"
-                          className="relative inline-block overflow-hidden align-bottom font-jakarta_sans  text-sm font-medium leading-[24px] text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white">
+                          className="relative inline-block overflow-hidden align-bottom font-jakarta_sans  text-sm font-medium leading-[24px] text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph  before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                        >
                           Create an Account
                         </Link>
                       </p>
@@ -139,7 +171,7 @@ const Login = () => {
       </section>
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

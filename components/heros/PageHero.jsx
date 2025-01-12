@@ -1,6 +1,6 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
+"use client";
+import { fadeUpAnimation } from "@/data/animation";
+import { motion } from "framer-motion";
 
 const PageHero = ({ subtitle, title, paragraph }) => {
   return (
@@ -10,14 +10,24 @@ const PageHero = ({ subtitle, title, paragraph }) => {
           className="mx-auto max-w-[948px] text-center"
           initial="initial"
           animate="animate"
-          variants={fadeUpAnimation}>
+          variants={fadeUpAnimation}
+        >
           {subtitle && <p className="mb-4 font-medium uppercase">{subtitle}</p>}
-          {title && <h1 className="mb-10 max-lg:mb-10" dangerouslySetInnerHTML={{ __html: title }}></h1>}
-          {paragraph && <p className="mx-auto mb-12 max-w-[590px] max-lg:mb-10">{paragraph}</p>}
+          {title && (
+            <h1
+              className="mb-10 max-lg:mb-10"
+              dangerouslySetInnerHTML={{ __html: title }}
+            ></h1>
+          )}
+          {paragraph && (
+            <p className="mx-auto mb-12 max-w-[590px] max-lg:mb-10">
+              {paragraph}
+            </p>
+          )}
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PageHero
+export default PageHero;

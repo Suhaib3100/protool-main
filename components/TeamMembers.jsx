@@ -1,15 +1,15 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import { teamData } from '@/data/data'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { motion } from 'framer-motion'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
+"use client";
+import { fadeUpAnimation } from "@/data/animation";
+import { teamData } from "@/data/data";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { motion } from "framer-motion";
+import useWhileInView from "@/hooks/useWhileInView";
+import { useRef } from "react";
 const TeamMembers = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <section className="bg-white pb-[170px] pt-150 dark:bg-dark-300 max-md:overflow-hidden max-md:pb-25 max-md:pt-20">
       <div className="container">
@@ -34,7 +34,8 @@ const TeamMembers = () => {
                 ref={ref}
                 initial="initial"
                 animate={controlAnimation}
-                variants={fadeUpAnimation}>
+                variants={fadeUpAnimation}
+              >
                 <div className="mb-6 rounded-medium bg-white p-2.5 dark:bg-dark-200">
                   <div className=" overflow-hidden rounded bg-gray-100 dark:bg-[#30302F]">
                     <Image
@@ -50,19 +51,23 @@ const TeamMembers = () => {
                   <Link href={`/teams/${member.id}`}>
                     <h3 className="mb-2">{member.name}</h3>
                   </Link>
-                  <p className="mb-6 text-sm font-medium leading-[1.5]">{member.designation}</p>
+                  <p className="mb-6 text-sm font-medium leading-[1.5]">
+                    {member.designation}
+                  </p>
                   <ul className="flex items-center justify-center gap-x-2.5">
                     <li>
                       <Link
                         href={member.fbLink}
-                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                      >
                         <svg
                           width="40"
                           height="40"
                           viewBox="0 0 40 40"
                           fill=""
                           xmlns="http://www.w3.org/2000/svg"
-                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                        >
                           <rect
                             x="0.5"
                             y="0.5"
@@ -84,14 +89,16 @@ const TeamMembers = () => {
                     <li>
                       <Link
                         href={member.dribbleInLink}
-                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                      >
                         <svg
                           width="40"
                           height="40"
                           viewBox="0 0 40 40"
                           fill=""
                           xmlns="http://www.w3.org/2000/svg"
-                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                        >
                           <rect
                             x="0.5"
                             y="0.5"
@@ -115,14 +122,16 @@ const TeamMembers = () => {
                     <li>
                       <Link
                         href={member.gitHubLink}
-                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                      >
                         <svg
                           width="40"
                           height="40"
                           viewBox="0 0 40 40"
                           fill=""
                           xmlns="http://www.w3.org/2000/svg"
-                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                        >
                           <rect
                             x="0.5"
                             y="0.5"
@@ -144,14 +153,16 @@ const TeamMembers = () => {
                     <li>
                       <Link
                         href={member.linkedInLink}
-                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                        className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                      >
                         <svg
                           width="40"
                           height="40"
                           viewBox="0 0 40 40"
                           fill=""
                           xmlns="http://www.w3.org/2000/svg"
-                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                          className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                        >
                           <rect
                             x="0.5"
                             y="0.5"
@@ -177,7 +188,7 @@ const TeamMembers = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TeamMembers
+export default TeamMembers;

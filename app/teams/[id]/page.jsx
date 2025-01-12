@@ -1,18 +1,18 @@
-import ContactForm from '@/components/ContactForm'
-import NewsLetter from '@/components/NewsLetter'
-import TeamMember from '@/components/TeamMember'
-import { teamData } from '@/data/data'
-import Link from 'next/link'
+import ContactForm from "@/components/ContactForm";
+import NewsLetter from "@/components/NewsLetter";
+import TeamMember from "@/components/TeamMember";
+import { teamData } from "@/data/data";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   return teamData.map((team) => ({
     id: team.id.toString(),
-  }))
+  }));
 }
 
 const TeamSingle = (props) => {
-  const teamId = props.params.id
-  const data = teamData.find((post) => post.id == teamId)
+  const teamId = props.params.id;
+  const data = teamData.find((post) => post.id == teamId);
 
   return (
     <>
@@ -42,7 +42,8 @@ const TeamSingle = (props) => {
                 viewBox="0 0 28 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <rect
                   x="0.5"
                   y="0.5"
@@ -77,7 +78,8 @@ const TeamSingle = (props) => {
                 viewBox="0 0 28 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="mr-3">
+                className="mr-3"
+              >
                 <rect
                   x="0.5"
                   y="0.5"
@@ -103,20 +105,25 @@ const TeamSingle = (props) => {
                 />
               </svg>
 
-              <Link href={`tel:${data.phone.split(' ').join('')}`}> {data.phone} </Link>
+              <Link href={`tel:${data.phone.split(" ").join("")}`}>
+                {" "}
+                {data.phone}{" "}
+              </Link>
             </div>
             <ul className="flex items-center gap-x-2.5 border-t border-dashed border-borderColor pt-12 dark:border-borderColor-dark">
               <li>
                 <Link
                   href={data.fbLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -138,14 +145,16 @@ const TeamSingle = (props) => {
               <li>
                 <Link
                   href={data.dribbleInLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -169,14 +178,16 @@ const TeamSingle = (props) => {
               <li>
                 <Link
                   href={data.gitHubLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -198,14 +209,16 @@ const TeamSingle = (props) => {
               <li>
                 <Link
                   href={data.linkedInLink}
-                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500">
+                  className="group transition-colors duration-500 hover:transition-colors hover:duration-500"
+                >
                   <svg
                     width="40"
                     height="40"
                     viewBox="0 0 40 40"
                     fill=""
                     xmlns="http://www.w3.org/2000/svg"
-                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500">
+                    className="fill-transparent transition-colors  duration-500 group-hover:fill-primary group-hover:transition-colors group-hover:duration-500"
+                  >
                     <rect
                       x="0.5"
                       y="0.5"
@@ -230,7 +243,7 @@ const TeamSingle = (props) => {
       <ContactForm />
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default TeamSingle
+export default TeamSingle;

@@ -1,11 +1,11 @@
-'use client'
-import { fadeUpAnimation } from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
-import { motion } from 'framer-motion'
+"use client";
+import { fadeUpAnimation } from "@/data/animation";
+import useWhileInView from "@/hooks/useWhileInView";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 const ContactForm = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <section className="relative mb-150">
       <div className="absolute left-1/2  -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
@@ -14,7 +14,8 @@ const ContactForm = () => {
         ref={ref}
         initial="initial"
         animate={controlAnimation}
-        variants={fadeUpAnimation}>
+        variants={fadeUpAnimation}
+      >
         <div className="mx-auto mb-12 max-w-[475px] text-center">
           <p className="section-tagline">Contact</p>
 
@@ -33,7 +34,8 @@ const ContactForm = () => {
                   <div className="max-md:col-span-full md:col-span-6">
                     <label
                       htmlFor="username"
-                      className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                      className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                    >
                       Your name
                     </label>
                     <input
@@ -47,7 +49,8 @@ const ContactForm = () => {
                   <div className="max-md:col-span-full md:col-span-6">
                     <label
                       htmlFor="email"
-                      className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                      className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                    >
                       Your Email
                     </label>
                     <input
@@ -61,14 +64,16 @@ const ContactForm = () => {
                   <div className="col-span-full">
                     <label
                       htmlFor="message"
-                      className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white">
+                      className="mb-2 block font-jakarta_sans text-sm font-medium text-paragraph dark:text-white"
+                    >
                       Message
                     </label>
                     <textarea
                       name="first-name"
                       id="message"
                       rows="10"
-                      className="block w-full resize-none rounded border border-borderColor bg-white px-5 py-2.5   text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:focus:border-primary"></textarea>
+                      className="block w-full resize-none rounded border border-borderColor bg-white px-5 py-2.5   text-sm text-paragraph-light outline-none transition-all duration-300 placeholder:text-paragraph-light focus:border-primary dark:border-borderColor-dark dark:bg-dark-200 dark:focus:border-primary"
+                    ></textarea>
                   </div>
                   <div className="col-span-full mx-auto text-center">
                     <button className="btn">Contact Now</button>
@@ -80,7 +85,7 @@ const ContactForm = () => {
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

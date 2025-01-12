@@ -1,26 +1,26 @@
-'use client'
-import React, { useState } from 'react'
-import BlogItems from './BlogItems'
-import Pagination from '../Pagination'
+"use client";
+import React, { useState } from "react";
+import BlogItems from "./BlogItems";
+import Pagination from "../Pagination";
 
 const BlogGrid = ({ blogItemData }) => {
-  const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 6
-  const totalPage = Math.ceil(blogItemData.length / itemsPerPage)
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+  const totalPage = Math.ceil(blogItemData.length / itemsPerPage);
 
   const paginateData = () => {
-    const startIndex = (currentPage - 1) * itemsPerPage
-    const endIndex = startIndex + itemsPerPage
-    return blogItemData.slice(startIndex, endIndex)
-  }
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    return blogItemData.slice(startIndex, endIndex);
+  };
 
-  const currentPageData = paginateData()
+  const currentPageData = paginateData();
   const goToNextPage = () => {
-    setCurrentPage((prevPage) => prevPage + 1)
-  }
+    setCurrentPage((prevPage) => prevPage + 1);
+  };
   const goToPreviousPage = () => {
-    setCurrentPage((prevPage) => prevPage - 1)
-  }
+    setCurrentPage((prevPage) => prevPage - 1);
+  };
 
   const paginateFunction = {
     totalPage,
@@ -28,7 +28,7 @@ const BlogGrid = ({ blogItemData }) => {
     setCurrentPage,
     goToNextPage,
     goToPreviousPage,
-  }
+  };
   return (
     <section className="relative py-150 max-md:py-20">
       <div className="absolute left-1/2 top-20 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
@@ -45,14 +45,20 @@ const BlogGrid = ({ blogItemData }) => {
           </div>
           <div className="grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-md:grid-cols-1">
             {currentPageData.map((blog) => (
-              <BlogItems key={blog.slug} slug={blog.slug} content={blog.content} blogData={blog.data} column={false} />
+              <BlogItems
+                key={blog.slug}
+                slug={blog.slug}
+                content={blog.content}
+                blogData={blog.data}
+                column={false}
+              />
             ))}
           </div>
         </div>
       </div>
       <Pagination paginateFunction={paginateFunction} />
     </section>
-  )
-}
+  );
+};
 
-export default BlogGrid
+export default BlogGrid;

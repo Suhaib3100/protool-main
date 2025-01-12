@@ -1,15 +1,15 @@
-'use client'
-import NewsLetter from '@/components/NewsLetter'
-import PageHero from '@/components/heros/PageHero'
-import { IntegrationData } from '@/data/data'
-import Image from 'next/image'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
-import { useRef } from 'react'
-import useWhileInView from '@/hooks/useWhileInView'
+"use client";
+import NewsLetter from "@/components/NewsLetter";
+import PageHero from "@/components/heros/PageHero";
+import { IntegrationData } from "@/data/data";
+import Image from "next/image";
+import { fadeUpAnimation } from "@/data/animation";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import useWhileInView from "@/hooks/useWhileInView";
 const Integration = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
   return (
     <>
       <PageHero
@@ -31,9 +31,13 @@ const Integration = () => {
               ref={ref}
               initial="initial"
               animate={controlAnimation}
-              variants={fadeUpAnimation}>
+              variants={fadeUpAnimation}
+            >
               {IntegrationData.map((items) => (
-                <div className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200" key={items.id}>
+                <div
+                  className="rounded-medium bg-white p-2.5 shadow-box dark:bg-dark-200"
+                  key={items.id}
+                >
                   <div className="rounded border border-dashed border-gray-100 p-10 text-center dark:border-borderColor-dark ">
                     <Image
                       src={items.image}
@@ -54,7 +58,7 @@ const Integration = () => {
 
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default Integration
+export default Integration;

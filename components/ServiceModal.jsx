@@ -1,15 +1,15 @@
-'use client'
-import { faX } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useState } from 'react'
-import ReactPlayer from 'react-player'
+"use client";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
+import ReactPlayer from "react-player";
 
 const ServiceModal = ({ videoLink }) => {
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   const openModal = (e) => {
-    e.preventDefault()
-    setModal(!modal)
-  }
+    e.preventDefault();
+    setModal(!modal);
+  };
   return modal ? (
     <div className="modal-bg">
       <div className="modal-align">
@@ -18,12 +18,17 @@ const ServiceModal = ({ videoLink }) => {
             <FontAwesomeIcon icon={faX} />
           </span>
           <div className="modal-video-align">
-            <ReactPlayer url={videoLink} className="modal-video-item" width="100%" height="100%" />
+            <ReactPlayer
+              url={videoLink}
+              className="modal-video-item"
+              width="100%"
+              height="100%"
+            />
           </div>
         </div>
       </div>
     </div>
-  ) : null
-}
+  ) : null;
+};
 
-export default ServiceModal
+export default ServiceModal;

@@ -1,9 +1,9 @@
-'use client'
-import { TestimonialData } from '@/data/data'
-import Image from 'next/image'
-import { RatingStars } from './Rating'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
+"use client";
+import { TestimonialData } from "@/data/data";
+import Image from "next/image";
+import { RatingStars } from "./Rating";
+import { fadeUpAnimation } from "@/data/animation";
+import { motion } from "framer-motion";
 const TestimonialSingle = () => {
   return (
     <section className=" relative pb-25">
@@ -22,16 +22,17 @@ const TestimonialSingle = () => {
                 key={testimonial.id}
                 initial="initial"
                 animate="animate"
-                variants={fadeUpAnimation}>
+                variants={fadeUpAnimation}
+              >
                 <div className="rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark">
-                <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
-    Protool
-  </span>
-  
-  {/* Dark mode logo (visible in dark mode) */}
-  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
-    Protool
-  </span>
+                  <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
+                    Protool
+                  </span>
+
+                  {/* Dark mode logo (visible in dark mode) */}
+                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
+                    Protool
+                  </span>
 
                   <blockquote className="mb-5 italic leading-[1.75] text-paragraph dark:text-white">
                     &ldquo;{testimonial.testimonial}&rdquo;
@@ -39,8 +40,8 @@ const TestimonialSingle = () => {
                   <div className="mb-7">
                     <RatingStars
                       rating={testimonial.rating}
-                      ratingColor={'text-paragraph dark:text-white'}
-                      ratingEmptyColor={'text-[#A7A7B4] dark:text-[#646463]'}
+                      ratingColor={"text-paragraph dark:text-white"}
+                      ratingEmptyColor={"text-[#A7A7B4] dark:text-[#646463]"}
                     />
                   </div>
 
@@ -53,7 +54,9 @@ const TestimonialSingle = () => {
                       height={56}
                     />
                     <div className="block">
-                      <h3 className="text-base font-semibold">{testimonial.author.name}</h3>
+                      <h3 className="text-base font-semibold">
+                        {testimonial.author.name}
+                      </h3>
                       <p className="font-jakarta_sans text-sm font-medium text-paragraph-light dark:text-[#A1A49D]">
                         {testimonial.author.designation}
                       </p>
@@ -66,7 +69,7 @@ const TestimonialSingle = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSingle
+export default TestimonialSingle;

@@ -1,7 +1,7 @@
-import { TestimonialData } from '@/data/data'
-import Image from 'next/image'
-import Link from 'next/link'
-import { RatingStars } from './Rating'
+import { TestimonialData } from "@/data/data";
+import Image from "next/image";
+import Link from "next/link";
+import { RatingStars } from "./Rating";
 const Testimonial = () => {
   return (
     <section className="relative bg-white  pb-150 pt-150 dark:bg-dark-300 max-md:py-20">
@@ -21,13 +21,15 @@ const Testimonial = () => {
             {TestimonialData.slice(0, 5).map((testimonial) => (
               <div
                 className="rounded-medium bg-white p-2.5 shadow-nav  dark:bg-dark-200 md:w-[calc(50%_-_20px)] lg:w-[calc(33.33%_-_20px)]"
-                key={testimonial.id}>
+                key={testimonial.id}
+              >
                 <div className="h-full rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark ">
-                <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
-    Protool  </span>
-    <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
-    Protool
-  </span>
+                  <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
+                    Protool{" "}
+                  </span>
+                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
+                    Protool
+                  </span>
 
                   <blockquote className="mb-5 italic leading-[1.75] text-paragraph dark:text-white">
                     &ldquo;{testimonial.testimonial}&rdquo;
@@ -35,8 +37,8 @@ const Testimonial = () => {
                   <div className="mb-7">
                     <RatingStars
                       rating={testimonial.rating}
-                      ratingColor={'text-paragraph dark:text-white'}
-                      ratingEmptyColor={'text-[#A7A7B4] dark:text-[#646463]'}
+                      ratingColor={"text-paragraph dark:text-white"}
+                      ratingEmptyColor={"text-[#A7A7B4] dark:text-[#646463]"}
                     />
                   </div>
 
@@ -49,7 +51,9 @@ const Testimonial = () => {
                       height={56}
                     />
                     <div className="block">
-                      <h3 className="text-base font-semibold">{testimonial.author.name}</h3>
+                      <h3 className="text-base font-semibold">
+                        {testimonial.author.name}
+                      </h3>
                       <p className="font-jakarta_sans text-sm font-medium text-paragraph-light dark:text-[#A1A49D]">
                         {testimonial.author.designation}
                       </p>
@@ -69,7 +73,7 @@ const Testimonial = () => {
         <div className="absolute bottom-15 left-0 z-10 h-[450px] w-full bg-gradient-to-b  from-transparent  to-white to-100% dark:to-dark-300"></div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Testimonial
+export default Testimonial;

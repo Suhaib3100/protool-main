@@ -1,21 +1,21 @@
-import NewsLetter from '@/components/NewsLetter'
-import getMarkDownContent from '@/utils/getMarkDownContent'
-import getMarkDownData from '@/utils/getMarkDownData'
-import Link from 'next/link'
-import ReactMarkdown from 'react-markdown'
+import NewsLetter from "@/components/NewsLetter";
+import getMarkDownContent from "@/utils/getMarkDownContent";
+import getMarkDownData from "@/utils/getMarkDownData";
+import Link from "next/link";
+import ReactMarkdown from "react-markdown";
 
 export async function generateStaticParams() {
-  const careerData = getMarkDownData('data/career')
+  const careerData = getMarkDownData("data/career");
   return careerData.map((item) => ({
     slug: item.slug,
-  }))
+  }));
 }
 
 const CareerDetails = (props) => {
-  const dataFolder = 'data/career/'
-  const slug = props.params.slug
-  const careerDetails = getMarkDownContent(dataFolder, slug)
-  const postParams = careerDetails.data
+  const dataFolder = "data/career/";
+  const slug = props.params.slug;
+  const careerDetails = getMarkDownContent(dataFolder, slug);
+  const postParams = careerDetails.data;
 
   return (
     <>
@@ -47,14 +47,18 @@ const CareerDetails = (props) => {
                   <div className=" [&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed [&>*:not(:last-child)]:border-borderColor dark:[&>*:not(:last-child)]:border-borderColor-dark ">
                     {postParams.publishDate && (
                       <div className="py-5">
-                        <h4 className="mb-2 text-lg font-medium">Date Posted</h4>
+                        <h4 className="mb-2 text-lg font-medium">
+                          Date Posted
+                        </h4>
                         <p>{postParams.publishDate}</p>
                       </div>
                     )}
 
                     {postParams.expirationDate && (
                       <div className="py-5">
-                        <h4 className="mb-2 text-lg font-medium">Expiration Posted</h4>
+                        <h4 className="mb-2 text-lg font-medium">
+                          Expiration Posted
+                        </h4>
                         <p>{postParams.expirationDate}</p>
                       </div>
                     )}
@@ -67,7 +71,9 @@ const CareerDetails = (props) => {
 
                     {postParams.salary && (
                       <div className="py-5">
-                        <h4 className="mb-2 text-lg font-medium">Offered Salary</h4>
+                        <h4 className="mb-2 text-lg font-medium">
+                          Offered Salary
+                        </h4>
                         <p>{postParams.salary} / week</p>
                       </div>
                     )}
@@ -79,12 +85,16 @@ const CareerDetails = (props) => {
                     )}
                     {postParams.qualification && (
                       <div className="py-5">
-                        <h4 className="mb-2 text-lg font-medium">Qualification</h4>
+                        <h4 className="mb-2 text-lg font-medium">
+                          Qualification
+                        </h4>
                         <p>{postParams.qualification}</p>
                       </div>
                     )}
                     <div className="py-5">
-                      <h4 className="mb-2 text-lg font-medium">Qualification</h4>
+                      <h4 className="mb-2 text-lg font-medium">
+                        Qualification
+                      </h4>
                       <p>Bachelor Degree, Art of Design</p>
                     </div>
                   </div>
@@ -115,7 +125,7 @@ const CareerDetails = (props) => {
       </section>
       <NewsLetter />
     </>
-  )
-}
+  );
+};
 
-export default CareerDetails
+export default CareerDetails;

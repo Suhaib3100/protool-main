@@ -1,8 +1,8 @@
-import getMarkDownData from '@/utils/getMarkDownData'
-import Link from 'next/link'
+import getMarkDownData from "@/utils/getMarkDownData";
+import Link from "next/link";
 
 const CareerList = () => {
-  const careerData = getMarkDownData('data/career')
+  const careerData = getMarkDownData("data/career");
   return (
     <section className="relative pb-150 max-md:overflow-hidden">
       <div className="absolute left-0 right-0 top-0 h-full w-full bg-[url('/images/core-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70  md:hidden"></div>
@@ -20,7 +20,8 @@ const CareerList = () => {
           {careerData.map((carerItem, index) => (
             <div
               className=" mx-auto max-w-[1050px] rounded-medium bg-white p-2.5 shadow-nav dark:bg-dark-200"
-              key={index}>
+              key={index}
+            >
               <div className=" rounded border border-dashed border-gray-100 bg-white px-5 py-6 dark:border-borderColor-dark dark:bg-dark-200 xl:px-8">
                 <div className="grid grid-cols-12 items-center max-md:gap-y-5">
                   <div className="col-span-full lg:col-span-4">
@@ -28,7 +29,10 @@ const CareerList = () => {
                   </div>
                   <div className="col-span-full sm:col-span-full md:col-span-5 lg:col-span-3">
                     {carerItem.data.shortDesc && (
-                      <p className="text-light font-jakarta_sans"> {carerItem.data.shortDesc}</p>
+                      <p className="text-light font-jakarta_sans">
+                        {" "}
+                        {carerItem.data.shortDesc}
+                      </p>
                     )}
                   </div>
 
@@ -45,7 +49,10 @@ const CareerList = () => {
                     )}
                   </div>
                   <div className="col-span-full sm:col-span-3 lg:col-span-2">
-                    <Link href={`/career/${carerItem.slug}`} className="btn-outline btn-sm">
+                    <Link
+                      href={`/career/${carerItem.slug}`}
+                      className="btn-outline btn-sm"
+                    >
                       Read More
                     </Link>
                   </div>
@@ -56,7 +63,7 @@ const CareerList = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CareerList
+export default CareerList;

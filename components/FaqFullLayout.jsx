@@ -1,16 +1,16 @@
-'use client'
-import React, { useState } from 'react'
+"use client";
+import React, { useState } from "react";
 
-import FaqItem from './FaqItem'
-import { FAQData } from '@/data/data'
+import FaqItem from "./FaqItem";
+import { FAQData } from "@/data/data";
 
 const FaqFullLayout = () => {
-  const [activeIndex, setActiveIndex] = useState(null)
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const handleItemClick = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index))
-  }
-  const generalFaq = FAQData.filter((faq) => faq.type.includes('general'))
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+  const generalFaq = FAQData.filter((faq) => faq.type.includes("general"));
   return (
     <section className="relative pb-150  max-md:overflow-hidden">
       <div className="container relative">
@@ -43,7 +43,7 @@ const FaqFullLayout = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FaqFullLayout
+export default FaqFullLayout;

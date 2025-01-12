@@ -1,11 +1,16 @@
-'use client'
-import Link from 'next/link'
-import { fadeUpAnimation } from '@/data/animation'
-import { motion } from 'framer-motion'
+"use client";
+import Link from "next/link";
+import { fadeUpAnimation } from "@/data/animation";
+import { motion } from "framer-motion";
 const NotFound = () => {
   return (
     <section className="mb-150 pt-[200px]">
-      <motion.div className="container relative" initial="initial" animate="animate" variants={fadeUpAnimation}>
+      <motion.div
+        className="container relative"
+        initial="initial"
+        animate="animate"
+        variants={fadeUpAnimation}
+      >
         <div className="mx-auto max-w-[700px] text-center">
           <h1 className="from-0to-primary/0 bg-gradient-to-b from-primary to-90% bg-clip-text text-[140px] font-bold leading-[1] text-transparent dark:text-transparent">
             404
@@ -25,7 +30,7 @@ const NotFound = () => {
         </div>
       </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

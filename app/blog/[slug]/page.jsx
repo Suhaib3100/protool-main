@@ -1,24 +1,27 @@
-import PageHero from '@/components/heros/PageHero'
-import getMarkDownContent from '@/utils/getMarkDownContent'
-import getMarkDownData from '@/utils/getMarkDownData'
-import Image from 'next/image'
-import ReactMarkdown from 'react-markdown'
+import PageHero from "@/components/heros/PageHero";
+import getMarkDownContent from "@/utils/getMarkDownContent";
+import getMarkDownData from "@/utils/getMarkDownData";
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
 
 export async function generateStaticParams() {
-  const blogs = getMarkDownData('data/blogs')
+  const blogs = getMarkDownData("data/blogs");
   return blogs.map((blog) => ({
     slug: blog.slug,
-  }))
+  }));
 }
 
 const BlogDetails = (props) => {
-  const dataFolder = 'data/blogs/'
-  const slug = props.params.slug
-  const blog = getMarkDownContent(dataFolder, slug)
-  const postParams = blog.data
+  const dataFolder = "data/blogs/";
+  const slug = props.params.slug;
+  const blog = getMarkDownContent(dataFolder, slug);
+  const postParams = blog.data;
   return (
     <>
-      <PageHero subtitle="BLOG Details" title="Recent blogs created <br/> by Protool" />
+      <PageHero
+        subtitle="BLOG Details"
+        title="Recent blogs created <br/> by Protool"
+      />
       <article className="relative pb-150">
         <div className="absolute -top-[250px] left-1/2 -z-10 h-[550px] w-full -translate-x-1/2  bg-[url('/images/hero-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70 md:hidden"></div>
         <div className="container relative ">
@@ -42,8 +45,20 @@ const BlogDetails = (props) => {
             <div className="mb-12 flex items-center gap-x-2 ">
               <p>{postParams.author}</p>
               <span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="5" height="6" viewBox="0 0 5 6" fill="none">
-                  <circle cx="2.5" cy="3" r="2.5" fill="" className="fill-[#D8DBD0] dark:fill-[#3B3C39]" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="6"
+                  viewBox="0 0 5 6"
+                  fill="none"
+                >
+                  <circle
+                    cx="2.5"
+                    cy="3"
+                    r="2.5"
+                    fill=""
+                    className="fill-[#D8DBD0] dark:fill-[#3B3C39]"
+                  />
                 </svg>
               </span>
               <p>{postParams.date}</p>
@@ -55,7 +70,7 @@ const BlogDetails = (props) => {
         </div>
       </article>
     </>
-  )
-}
+  );
+};
 
-export default BlogDetails
+export default BlogDetails;

@@ -1,42 +1,42 @@
-'use client'
+"use client";
 
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import possibilitiesExpenseLight from '../public/images/payment/expense.png'
-import possibilitiesExpenseDark from '../public/images/payment/expense-dark.png'
-import possibilitiesBaseDark from '../public/images/payment/explore-dark.png'
-import possibilitiesBaseLight from '../public/images/payment/explore.png'
-import possibilitiesPaymentDark from '../public/images/payment/payment-dark.png'
-import possibilitiesPaymentLight from '../public/images/payment/payment.png'
-import possibilitiesSummeryDark from '../public/images/payment/summery-dark.png'
-import possibilitiesSummeryLight from '../public/images/payment/summery.png'
-import WHyUsDark from '../public/images/payment/whyUs-bg-dark.png'
-import WHyUsLight from '../public/images/payment/whyUs-bg.png'
-import WHyUsImageDark from '../public/images/payment/whyUs-image-dark.png'
-import WHyUsImageLight from '../public/images/payment/whyUs-image.png'
-import Image from 'next/image'
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import possibilitiesExpenseLight from "../public/images/payment/expense.png";
+import possibilitiesExpenseDark from "../public/images/payment/expense-dark.png";
+import possibilitiesBaseDark from "../public/images/payment/explore-dark.png";
+import possibilitiesBaseLight from "../public/images/payment/explore.png";
+import possibilitiesPaymentDark from "../public/images/payment/payment-dark.png";
+import possibilitiesPaymentLight from "../public/images/payment/payment.png";
+import possibilitiesSummeryDark from "../public/images/payment/summery-dark.png";
+import possibilitiesSummeryLight from "../public/images/payment/summery.png";
+import WHyUsDark from "../public/images/payment/whyUs-bg-dark.png";
+import WHyUsLight from "../public/images/payment/whyUs-bg.png";
+import WHyUsImageDark from "../public/images/payment/whyUs-image-dark.png";
+import WHyUsImageLight from "../public/images/payment/whyUs-image.png";
+import Image from "next/image";
 import {
   fadeFromLeftAnimation,
   fadeFromLeftAnimation2,
   fadeFromLeftAnimation3,
   fadeFromRightAnimation,
   fadeUpAnimation,
-} from '@/data/animation'
-import useWhileInView from '@/hooks/useWhileInView'
-import { useRef } from 'react'
+} from "@/data/animation";
+import useWhileInView from "@/hooks/useWhileInView";
+import { useRef } from "react";
 const WhyUs = () => {
-  const ref = useRef(null)
-  const controlAnimation = useWhileInView(ref)
-  const ref2 = useRef(null)
-  const controlAnimation2 = useWhileInView(ref2)
-  const ref3 = useRef(null)
-  const controlAnimation3 = useWhileInView(ref3)
-  const ref4 = useRef(null)
-  const controlAnimation4 = useWhileInView(ref4)
-  const ref5 = useRef(null)
-  const controlAnimation5 = useWhileInView(ref5)
+  const ref = useRef(null);
+  const controlAnimation = useWhileInView(ref);
+  const ref2 = useRef(null);
+  const controlAnimation2 = useWhileInView(ref2);
+  const ref3 = useRef(null);
+  const controlAnimation3 = useWhileInView(ref3);
+  const ref4 = useRef(null);
+  const controlAnimation4 = useWhileInView(ref4);
+  const ref5 = useRef(null);
+  const controlAnimation5 = useWhileInView(ref5);
   return (
     <section className="relative overflow-x-hidden pt-[200px]">
       <div className="container relative z-10 [&>*:nth-child(odd)]:after:absolute [&>*:nth-child(odd)]:after:bottom-0 [&>*:nth-child(odd)]:after:left-1/2 [&>*:nth-child(odd)]:after:h-0.5 [&>*:nth-child(odd)]:after:w-full [&>*:nth-child(odd)]:after:-translate-x-1/2  [&>*:nth-child(odd)]:after:bg-[url('/images/payment/seperator.png')] [&>*:nth-child(odd)]:after:bg-full [&>*:nth-child(odd)]:after:bg-center [&>*:nth-child(odd)]:after:bg-no-repeat dark:[&>*:nth-child(odd)]:after:bg-[url('/images/payment/seperator-dark.png')]  [&>:nth-child(even)]:pt-25  max-md:[&>:nth-child(even)]:pt-10 lg:[&>:nth-child(even)]:pt-[200px]  [&>:nth-child(odd)]:pb-25 max-md:[&>:nth-child(odd)]:pb-0 lg:[&>:nth-child(odd)]:pb-150">
@@ -46,7 +46,8 @@ const WhyUs = () => {
             ref={ref}
             initial="initial"
             animate={controlAnimation}
-            variants={fadeFromRightAnimation}>
+            variants={fadeFromRightAnimation}
+          >
             <Image
               src={WHyUsLight}
               alt="hero Image"
@@ -58,27 +59,48 @@ const WhyUs = () => {
               className="hidden w-full rounded-medium shadow-nav dark:inline-block"
             />
             <div className="absolute bottom-2.5 left-1/2 mx-auto aspect-video w-[400px] -translate-x-1/2 max-lg:w-8/12">
-              <Image src={WHyUsImageLight} alt="hero Image" className="inline-block rounded-t-medium  dark:hidden" />
-              <Image src={WHyUsImageDark} alt="hero Image" className="hidden rounded-t-medium  dark:inline-block" />
+              <Image
+                src={WHyUsImageLight}
+                alt="hero Image"
+                className="inline-block rounded-t-medium  dark:hidden"
+              />
+              <Image
+                src={WHyUsImageDark}
+                alt="hero Image"
+                className="hidden rounded-t-medium  dark:inline-block"
+              />
             </div>
           </motion.div>
           <div className="relative max-md:order-2">
             <p className="section-tagline">WHY CHOOSE US</p>
 
             <h2 className="mb-8">
-  Control the flow of
-  <br />
-  money easily
-</h2>
-<p className="mb-11">
-  Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After magazine.
-</p>
+              Control the flow of
+              <br />
+              money easily
+            </h2>
+            <p className="mb-11">
+              Until recently, the prevailing view assumed lorem ipsum was born
+              as a nonsense text nothing Before & After magazine.
+            </p>
 
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 ">
               <li className="flex items-center gap-x-2 ">
                 <span className=" shadow-icon  item-center relative flex justify-center gap-6 rounded-full bg-white dark:bg-dark-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <circle cx="15" cy="15" r="14" fill="" className="fill-[#E6FFB1] dark:fill-[#3B3C39]" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                  >
+                    <circle
+                      cx="15"
+                      cy="15"
+                      r="14"
+                      fill=""
+                      className="fill-[#E6FFB1] dark:fill-[#3B3C39]"
+                    />
                     <path
                       d="M15 0C6.75 0 0 6.75 0 15C0 23.25 6.75 30 15 30C23.25 30 30 23.25 30 15C30 6.75 23.25 0 15 0ZM16.125 1.25C20.5 1.625 24.25 4 26.5 7.5H12.375L16.125 1.25ZM18.375 8.75L22.125 15L18.375 21.25H11.5L7.875 14.75L11.625 8.75H18.375ZM14.75 1.25L7.25 13.5L3.625 7.25C6.125 3.75 10.125 1.375 14.75 1.25ZM1.25 15C1.25 12.625 1.875 10.375 2.875 8.5L10.125 21.25H2.75C1.75 19.375 1.25 17.25 1.25 15ZM13.875 28.75C9.5 28.375 5.75 26 3.5 22.5H17.625L13.875 28.75ZM15.375 28.75L23 16.25L26.75 22.375C24.25 26.125 20.125 28.625 15.375 28.75ZM19.875 8.75H27.25C28.25 10.625 28.75 12.75 28.75 15C28.75 17.125 28.25 19.25 27.375 21L19.875 8.75Z"
                       fill=""
@@ -86,11 +108,20 @@ const WhyUs = () => {
                     />
                   </svg>
                 </span>
-                <span className="dark:text-white"> It’s scalable and secure </span>
+                <span className="dark:text-white">
+                  {" "}
+                  It’s scalable and secure{" "}
+                </span>
               </li>
               <li className="flex items-center gap-x-2">
                 <span className=" shadow-icon  item-center relative flex justify-center rounded-full bg-white dark:bg-dark-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="30"
+                    viewBox="0 0 28 30"
+                    fill="none"
+                  >
                     <path
                       d="M11 1.5C12.2 0.7 13.5 0.5 14 0.5C14.8 0.5 15.6667 0.833333 16 1C18 2.16667 22.5 4.8 24.5 6C26.5 7.2 27.3333 9.16667 27.5 10V19C27.5 21.4 26.1667 23 25.5 23.5C23.5 24.6667 19 27.3 17 28.5C15 29.7 12.8333 29.3333 12 29C9.33333 27.5 3.7 24.3 2.5 23.5C1.3 22.7 0.666667 20.5 0.5 19.5V10.5C0.5 8.9 1.83333 7.16667 2.5 6.5C4.83333 5.16667 9.8 2.3 11 1.5Z"
                       fill=""
@@ -103,11 +134,20 @@ const WhyUs = () => {
                     />
                   </svg>
                 </span>
-                <span className="dark:text-white"> Artificial Intelligence Feature </span>
+                <span className="dark:text-white">
+                  {" "}
+                  Artificial Intelligence Feature{" "}
+                </span>
               </li>
               <li className="flex items-center gap-x-2 ">
                 <span className=" shadow-icon  item-center relative flex justify-center rounded-full bg-white dark:bg-dark-200">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" viewBox="0 0 28 30" fill="none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="30"
+                    viewBox="0 0 28 30"
+                    fill="none"
+                  >
                     <path
                       d="M9.99965 3C11.5997 1 13.333 0.5 13.9997 0.5C15.5996 0.5 16.9997 1.83333 17.4998 2.5C19.8331 5 24.8998 10.6 26.4998 13C28.0998 15.4 27.1664 17.6667 26.4998 18.5C23.9998 21.1667 18.4998 26.9 16.4998 28.5C14.4998 30.1 12.6664 29.5 11.9998 29C9.16639 26.5 3.09965 20.9 1.49965 18.5C-0.100346 16.1 0.832987 13.8333 1.49965 13C3.66632 10.5 8.39965 5 9.99965 3Z"
                       fill=""
@@ -121,22 +161,26 @@ const WhyUs = () => {
                   </svg>
                 </span>
 
-                <span className="dark:text-white">Offline version available</span>
-</li>
-</ul>
-</div>
-</div>
-<div className="relative grid grid-cols-2 items-end gap-25 max-md:grid-cols-1 1xl:gap-x-24">
-  <div className="relative max-md:order-1">
-    <p className="section-tagline">EXPLORE POSSIBILITIES</p>
+                <span className="dark:text-white">
+                  Offline version available
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="relative grid grid-cols-2 items-end gap-25 max-md:grid-cols-1 1xl:gap-x-24">
+          <div className="relative max-md:order-1">
+            <p className="section-tagline">EXPLORE POSSIBILITIES</p>
 
-    <h2 className="mb-8">
-      Manage your projects <br />
-      with Protool.
-    </h2>
-    <p className="mb-11">
-      Protool offers a seamless platform for managing your development projects and digital marketing strategies, helping you stay ahead in the tech world.
-    </p>
+            <h2 className="mb-8">
+              Manage your projects <br />
+              with Protool.
+            </h2>
+            <p className="mb-11">
+              Protool offers a seamless platform for managing your development
+              projects and digital marketing strategies, helping you stay ahead
+              in the tech world.
+            </p>
             <ul className="mb-14 max-w-[490px] [&>*:not(:last-child)]:mb-5">
               <li className="flex items-center gap-x-5 rounded border border-dashed border-gray-100 p-2.5 dark:border-borderColor-dark">
                 <span className=" shadow-icon relative h-10 w-10 gap-6 rounded-full bg-[#F3F8E8]  dark:bg-dark-200">
@@ -145,22 +189,25 @@ const WhyUs = () => {
                     className=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary"
                   />
                 </span>
-                <span className="font-jakarta_sans font-semibold">It’s scalable and secure</span>
-</li>
-<li className="flex items-center gap-x-5 rounded border border-dashed border-gray-100 p-2.5 dark:border-borderColor-dark">
-  <span className="shadow-icon relative h-10 w-10 gap-6 rounded-full bg-[#F3F8E8] dark:bg-dark-200">
-    <FontAwesomeIcon
-      icon={faCheck}
-      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary"
-    />
-  </span>
-  <span className="font-jakarta_sans font-semibold">Project Management & Development</span>
-</li>
-</ul>
-<Link href="/contact" className="btn">
-  Get Started with Protool
-</Link>
-
+                <span className="font-jakarta_sans font-semibold">
+                  It’s scalable and secure
+                </span>
+              </li>
+              <li className="flex items-center gap-x-5 rounded border border-dashed border-gray-100 p-2.5 dark:border-borderColor-dark">
+                <span className="shadow-icon relative h-10 w-10 gap-6 rounded-full bg-[#F3F8E8] dark:bg-dark-200">
+                  <FontAwesomeIcon
+                    icon={faCheck}
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary"
+                  />
+                </span>
+                <span className="font-jakarta_sans font-semibold">
+                  Project Management & Development
+                </span>
+              </li>
+            </ul>
+            <Link href="/contact" className="btn">
+              Get Started with Protool
+            </Link>
           </div>
           <div className="relative  max-md:order-2">
             <motion.div
@@ -168,42 +215,78 @@ const WhyUs = () => {
               ref={ref2}
               initial="initial"
               animate={controlAnimation2}
-              variants={fadeUpAnimation}>
-              <Image src={possibilitiesBaseLight} alt="explore" className="rounded-medium dark:hidden" />
-              <Image src={possibilitiesBaseDark} alt="explore" className="hidden rounded-medium dark:inline-block" />
+              variants={fadeUpAnimation}
+            >
+              <Image
+                src={possibilitiesBaseLight}
+                alt="explore"
+                className="rounded-medium dark:hidden"
+              />
+              <Image
+                src={possibilitiesBaseDark}
+                alt="explore"
+                className="hidden rounded-medium dark:inline-block"
+              />
             </motion.div>
             <motion.div
               className="absolute rounded-medium max-lg:-right-12 max-lg:-top-20 max-lg:max-w-[275px] lg:-top-[170px] lg:right-0"
               ref={ref3}
               initial="initial"
               animate={controlAnimation3}
-              variants={fadeFromLeftAnimation}>
-              <Image src={possibilitiesSummeryLight} alt="summery" className=" dark:hidden" />
-              <Image src={possibilitiesSummeryDark} alt="summery" className="hidden dark:inline-block" />
+              variants={fadeFromLeftAnimation}
+            >
+              <Image
+                src={possibilitiesSummeryLight}
+                alt="summery"
+                className=" dark:hidden"
+              />
+              <Image
+                src={possibilitiesSummeryDark}
+                alt="summery"
+                className="hidden dark:inline-block"
+              />
             </motion.div>
             <motion.div
               className="absolute rounded-medium max-lg:-right-12 max-lg:top-[80px] max-lg:max-w-[275px] max-xs:top-[75px] lg:right-0 lg:top-[280px]"
               ref={ref4}
               initial="initial"
               animate={controlAnimation4}
-              variants={fadeFromLeftAnimation2}>
-              <Image src={possibilitiesPaymentLight} alt="summery" className="dark:hidden" />
-              <Image src={possibilitiesPaymentDark} alt="summery" className="hidden dark:inline-block" />
+              variants={fadeFromLeftAnimation2}
+            >
+              <Image
+                src={possibilitiesPaymentLight}
+                alt="summery"
+                className="dark:hidden"
+              />
+              <Image
+                src={possibilitiesPaymentDark}
+                alt="summery"
+                className="hidden dark:inline-block"
+              />
             </motion.div>
             <motion.div
               className="absolute rounded-medium max-lg:-right-12 max-lg:top-[220px] max-lg:max-w-[275px] max-xs:top-[170px] lg:right-0 lg:top-[75px]"
               ref={ref5}
               initial="initial"
               animate={controlAnimation5}
-              variants={fadeFromLeftAnimation3}>
-              <Image src={possibilitiesExpenseLight} alt="summery" className="dark:hidden" />
-              <Image src={possibilitiesExpenseDark} alt="summery" className="hidden dark:inline-block" />
+              variants={fadeFromLeftAnimation3}
+            >
+              <Image
+                src={possibilitiesExpenseLight}
+                alt="summery"
+                className="dark:hidden"
+              />
+              <Image
+                src={possibilitiesExpenseDark}
+                alt="summery"
+                className="hidden dark:inline-block"
+              />
             </motion.div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default WhyUs
+export default WhyUs;
