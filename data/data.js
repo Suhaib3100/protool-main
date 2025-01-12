@@ -776,7 +776,7 @@ export const teamData = [
   {
     id: 3,
     name: 'Anuraag R',
-    designation: 'Chief Marketing Officer',
+    designation: 'Chief Marketing Office',
     fbLink: '#',
     dribbleInLink: '#',
     gitHubLink: '#',
