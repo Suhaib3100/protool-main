@@ -12,16 +12,17 @@ const CtaV2 = () => {
         </div>
         <div className="absolute -bottom-[350px] left-1/2 -z-10 h-full w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')]  bg-contain bg-center bg-no-repeat p-[350px] opacity-70 md:hidden"></div>
         <div className=" mx-auto text-center">
-          <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">
-            Start your best payment <br />
-            experience now!
-          </h2>
-          <p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
-            By creating a custom Web design for your business, we can bring your vision to life.
-          </p>
-          <Link href="/contact" className="btn">
-            Get Started Today
-          </Link>
+        <h2 className="mb-5 text-[48px] font-semibold max-lg:text-[32px]">
+  Launch your digital transformation <br />
+  with Protool today!
+</h2>
+<p className="mx-auto mb-12 max-w-[400px] max-lg:mt-6">
+  At Protool, we craft custom web and app solutions to help your business grow and thrive in the digital world.
+</p>
+<Link href="/contact" className="btn">
+  Start Your Project Now
+</Link>
+
           <ul className="mx-auto mt-20 flex  max-w-[815px] items-center justify-between max-lg:mt-5 max-lg:flex-col max-lg:gap-5">
             <li className="flex items-center">
               <svg

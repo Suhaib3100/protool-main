@@ -24,20 +24,15 @@ const TestimonialSingle = () => {
                 animate="animate"
                 variants={fadeUpAnimation}>
                 <div className="rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark">
-                  <Image
-                    src={testimonial.logoLight}
-                    alt="service logo"
-                    className="mb-6 inline-block dark:hidden"
-                    width={120}
-                    height={35}
-                  />
-                  <Image
-                    src={testimonial.logoDark}
-                    alt="service logo"
-                    className="mb-6 hidden dark:inline-block"
-                    width={110}
-                    height={35}
-                  />
+                <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
+    Protool
+  </span>
+  
+  {/* Dark mode logo (visible in dark mode) */}
+  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
+    Protool
+  </span>
+
                   <blockquote className="mb-5 italic leading-[1.75] text-paragraph dark:text-white">
                     &ldquo;{testimonial.testimonial}&rdquo;
                   </blockquote>

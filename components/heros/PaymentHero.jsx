@@ -8,7 +8,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { fadeUpAnimation } from '@/data/animation'
 import { motion } from 'framer-motion'
-const PaymentHero = () => {
+
+const ProtoolHero = () => {
   return (
     <section className="hero relative overflow-hidden pb-[140px] max-lg:pt-[160px] lg:pt-[260px]">
       <div className="container">
@@ -18,22 +19,21 @@ const PaymentHero = () => {
             initial="initial"
             animate="animate"
             variants={fadeUpAnimation}>
-            <p className=" mb-4 font-medium uppercase">Digital Payment Solution</p>
+            <p className=" mb-4 font-medium uppercase">Website & App Development</p>
             <h1 className="mb-10">
-              Smart
-              <span className="inline-block px-5 pb-2.5 pt-0.5  font-playfair italic leading-none"> Payment </span>
-              solution for your Business
+              Empowering Your Business with
+              <span className="inline-block px-5 pb-2.5 pt-0.5 font-playfair italic leading-none"> Digital </span>
+              Solutions
             </h1>
             <p className="mb-12 max-w-[590px]">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&rsquo;s not Latin,
-              though it looks like it
+              Protool is a leading agency offering innovative website and app development services combined with powerful digital marketing strategies. Let’s take your business to the next level.
             </p>
             <div className="flex items-center gap-4">
               <Link href="/contact" className="btn">
                 Get Started
               </Link>
               <Link href="/request-demo" className="btn-outline">
-                Get a Demo
+                Request a Demo
               </Link>
             </div>
           </motion.div>
@@ -44,7 +44,7 @@ const PaymentHero = () => {
             variants={fadeUpAnimation}>
             <div className="absolute left-1/2 top-1/2 -z-10 flex -translate-x-1/2 -translate-y-1/2 max-md:hidden">
               <div className="rounded-full bg-primary-200/20 blur-[145px]  max-1xl:h-[335px] max-1xl:w-[335px] max-lg:hidden 1xl:h-[442px] 1xl:w-[442px]"></div>
-              <div className="-ml-[170px] -mt-150 rounded-full  bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:blur-[80px] max-lg:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
+              <div className="-ml-[170px] -mt-150 rounded-full bg-primary-200/25 blur-[145px] max-1xl:h-[335px] max-1xl:blur-[80px] max-lg:w-[335px] max-md:ml-0 1xl:h-[442px] 1xl:w-[442px]"></div>
               <div className="-ml-[170px] rounded-full bg-primary-200/20  blur-[145px] max-1xl:h-[335px] max-1xl:w-[335px] max-lg:hidden 1xl:h-[442px] 1xl:w-[442px]"></div>
             </div>
             <div className="absolute -bottom-150 left-1/2 -z-10 h-full w-full -translate-x-1/2 bg-[url('/images/hero-gradient.png')]  bg-contain bg-center bg-no-repeat p-[350px] opacity-70 md:hidden"></div>
@@ -81,4 +81,4 @@ const PaymentHero = () => {
   )
 }
 
-export default PaymentHero
+export default ProtoolHero

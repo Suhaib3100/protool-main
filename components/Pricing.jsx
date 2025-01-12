@@ -49,14 +49,14 @@ const Pricing = ({ spacing = 'pt-150', sectionTtile = true }) => {
                       {isAnnual ? (
                         <div className="price-month mb-16">
                           <h2>
-                            $<span>{price.priceMonthly}</span>
+                            <span>{price.priceMonthly}</span>
                           </h2>
                           <p>Per Month</p>
                         </div>
                       ) : (
                         <div className="price-year mb-16">
                           <h2>
-                            $<span>{price.priceYearly}</span>
+                            <span>{price.priceYearly}</span>
                           </h2>
                           <p>Per Year</p>
                         </div>
@@ -96,14 +96,14 @@ const Pricing = ({ spacing = 'pt-150', sectionTtile = true }) => {
                       {isAnnual ? (
                         <div className="price-month mb-16">
                           <h2>
-                            $<span>{price.priceMonthly}</span>
+                            <span>{price.priceMonthly}</span>
                           </h2>
                           <p>Per Month</p>
                         </div>
                       ) : (
                         <div className="price-year mb-16">
                           <h2>
-                            $<span>{price.priceYearly}</span>
+                            <span>{price.priceYearly}</span>
                           </h2>
                           <p>Per Year</p>
                         </div>

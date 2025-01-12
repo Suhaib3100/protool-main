@@ -66,14 +66,14 @@ const WhyUs = () => {
             <p className="section-tagline">WHY CHOOSE US</p>
 
             <h2 className="mb-8">
-              Control the flow of
-              <br />
-              money easily
-            </h2>
-            <p className="mb-11">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After
-              magazine.
-            </p>
+  Control the flow of
+  <br />
+  money easily
+</h2>
+<p className="mb-11">
+  Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After magazine.
+</p>
+
             <ul className="mb-14 [&>*:not(:last-child)]:mb-6 ">
               <li className="flex items-center gap-x-2 ">
                 <span className=" shadow-icon  item-center relative flex justify-center gap-6 rounded-full bg-white dark:bg-dark-200">
@@ -121,23 +121,22 @@ const WhyUs = () => {
                   </svg>
                 </span>
 
-                <span className="dark:text-white"> Offline version available </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="relative grid grid-cols-2 items-end gap-25 max-md:grid-cols-1 1xl:gap-x-24 ">
-          <div className="relative  max-md:order-1">
-            <p className="section-tagline">EXPLORE POSSIBILITIES</p>
+                <span className="dark:text-white">Offline version available</span>
+</li>
+</ul>
+</div>
+</div>
+<div className="relative grid grid-cols-2 items-end gap-25 max-md:grid-cols-1 1xl:gap-x-24">
+  <div className="relative max-md:order-1">
+    <p className="section-tagline">EXPLORE POSSIBILITIES</p>
 
-            <h2 className="mb-8">
-              Manage your money <br />
-              with Protool.
-            </h2>
-            <p className="mb-11">
-              Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text nothing Before & After
-              magazine.
-            </p>
+    <h2 className="mb-8">
+      Manage your projects <br />
+      with Protool.
+    </h2>
+    <p className="mb-11">
+      Protool offers a seamless platform for managing your development projects and digital marketing strategies, helping you stay ahead in the tech world.
+    </p>
             <ul className="mb-14 max-w-[490px] [&>*:not(:last-child)]:mb-5">
               <li className="flex items-center gap-x-5 rounded border border-dashed border-gray-100 p-2.5 dark:border-borderColor-dark">
                 <span className=" shadow-icon relative h-10 w-10 gap-6 rounded-full bg-[#F3F8E8]  dark:bg-dark-200">
@@ -146,21 +145,22 @@ const WhyUs = () => {
                     className=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary"
                   />
                 </span>
-                <span className="font-jakarta_sans font-semibold"> It’s scalable and secure </span>
-              </li>
-              <li className="flex items-center gap-x-5 rounded border border-dashed border-gray-100 p-2.5 dark:border-borderColor-dark">
-                <span className=" shadow-icon relative h-10 w-10 gap-6 rounded-full bg-[#F3F8E8]  dark:bg-dark-200">
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary"
-                  />
-                </span>
-                <span className="font-jakarta_sans font-semibold"> Cash Flow Statements </span>
-              </li>
-            </ul>
-            <Link href="/contact" className="btn">
-              Get Started
-            </Link>
+                <span className="font-jakarta_sans font-semibold">It’s scalable and secure</span>
+</li>
+<li className="flex items-center gap-x-5 rounded border border-dashed border-gray-100 p-2.5 dark:border-borderColor-dark">
+  <span className="shadow-icon relative h-10 w-10 gap-6 rounded-full bg-[#F3F8E8] dark:bg-dark-200">
+    <FontAwesomeIcon
+      icon={faCheck}
+      className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-primary"
+    />
+  </span>
+  <span className="font-jakarta_sans font-semibold">Project Management & Development</span>
+</li>
+</ul>
+<Link href="/contact" className="btn">
+  Get Started with Protool
+</Link>
+
           </div>
           <div className="relative  max-md:order-2">
             <motion.div

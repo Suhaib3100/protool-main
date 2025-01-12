@@ -41,7 +41,7 @@ const PrimaryNavbar = () => {
           <div className="nav-logo xl:min-w-[266px]">
             <Link href="/">
               <p className="text-3xl font-medium">
-                kata<span className="font-semibold">works</span>
+                Pro<span className="font-semibold">tool</span>
               </p>
             </Link>
           </div>

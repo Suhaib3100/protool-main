@@ -42,14 +42,18 @@ const SecondaryNavbar = () => {
         <nav className="container flex items-center">
           <div className="nav-logo">
             <Link href="/">
-              <Image src={menuData.logoLight} alt="logo" className="dark:hidden" width={70} height={29} />
-              <Image
-                src={menuData.logoDark}
-                alt="logo dark version"
-                className="hidden dark:inline-block"
-                width={70}
-                height={29}
-              />
+            <span className="mb-6 inline-block dark:hidden text-4xl mt-8 font-bold text-[#000000]">
+    Protool
+  </span>
+  
+  {/* Dark mode logo (visible in dark mode) */}
+<span className="mb-6 hidden dark:inline-block text-4xl font-extrabold text-[#e9eaea] mt-8 
+                bg-gradient-to-r from-[#086c74] via-[#0042DA] to-[#086c74] 
+                text-transparent bg-clip-text 
+                shadow-lg transform transition-all hover:scale-110 hover:rotate-3">
+  Protool
+  </span>
+
             </Link>
           </div>
           <ul className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">

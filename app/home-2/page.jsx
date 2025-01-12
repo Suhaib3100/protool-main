@@ -11,7 +11,7 @@ import WhyUs from '@/components/WhyUs'
 import { PaymentFeaturesData } from '@/data/data'
 const HomePageTwo = () => {
   return (
-    <>
+    <>  
       <PaymentHero />
       <PaymentRating />
       <CoreFeature />

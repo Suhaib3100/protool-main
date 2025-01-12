@@ -23,20 +23,12 @@ const Testimonial = () => {
                 className="rounded-medium bg-white p-2.5 shadow-nav  dark:bg-dark-200 md:w-[calc(50%_-_20px)] lg:w-[calc(33.33%_-_20px)]"
                 key={testimonial.id}>
                 <div className="h-full rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark ">
-                  <Image
-                    src={testimonial.logoLight}
-                    alt="service logo"
-                    className="mb-6 inline-block dark:hidden"
-                    width={120}
-                    height={35}
-                  />
-                  <Image
-                    src={testimonial.logoDark}
-                    alt="service logo"
-                    className="mb-6 hidden dark:inline-block"
-                    width={110}
-                    height={35}
-                  />
+                <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
+    Protool  </span>
+    <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
+    Protool
+  </span>
+
                   <blockquote className="mb-5 italic leading-[1.75] text-paragraph dark:text-white">
                     &ldquo;{testimonial.testimonial}&rdquo;
                   </blockquote>
