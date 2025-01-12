@@ -923,8 +923,8 @@ export const FooterData = {
   footerText:
     "Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.",
   copyright: `${new Date().getFullYear()} Protool. All Rights Reserved`,
-  email: "info@example.com",
-  phone: "+3 230 705 5448",
+  email: "suhaib@protool.co.in",
+  phone: "+91 8310090539",
   logoDarkStyle: {
     width: "200px", // Set your desired width
     height: "60px", // Set your desired height

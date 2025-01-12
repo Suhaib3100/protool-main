@@ -49,7 +49,7 @@ const SecondaryNavbar = () => {
               {/* Dark mode logo (visible in dark mode) */}
               <span
                 className="mb-6 hidden dark:inline-block text-4xl font-extrabold text-[#e9eaea] mt-8 
-                bg-gradient-to-r from-[#086c74] via-[#0042DA] to-[#086c74] 
+                bg-gradient-to-r from-[#fdffff] via-[#ffffff] to-[#17dc0d] 
                 text-transparent bg-clip-text 
                 shadow-lg transform transition-all hover:scale-110 hover:rotate-3"
               >

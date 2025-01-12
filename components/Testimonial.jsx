@@ -27,7 +27,7 @@ const Testimonial = () => {
                   <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
                     Protool{" "}
                   </span>
-                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
+                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#ffffff]">
                     Protool
                   </span>
 

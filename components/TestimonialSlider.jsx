@@ -50,7 +50,7 @@ const TestimonialSlider = ({ spacing = "pt-0" }) => {
                   </span>
 
                   {/* Dark mode logo (visible in dark mode) */}
-                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#0042DA]">
+                  <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#eeeeee]">
                     Protool
                   </span>
 
