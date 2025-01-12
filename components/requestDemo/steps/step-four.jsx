@@ -1,10 +1,16 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { Label } from '@/components/ui/label'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import { Loader2 } from 'lucide-react'
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Label } from '@/components/ui/label';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { Loader2 } from 'lucide-react';
 
 export function StepFour({
   formData,
@@ -12,7 +18,7 @@ export function StepFour({
   onSubmit,
   onPrevious,
   isSubmitting = false,
-  className = ''
+  className = '',
 }) {
   const timeSlots = [
     '9:00 AM - 10:00 AM',
@@ -21,7 +27,7 @@ export function StepFour({
     '2:00 PM - 3:00 PM',
     '3:00 PM - 4:00 PM',
     '4:00 PM - 5:00 PM',
-  ]
+  ];
 
   return (
     <motion.div
@@ -36,26 +42,26 @@ export function StepFour({
           <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
             Choose Your Preferred Time
           </h2>
-          <p className="text-zinc-400">
-            Select a time slot for your demo
-          </p>
+          <p className="text-zinc-400">Select a time slot for your demo</p>
         </div>
 
         <div className="space-y-3">
-          <Label htmlFor="time" className="text-zinc-300">Preferred Time</Label>
+          <Label htmlFor="time" className="text-zinc-300">
+            Preferred Time
+          </Label>
           <Select
             value={formData.preferredTime}
-            onValueChange={value => updateFormData({ preferredTime: value })}
+            onValueChange={(value) => updateFormData({ preferredTime: value })}
             disabled={isSubmitting}
           >
-            <SelectTrigger 
+            <SelectTrigger
               id="time"
               className="w-full bg-zinc-800/50 border-zinc-700/50 text-white h-12"
             >
               <SelectValue placeholder="Select a time slot" />
             </SelectTrigger>
             <SelectContent className="bg-zinc-900 border-zinc-700">
-              {timeSlots.map(slot => (
+              {timeSlots.map((slot) => (
                 <SelectItem key={slot} value={slot} className="text-zinc-300">
                   {slot}
                 </SelectItem>
@@ -94,5 +100,5 @@ export function StepFour({
         </div>
       </div>
     </motion.div>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import imageOnlineValue from "../public/images/about/onlinePayment.png";
-import imageOnlineValueDark from "../public/images/about/onlinePayment-dark.png";
-import imageShape from "../public/images/about/onlinePayment-shape.png";
-import imageShapeDark from "../public/images/about/onlinePayment-shape-dark.png";
-import { fadeFromRightAnimation, fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
-import useWhileInView from "@/hooks/useWhileInView";
-import { useRef } from "react";
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import imageOnlineValue from '../public/images/about/onlinePayment.png';
+import imageOnlineValueDark from '../public/images/about/onlinePayment-dark.png';
+import imageShape from '../public/images/about/onlinePayment-shape.png';
+import imageShapeDark from '../public/images/about/onlinePayment-shape-dark.png';
+import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const AboutValue = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);
@@ -92,8 +92,8 @@ const AboutValue = () => {
                   </svg>
                 </span>
                 <span className="dark:text-white">
-                  {" "}
-                  Income and expenses tracker{" "}
+                  {' '}
+                  Income and expenses tracker{' '}
                 </span>
               </li>
               <li className="flex items-center gap-x-2">

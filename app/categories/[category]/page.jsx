@@ -1,18 +1,18 @@
-import BlogSearch from "@/components/blogs/BlogSearch";
-import PageHero from "@/components/heros/PageHero";
-import getMarkDownData from "@/utils/getMarkDownData";
+import BlogSearch from '@/components/blogs/BlogSearch';
+import PageHero from '@/components/heros/PageHero';
+import getMarkDownData from '@/utils/getMarkDownData';
 
 export async function generateStaticParams() {
-  const careerData = getMarkDownData("data/blogs");
+  const careerData = getMarkDownData('data/blogs');
   return careerData.map((item) => ({
     category: item.data.categories,
   }));
 }
 
 const BlogCategory = ({ params }) => {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
   const decodedCategory = decodeURIComponent(
-    params.category.replace(/%20/g, " "),
+    params.category.replace(/%20/g, ' '),
   );
   const categoryBlog = blogs.filter(
     (blog) => blog.data.categories === decodedCategory,

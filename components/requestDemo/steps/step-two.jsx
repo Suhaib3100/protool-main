@@ -1,16 +1,16 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
-export function StepTwo({ 
-  formData, 
-  updateFormData, 
-  onNext, 
-  onPrevious, 
-  className = '' 
+export function StepTwo({
+  formData,
+  updateFormData,
+  onNext,
+  onPrevious,
+  className = '',
 }) {
   return (
     <motion.div
@@ -25,17 +25,17 @@ export function StepTwo({
           <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
             What&apos;s your name?
           </h2>
-          <p className="text-zinc-400">
-            Let us know how to address you
-          </p>
+          <p className="text-zinc-400">Let us know how to address you</p>
         </div>
 
         <div className="space-y-3">
-          <Label htmlFor="firstName" className="text-zinc-300">First Name</Label>
+          <Label htmlFor="firstName" className="text-zinc-300">
+            First Name
+          </Label>
           <Input
             id="firstName"
             value={formData.firstName}
-            onChange={e => updateFormData({ firstName: e.target.value })}
+            onChange={(e) => updateFormData({ firstName: e.target.value })}
             placeholder="Enter your first name"
             className="bg-zinc-800/50 border-zinc-700/50 focus:border-[#9FE12C] text-white placeholder:text-zinc-500 h-12"
           />
@@ -63,5 +63,5 @@ export function StepTwo({
         </div>
       </div>
     </motion.div>
-  )
+  );
 }

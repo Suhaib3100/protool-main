@@ -1,8 +1,8 @@
-"use client";
-import { fadeFromRightAnimation, fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
-import useWhileInView from "@/hooks/useWhileInView";
-import { useRef } from "react";
+'use client';
+import { fadeFromRightAnimation, fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const AboutBanking = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);
@@ -88,8 +88,8 @@ const AboutBanking = () => {
                   </svg>
                 </span>
                 <span className="dark:text-white">
-                  {" "}
-                  Income and expenses tracker{" "}
+                  {' '}
+                  Income and expenses tracker{' '}
                 </span>
               </li>
               <li className="flex items-center gap-x-2">

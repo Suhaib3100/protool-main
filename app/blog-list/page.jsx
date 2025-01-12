@@ -1,9 +1,9 @@
-import BlogSearch from "@/components/blogs/BlogSearch";
-import PageHero from "@/components/heros/PageHero";
-import getMarkDownData from "@/utils/getMarkDownData";
+import BlogSearch from '@/components/blogs/BlogSearch';
+import PageHero from '@/components/heros/PageHero';
+import getMarkDownData from '@/utils/getMarkDownData';
 
 const BlogListPage = () => {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
 
   return (
     <>

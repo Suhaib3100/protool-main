@@ -1,7 +1,7 @@
-"use client";
-import Link from "next/link";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
+'use client';
+import Link from 'next/link';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
 const NotFound = () => {
   return (
     <section className="mb-150 pt-[200px]">

@@ -1,9 +1,9 @@
-"use client";
-import { PricingData } from "@/data/data";
-import Link from "next/link";
-import { useState } from "react";
+'use client';
+import { PricingData } from '@/data/data';
+import Link from 'next/link';
+import { useState } from 'react';
 
-const Pricing = ({ spacing = "pt-150", sectionTtile = true }) => {
+const Pricing = ({ spacing = 'pt-150', sectionTtile = true }) => {
   const [isAnnual, setIsAnnual] = useState(false);
   return (
     <section

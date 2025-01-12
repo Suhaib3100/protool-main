@@ -1,8 +1,8 @@
-import NewsLetter from "@/components/NewsLetter";
-import GetMarkDownData from "@/utils/getMarkDownData";
-import ReactMarkdown from "react-markdown";
+import NewsLetter from '@/components/NewsLetter';
+import GetMarkDownData from '@/utils/getMarkDownData';
+import ReactMarkdown from 'react-markdown';
 const TermsCondition = () => {
-  const terms = GetMarkDownData("data/terms");
+  const terms = GetMarkDownData('data/terms');
   return (
     <>
       <section className="relative overflow-hidden pb-150 pt-[250px] max-md:pt-150">

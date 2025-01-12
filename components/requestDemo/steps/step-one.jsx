@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { Sparkles } from 'lucide-react'
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import { Sparkles } from 'lucide-react';
 
 export function StepOne({ onNext, className = '' }) {
   return (
@@ -27,7 +27,8 @@ export function StepOne({ onNext, className = '' }) {
             Are you interested in a demo?
           </h2>
           <p className="text-zinc-400 text-lg max-w-sm mx-auto">
-            Get a personalized walkthrough of our platform and discover how we can help transform your business
+            Get a personalized walkthrough of our platform and discover how we
+            can help transform your business
           </p>
         </div>
         <motion.div
@@ -45,5 +46,5 @@ export function StepOne({ onNext, className = '' }) {
         </motion.div>
       </div>
     </motion.div>
-  )
+  );
 }

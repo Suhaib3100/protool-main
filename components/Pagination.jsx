@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Pagination = ({ paginateFunction }) => {
   const {
@@ -22,20 +22,20 @@ const Pagination = ({ paginateFunction }) => {
             }}
             className={`group flex h-10 w-10 items-center justify-center rounded-full border border-borderColor  text-sm  font-medium duration-300 dark:border-borderColor-dark ${
               currentPage === 1
-                ? "disabled:opacity-7 cursor-not-allowed"
-                : "cursor-pointer hover:bg-primary"
+                ? 'disabled:opacity-7 cursor-not-allowed'
+                : 'cursor-pointer hover:bg-primary'
             }`}
             disabled={currentPage === 1}
           >
             <FontAwesomeIcon
               icon={faArrowLeft}
-              className={`${currentPage === 1 ? "" : "dark:group-hover:text-paragraph"}  duration-300`}
+              className={`${currentPage === 1 ? '' : 'dark:group-hover:text-paragraph'}  duration-300`}
             />
           </button>
         </li>
         {Array.from({ length: totalPage }, (_, index) => (
           <li
-            className={`group ${index + 1 === currentPage && "page-active"}`}
+            className={`group ${index + 1 === currentPage && 'page-active'}`}
             key={index}
           >
             <button
@@ -55,14 +55,14 @@ const Pagination = ({ paginateFunction }) => {
             }}
             className={`group flex h-10 w-10 items-center justify-center rounded-full border border-borderColor  text-sm  font-medium duration-300 dark:border-borderColor-dark  ${
               currentPage === totalPage
-                ? "disabled:opacity-7 cursor-not-allowed"
-                : "cursor-pointer hover:bg-primary"
+                ? 'disabled:opacity-7 cursor-not-allowed'
+                : 'cursor-pointer hover:bg-primary'
             }`}
             disabled={currentPage === totalPage}
           >
             <FontAwesomeIcon
               icon={faArrowRight}
-              className={`${currentPage === totalPage ? "" : "dark:group-hover:text-paragraph"}  duration-300`}
+              className={`${currentPage === totalPage ? '' : 'dark:group-hover:text-paragraph'}  duration-300`}
             />
           </button>
         </li>

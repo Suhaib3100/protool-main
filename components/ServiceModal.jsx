@@ -1,8 +1,8 @@
-"use client";
-import { faX } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
-import ReactPlayer from "react-player";
+'use client';
+import { faX } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+import ReactPlayer from 'react-player';
 
 const ServiceModal = ({ videoLink }) => {
   const [modal, setModal] = useState(false);

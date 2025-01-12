@@ -1,12 +1,12 @@
-import getMarkDownData from "@/utils/getMarkDownData";
-import Link from "next/link";
-import ReactMarkdown from "react-markdown";
+import getMarkDownData from '@/utils/getMarkDownData';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 const FinancialBlog = () => {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
 
   const FinancialBlogItems = blogs.filter(
-    (blog) => blog.data.tags === "Finance",
+    (blog) => blog.data.tags === 'Finance',
   );
 
   return (

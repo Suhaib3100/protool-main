@@ -1,6 +1,6 @@
-"use client";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <section
@@ -152,7 +152,7 @@ const Hero = () => {
         >
           <div className="col-span-12 md:col-span-6 ">
             <h1 className="mb-12 max-md:mb-8">
-              Criamos e{" "}
+              Criamos e{' '}
               <span className=" mr-2 inline-block rounded-[88px] border-2 border-paragraph bg-[#D9D9D900] pb-2.5 pl-4 pr-5 pt-0.5 font-playfair italic leading-none dark:border-[#F0F3EA]">
                 escalamos
               </span>

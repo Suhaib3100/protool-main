@@ -1,7 +1,7 @@
-"use client";
-import React, { useState } from "react";
-import BlogItems from "./BlogItems";
-import Pagination from "../Pagination";
+'use client';
+import React, { useState } from 'react';
+import BlogItems from './BlogItems';
+import Pagination from '../Pagination';
 
 const BlogGrid = ({ blogItemData }) => {
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,10 +1,10 @@
-import BlogFeatures from "@/components/blogs/BlogFeatures";
-import BlogGrid from "@/components/blogs/BlogGrid";
-import PageHero from "@/components/heros/PageHero";
-import getMarkDownData from "@/utils/getMarkDownData";
+import BlogFeatures from '@/components/blogs/BlogFeatures';
+import BlogGrid from '@/components/blogs/BlogGrid';
+import PageHero from '@/components/heros/PageHero';
+import getMarkDownData from '@/utils/getMarkDownData';
 
 const Blog = () => {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
   return (
     <>
       <PageHero

@@ -1,9 +1,9 @@
-import NewsLetter from "@/components/NewsLetter";
-import getMarkDownData from "@/utils/getMarkDownData";
-import ReactMarkdown from "react-markdown";
+import NewsLetter from '@/components/NewsLetter';
+import getMarkDownData from '@/utils/getMarkDownData';
+import ReactMarkdown from 'react-markdown';
 
 const Privacy = () => {
-  const privacy = getMarkDownData("data/privacy/");
+  const privacy = getMarkDownData('data/privacy/');
   return (
     <>
       <section className="relative overflow-hidden pb-150 pt-[250px] max-md:pt-150">

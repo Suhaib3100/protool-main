@@ -1,9 +1,9 @@
-"use client";
-import NewsLetter from "@/components/NewsLetter";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
-import useWhileInView from "@/hooks/useWhileInView";
-import { useRef } from "react";
+'use client';
+import NewsLetter from '@/components/NewsLetter';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const RequestDemo = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);

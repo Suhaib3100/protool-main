@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from 'react';
 const CounterAnimation = ({ number }) => {
   const [count, setCount] = useState(0);
   const [isCounting, setIsCounting] = useState(false);

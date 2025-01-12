@@ -1,12 +1,12 @@
-"use client";
-import NewsLetter from "@/components/NewsLetter";
-import PageHero from "@/components/heros/PageHero";
-import { IntegrationData } from "@/data/data";
-import Image from "next/image";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
-import { useRef } from "react";
-import useWhileInView from "@/hooks/useWhileInView";
+'use client';
+import NewsLetter from '@/components/NewsLetter';
+import PageHero from '@/components/heros/PageHero';
+import { IntegrationData } from '@/data/data';
+import Image from 'next/image';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import useWhileInView from '@/hooks/useWhileInView';
 const Integration = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);

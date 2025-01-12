@@ -1,10 +1,10 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import ReactMarkdown from "react-markdown";
-import { Pagination } from "swiper/modules";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
+import { Pagination } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const BlogFeatures = ({ featureBlog }) => {
   const featuredBlogFiltered = featureBlog.filter(

@@ -1,10 +1,10 @@
-import getMarkDownData from "@/utils/getMarkDownData";
-import Image from "next/image";
-import Link from "next/link";
-import ReactMarkdown from "react-markdown";
+import getMarkDownData from '@/utils/getMarkDownData';
+import Image from 'next/image';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 
 const HomeBlog = () => {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
 
   return (
     <section className="relative bg-white  pb-150 dark:bg-dark-300 max-md:pb-20">

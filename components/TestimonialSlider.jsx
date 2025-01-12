@@ -1,11 +1,11 @@
-"use client";
-import { TestimonialData } from "@/data/data";
-import Image from "next/image";
-import { Pagination } from "swiper/modules";
+'use client';
+import { TestimonialData } from '@/data/data';
+import Image from 'next/image';
+import { Pagination } from 'swiper/modules';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { RatingStars } from "./Rating";
-const TestimonialSlider = ({ spacing = "pt-0" }) => {
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { RatingStars } from './Rating';
+const TestimonialSlider = ({ spacing = 'pt-0' }) => {
   return (
     <section className={`relative pb-150 ${spacing} max-md:overflow-hidden`}>
       <div className="container relative">
@@ -62,8 +62,8 @@ const TestimonialSlider = ({ spacing = "pt-0" }) => {
                   <div className="mb-7">
                     <RatingStars
                       rating={testimonial.rating}
-                      ratingColor={"text-paragraph dark:text-white"}
-                      ratingEmptyColor={"text-[#A7A7B4] dark:text-[#646463]"}
+                      ratingColor={'text-paragraph dark:text-white'}
+                      ratingEmptyColor={'text-[#A7A7B4] dark:text-[#646463]'}
                     />
                   </div>
 

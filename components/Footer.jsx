@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import { FooterData } from "@/data/data.js";
-import Link from "next/link";
+import Image from 'next/image';
+import React from 'react';
+import { FooterData } from '@/data/data.js';
+import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-white pt-20 dark:bg-dark-300">
@@ -70,7 +70,7 @@ const Footer = () => {
 
             <p className="mb-3">
               <Link
-                href={`tel:${FooterData.phone.split(" ").join("")}`}
+                href={`tel:${FooterData.phone.split(' ').join('')}`}
                 className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
               >
                 {FooterData.phone}
@@ -95,7 +95,7 @@ const Footer = () => {
             className="w-full object-cover dark:hidden"
             width={500}
             height={2}
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: 'auto', height: 'auto' }}
           />
           <Image
             src="/images/footer-seperator-dark.svg"
@@ -103,7 +103,7 @@ const Footer = () => {
             className="hidden w-full object-cover dark:block"
             width={500}
             height={2}
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: 'auto', height: 'auto' }}
           />
         </div>
 

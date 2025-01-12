@@ -1,10 +1,10 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
-import imageBase from "../public/images/payment/whyUs-image.png";
-import imageBaseDark from "../public/images/payment/whyUs-image-dark.png";
-import imageShape from "../public/images/payment/whyUs-bg.png";
-import imageShapeDark from "../public/images/payment/whyUs-bg-dark.png";
+import imageBase from '../public/images/payment/whyUs-image.png';
+import imageBaseDark from '../public/images/payment/whyUs-image-dark.png';
+import imageShape from '../public/images/payment/whyUs-bg.png';
+import imageShapeDark from '../public/images/payment/whyUs-bg-dark.png';
 const PriceChoose = () => {
   return (
     <section className="relative py-150 max-md:mt-15">
@@ -71,8 +71,8 @@ const PriceChoose = () => {
                   </svg>
                 </span>
                 <span className="dark:text-white">
-                  {" "}
-                  It’s scalable and secure{" "}
+                  {' '}
+                  It’s scalable and secure{' '}
                 </span>
               </li>
               <li className="flex items-center gap-x-2">
@@ -97,8 +97,8 @@ const PriceChoose = () => {
                   </svg>
                 </span>
                 <span className="dark:text-white">
-                  {" "}
-                  Artificial Intelligence Feature{" "}
+                  {' '}
+                  Artificial Intelligence Feature{' '}
                 </span>
               </li>
               <li className="flex items-center gap-x-2 ">
@@ -124,8 +124,8 @@ const PriceChoose = () => {
                 </span>
 
                 <span className="dark:text-white">
-                  {" "}
-                  Offline version available{" "}
+                  {' '}
+                  Offline version available{' '}
                 </span>
               </li>
             </ul>

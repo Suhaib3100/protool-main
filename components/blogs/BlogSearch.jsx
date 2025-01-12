@@ -1,10 +1,10 @@
-"use client";
-import { useState } from "react";
-import BlogList from "./BlogList";
-import BlogSidebar from "./BlogSidebar";
+'use client';
+import { useState } from 'react';
+import BlogList from './BlogList';
+import BlogSidebar from './BlogSidebar';
 
 const BlogSearch = ({ blogs, sidebarBlogs, setActive }) => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const searchedData = blogs.filter((blog) =>
     blog.data?.title.toLowerCase().includes(search.toLowerCase()),
   );

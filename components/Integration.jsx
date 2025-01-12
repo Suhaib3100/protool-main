@@ -1,83 +1,83 @@
-"use client";
-import { gsap, MotionPathPlugin } from "gsap/all";
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
+'use client';
+import { gsap, MotionPathPlugin } from 'gsap/all';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect } from 'react';
 const Integration = () => {
   useEffect(() => {
     gsap.registerPlugin(MotionPathPlugin);
-    gsap.set("#rect, #rect-2, #rect-3, #rect-4, #rect-5, #rect-6", {
+    gsap.set('#rect, #rect-2, #rect-3, #rect-4, #rect-5, #rect-6', {
       opacity: 1,
     });
-    gsap.from("#rect", {
+    gsap.from('#rect', {
       motionPath: {
-        path: "#path",
+        path: '#path',
         autoRotate: true,
-        align: "#path",
+        align: '#path',
         alignOrigin: [0.5, 0.5],
       },
       duration: 2,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
       repeatDelay: 0,
     });
-    gsap.from("#rect-2", {
+    gsap.from('#rect-2', {
       motionPath: {
-        path: "#path-2",
+        path: '#path-2',
         autoRotate: true,
-        align: "#path-2",
+        align: '#path-2',
         alignOrigin: [0.5, 0.5],
       },
       duration: 2,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
       repeatDelay: 0,
     });
-    gsap.from("#rect-3", {
+    gsap.from('#rect-3', {
       motionPath: {
-        path: "#path-3",
+        path: '#path-3',
         autoRotate: true,
-        align: "#path-3",
+        align: '#path-3',
         alignOrigin: [0.5, 0.5],
       },
       duration: 2,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
       repeatDelay: 0,
     });
-    gsap.from("#rect-4", {
+    gsap.from('#rect-4', {
       motionPath: {
-        path: "#path-4",
+        path: '#path-4',
         autoRotate: true,
-        align: "#path-4",
+        align: '#path-4',
         alignOrigin: [0.5, 0.5],
       },
       duration: 2,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
       repeatDelay: 0,
     });
-    gsap.from("#rect-5", {
+    gsap.from('#rect-5', {
       motionPath: {
-        path: "#path-5",
+        path: '#path-5',
         autoRotate: true,
-        align: "#path-5",
+        align: '#path-5',
         alignOrigin: [0.5, 0.5],
       },
       duration: 2,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
       repeatDelay: 0,
     });
-    gsap.from("#rect-6", {
+    gsap.from('#rect-6', {
       motionPath: {
-        path: "#path-6",
+        path: '#path-6',
         autoRotate: true,
-        align: "#path-6",
+        align: '#path-6',
         alignOrigin: [0.5, 0.5],
       },
       duration: 2,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
       repeatDelay: 0,
     });

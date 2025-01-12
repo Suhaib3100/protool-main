@@ -1,7 +1,7 @@
-"use client";
-import { useState } from "react";
-import Pagination from "../Pagination";
-import BlogItems from "./BlogItems";
+'use client';
+import { useState } from 'react';
+import Pagination from '../Pagination';
+import BlogItems from './BlogItems';
 const BlogList = ({ blogItemData }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;

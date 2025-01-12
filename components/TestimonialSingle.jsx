@@ -1,9 +1,9 @@
-"use client";
-import { TestimonialData } from "@/data/data";
-import Image from "next/image";
-import { RatingStars } from "./Rating";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
+'use client';
+import { TestimonialData } from '@/data/data';
+import Image from 'next/image';
+import { RatingStars } from './Rating';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
 const TestimonialSingle = () => {
   return (
     <section className=" relative pb-25">
@@ -40,8 +40,8 @@ const TestimonialSingle = () => {
                   <div className="mb-7">
                     <RatingStars
                       rating={testimonial.rating}
-                      ratingColor={"text-paragraph dark:text-white"}
-                      ratingEmptyColor={"text-[#A7A7B4] dark:text-[#646463]"}
+                      ratingColor={'text-paragraph dark:text-white'}
+                      ratingEmptyColor={'text-[#A7A7B4] dark:text-[#646463]'}
                     />
                   </div>
 

@@ -1,14 +1,14 @@
-import React from "react";
-import Image from "next/image";
-import Marquee from "react-fast-marquee";
-import { ClientData } from "@/data/data";
-import clientBorder from "../public/images/clients/client-border.svg";
-import clientBorderDark from "../public/images/clients/client-border-dark.svg";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
+import { ClientData } from '@/data/data';
+import clientBorder from '../public/images/clients/client-border.svg';
+import clientBorderDark from '../public/images/clients/client-border-dark.svg';
+import Link from 'next/link';
 const Clients = ({
   sectionTitle = true,
   border = true,
-  spacing = "pt-[140px] pb-[145px] max-lg:py-20 bg-white dark:bg-dark-300 ",
+  spacing = 'pt-[140px] pb-[145px] max-lg:py-20 bg-white dark:bg-dark-300 ',
 }) => {
   return (
     <section className={`client ${spacing} `}>

@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 const PaymentFeatures = ({
   sectionTag,
   sectionTitle,
   features,
-  spacing = "bg-white dark:bg-dark-300 pb-150 pt-150",
+  spacing = 'bg-white dark:bg-dark-300 pb-150 pt-150',
 }) => {
   return (
     <section className={`${spacing}`}>

@@ -1,14 +1,14 @@
-"use client";
-import { menuData } from "@/data/data";
-import { cn } from "@/utils/cn";
-import { faAngleDown, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
-import SearchOption from "../SearchOption";
-import TopBar from "./TopBar";
+'use client';
+import { menuData } from '@/data/data';
+import { cn } from '@/utils/cn';
+import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+import SearchOption from '../SearchOption';
+import TopBar from './TopBar';
 
 const SecondaryNavbar = () => {
   const pathname = usePathname();
@@ -23,10 +23,10 @@ const SecondaryNavbar = () => {
     }
   };
   useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
+    window.addEventListener('scroll', handleStickyNavbar);
 
     return () => {
-      window.removeEventListener("scroll", handleStickyNavbar);
+      window.removeEventListener('scroll', handleStickyNavbar);
     };
   }, []);
 
@@ -35,8 +35,8 @@ const SecondaryNavbar = () => {
       <TopBar sticky={sticky} />
       <div
         className={cn(
-          "fixed left-0 top-12 z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]",
-          sticky ? "nav-sticky" : "",
+          'fixed left-0 top-12 z-50 w-full bg-transparent transition-all duration-500 max-md:z-[500]',
+          sticky ? 'nav-sticky' : '',
         )}
       >
         <nav className="container flex items-center">
@@ -60,7 +60,7 @@ const SecondaryNavbar = () => {
           <ul className="nav-list hidden lg:ml-7 lg:flex xl:ml-15 [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li
-                className={`${menuItem.path ? "" : "group relative"}`}
+                className={`${menuItem.path ? '' : 'group relative'}`}
                 key={menuItem.id}
               >
                 {menuItem.path ? (
@@ -68,8 +68,8 @@ const SecondaryNavbar = () => {
                     <Link
                       href={menuItem.path}
                       className={cn(
-                        "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
-                        pathname === menuItem.path ? "active" : "",
+                        'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        pathname === menuItem.path ? 'active' : '',
                       )}
                     >
                       {menuItem.title}
@@ -168,7 +168,7 @@ const SecondaryNavbar = () => {
           </ul>
 
           <div
-            className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? "open" : ""}`}
+            className={`mobile-menu max-lg:overflow-y-auto ${innerMobileMenu ? 'open' : ''}`}
           >
             <button
               className=" navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200"
@@ -179,7 +179,7 @@ const SecondaryNavbar = () => {
             <ul className="nav-list flex w-full max-w-[500px] flex-col gap-5 landscape:h-full">
               {menuData.menuContent.map((menuItem) => (
                 <li
-                  className={`${menuItem.path ? "" : "group relative"}`}
+                  className={`${menuItem.path ? '' : 'group relative'}`}
                   key={menuItem.id}
                 >
                   {menuItem.path ? (
@@ -187,8 +187,8 @@ const SecondaryNavbar = () => {
                       <Link
                         href={menuItem.path}
                         className={cn(
-                          "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
-                          pathname === menuItem.path ? "active" : "",
+                          'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                          pathname === menuItem.path ? 'active' : '',
                         )}
                         onClick={() => setInnerMobileMenu(!innerMobileMenu)}
                       >

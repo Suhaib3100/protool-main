@@ -1,17 +1,17 @@
-import BlogSearch from "@/components/blogs/BlogSearch";
-import PageHero from "@/components/heros/PageHero";
-import getMarkDownData from "@/utils/getMarkDownData";
+import BlogSearch from '@/components/blogs/BlogSearch';
+import PageHero from '@/components/heros/PageHero';
+import getMarkDownData from '@/utils/getMarkDownData';
 
 export async function generateStaticParams() {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
   return blogs.map((item) => ({
     tag: item.data.tags,
   }));
 }
 
 const BlogTags = ({ params }) => {
-  const blogs = getMarkDownData("data/blogs");
-  const decodedTags = decodeURIComponent(params.tag.replace(/%20/g, " "));
+  const blogs = getMarkDownData('data/blogs');
+  const decodedTags = decodeURIComponent(params.tag.replace(/%20/g, ' '));
   const tagsBlog = blogs.filter((blog) => blog.data.tags === decodedTags);
   return (
     <>

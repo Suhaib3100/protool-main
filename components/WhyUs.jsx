@@ -1,31 +1,31 @@
-"use client";
+'use client';
 
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import possibilitiesExpenseLight from "../public/images/payment/expense.png";
-import possibilitiesExpenseDark from "../public/images/payment/expense-dark.png";
-import possibilitiesBaseDark from "../public/images/payment/explore-dark.png";
-import possibilitiesBaseLight from "../public/images/payment/explore.png";
-import possibilitiesPaymentDark from "../public/images/payment/payment-dark.png";
-import possibilitiesPaymentLight from "../public/images/payment/payment.png";
-import possibilitiesSummeryDark from "../public/images/payment/summery-dark.png";
-import possibilitiesSummeryLight from "../public/images/payment/summery.png";
-import WHyUsDark from "../public/images/payment/whyUs-bg-dark.png";
-import WHyUsLight from "../public/images/payment/whyUs-bg.png";
-import WHyUsImageDark from "../public/images/payment/whyUs-image-dark.png";
-import WHyUsImageLight from "../public/images/payment/whyUs-image.png";
-import Image from "next/image";
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import possibilitiesExpenseLight from '../public/images/payment/expense.png';
+import possibilitiesExpenseDark from '../public/images/payment/expense-dark.png';
+import possibilitiesBaseDark from '../public/images/payment/explore-dark.png';
+import possibilitiesBaseLight from '../public/images/payment/explore.png';
+import possibilitiesPaymentDark from '../public/images/payment/payment-dark.png';
+import possibilitiesPaymentLight from '../public/images/payment/payment.png';
+import possibilitiesSummeryDark from '../public/images/payment/summery-dark.png';
+import possibilitiesSummeryLight from '../public/images/payment/summery.png';
+import WHyUsDark from '../public/images/payment/whyUs-bg-dark.png';
+import WHyUsLight from '../public/images/payment/whyUs-bg.png';
+import WHyUsImageDark from '../public/images/payment/whyUs-image-dark.png';
+import WHyUsImageLight from '../public/images/payment/whyUs-image.png';
+import Image from 'next/image';
 import {
   fadeFromLeftAnimation,
   fadeFromLeftAnimation2,
   fadeFromLeftAnimation3,
   fadeFromRightAnimation,
   fadeUpAnimation,
-} from "@/data/animation";
-import useWhileInView from "@/hooks/useWhileInView";
-import { useRef } from "react";
+} from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const WhyUs = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);
@@ -109,8 +109,8 @@ const WhyUs = () => {
                   </svg>
                 </span>
                 <span className="dark:text-white">
-                  {" "}
-                  It’s scalable and secure{" "}
+                  {' '}
+                  It’s scalable and secure{' '}
                 </span>
               </li>
               <li className="flex items-center gap-x-2">
@@ -135,8 +135,8 @@ const WhyUs = () => {
                   </svg>
                 </span>
                 <span className="dark:text-white">
-                  {" "}
-                  Artificial Intelligence Feature{" "}
+                  {' '}
+                  Artificial Intelligence Feature{' '}
                 </span>
               </li>
               <li className="flex items-center gap-x-2 ">

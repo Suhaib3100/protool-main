@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import PaymentImage from "../../public/images/payment/payment-hero.png";
-import PaymentImageDark from "../../public/images/payment/payment-hero-dark.png";
-import PaymentImageDevice from "../../public/images/payment/payment-hero-device.png";
-import PaymentImageDeviceDark from "../../public/images/payment/payment-hero-device-dark.png";
-import Image from "next/image";
-import Link from "next/link";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
+'use client';
+import React from 'react';
+import PaymentImage from '../../public/images/payment/payment-hero.png';
+import PaymentImageDark from '../../public/images/payment/payment-hero-dark.png';
+import PaymentImageDevice from '../../public/images/payment/payment-hero-device.png';
+import PaymentImageDeviceDark from '../../public/images/payment/payment-hero-device-dark.png';
+import Image from 'next/image';
+import Link from 'next/link';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
 
 const ProtoolHero = () => {
   return (
@@ -26,8 +26,8 @@ const ProtoolHero = () => {
             <h1 className="mb-10">
               Empowering Your Business with
               <span className="inline-block px-5 pb-2.5 pt-0.5 font-playfair italic leading-none">
-                {" "}
-                Digital{" "}
+                {' '}
+                Digital{' '}
               </span>
               Solutions
             </h1>

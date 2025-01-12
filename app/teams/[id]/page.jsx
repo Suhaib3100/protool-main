@@ -1,8 +1,8 @@
-import ContactForm from "@/components/ContactForm";
-import NewsLetter from "@/components/NewsLetter";
-import TeamMember from "@/components/TeamMember";
-import { teamData } from "@/data/data";
-import Link from "next/link";
+import ContactForm from '@/components/ContactForm';
+import NewsLetter from '@/components/NewsLetter';
+import TeamMember from '@/components/TeamMember';
+import { teamData } from '@/data/data';
+import Link from 'next/link';
 
 export async function generateStaticParams() {
   return teamData.map((team) => ({
@@ -105,9 +105,9 @@ const TeamSingle = (props) => {
                 />
               </svg>
 
-              <Link href={`tel:${data.phone.split(" ").join("")}`}>
-                {" "}
-                {data.phone}{" "}
+              <Link href={`tel:${data.phone.split(' ').join('')}`}>
+                {' '}
+                {data.phone}{' '}
               </Link>
             </div>
             <ul className="flex items-center gap-x-2.5 border-t border-dashed border-borderColor pt-12 dark:border-borderColor-dark">

@@ -1,16 +1,16 @@
-"use client";
-import FaqItem from "@/components/FaqItem";
-import PageHero from "@/components/heros/PageHero";
-import { FAQData } from "@/data/data";
-import { useEffect, useRef, useState } from "react";
-import { fadeUpAnimation } from "@/data/animation";
+'use client';
+import FaqItem from '@/components/FaqItem';
+import PageHero from '@/components/heros/PageHero';
+import { FAQData } from '@/data/data';
+import { useEffect, useRef, useState } from 'react';
+import { fadeUpAnimation } from '@/data/animation';
 
-import { motion } from "framer-motion";
-import useWhileInView from "@/hooks/useWhileInView";
+import { motion } from 'framer-motion';
+import useWhileInView from '@/hooks/useWhileInView';
 const FaqPage = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);
-  const categories = ["general", "changelog", "terms"];
+  const categories = ['general', 'changelog', 'terms'];
   const [filterData, setFilterData] = useState([...FAQData]);
   const [active, setActive] = useState(0);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -20,7 +20,7 @@ const FaqPage = () => {
   };
 
   useEffect(() => {
-    const generalFaq = FAQData.filter((faq) => faq.type.includes("general"));
+    const generalFaq = FAQData.filter((faq) => faq.type.includes('general'));
     setFilterData(generalFaq);
   }, []);
 
@@ -55,7 +55,7 @@ const FaqPage = () => {
             <ul className=" faq-tabs mx-auto mb-15 flex w-fit max-w-[530px] items-center border-b-2 border-white dark:border-borderColor-dark max-md:flex-col max-md:border-none">
               {categories?.map((btn, index) => (
                 <li
-                  className={index === active ? "tabActive group" : "group"}
+                  className={index === active ? 'tabActive group' : 'group'}
                   key={btn}
                 >
                   <button

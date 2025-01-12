@@ -1,24 +1,24 @@
-"use client";
+'use client';
 import {
   fadeFromLeftAnimation,
   fadeFromRightAnimation,
   fadeUpAnimation,
-} from "@/data/animation";
-import useWhileInView from "@/hooks/useWhileInView";
-import solutionImageDark from "@/public/images/solution/solution-dark.png";
-import solutionImage1Dark from "@/public/images/solution/solution-shape1-dark.png";
-import solutionImage1 from "@/public/images/solution/solution-shape1.png";
-import solutionImage2Dark from "@/public/images/solution/solution-shape2-dark.png";
-import solutionImage2 from "@/public/images/solution/solution-shape2.png";
-import solutionImage3Dark from "@/public/images/solution/solution-shape3-dark.png";
-import solution3Image from "@/public/images/solution/solution-shape3.png";
-import solutionImage from "@/public/images/solution/solution.png";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { useRef } from "react";
+} from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import solutionImageDark from '@/public/images/solution/solution-dark.png';
+import solutionImage1Dark from '@/public/images/solution/solution-shape1-dark.png';
+import solutionImage1 from '@/public/images/solution/solution-shape1.png';
+import solutionImage2Dark from '@/public/images/solution/solution-shape2-dark.png';
+import solutionImage2 from '@/public/images/solution/solution-shape2.png';
+import solutionImage3Dark from '@/public/images/solution/solution-shape3-dark.png';
+import solution3Image from '@/public/images/solution/solution-shape3.png';
+import solutionImage from '@/public/images/solution/solution.png';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRef } from 'react';
 
 const Solution = () => {
   const ref1 = useRef(null);

@@ -1,14 +1,14 @@
-import AboutDetails from "@/components/AboutDetails";
-import AboutValue from "@/components/AboutValue";
-import Counter from "@/components/Counter";
-import CtaV2 from "@/components/CtaV2";
+import AboutDetails from '@/components/AboutDetails';
+import AboutValue from '@/components/AboutValue';
+import Counter from '@/components/Counter';
+import CtaV2 from '@/components/CtaV2';
 
-import PageHero from "@/components/heros/PageHero";
-import PaymentFeatures from "@/components/PaymentFeatures";
-import TeamMembers from "@/components/TeamMembers";
-import TestimonialSlider from "@/components/TestimonialSlider";
-import { AboutFeaturesData } from "@/data/data";
-import React from "react";
+import PageHero from '@/components/heros/PageHero';
+import PaymentFeatures from '@/components/PaymentFeatures';
+import TeamMembers from '@/components/TeamMembers';
+import TestimonialSlider from '@/components/TestimonialSlider';
+import { AboutFeaturesData } from '@/data/data';
+import React from 'react';
 
 const About = () => {
   return (
@@ -21,10 +21,10 @@ const About = () => {
       <AboutDetails />
       <PaymentFeatures
         features={AboutFeaturesData}
-        sectionTag={"OUR VALUES"}
-        sectionTitle={"Driven by Innovation and Excellence"}
+        sectionTag={'OUR VALUES'}
+        sectionTitle={'Driven by Innovation and Excellence'}
         spacing={
-          "max-md:py-25 py-150 bg-white dark:bg-dark-300 relative max-md:overflow-hidden"
+          'max-md:py-25 py-150 bg-white dark:bg-dark-300 relative max-md:overflow-hidden'
         }
       />
       <AboutValue />

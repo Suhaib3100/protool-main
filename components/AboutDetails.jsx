@@ -1,6 +1,6 @@
-"use client";
-import { AboutImages } from "@/data/data";
-import Image from "next/image";
+'use client';
+import { AboutImages } from '@/data/data';
+import Image from 'next/image';
 
 const AboutDetails = () => {
   return (

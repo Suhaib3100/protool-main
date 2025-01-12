@@ -1,16 +1,16 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import bannerLight from "../public/images/banking/banner.png";
-import bannerDark from "../public/images/banking/banner-dark.png";
-import bannerDeviceLight from "../public/images/banking/banner-device.png";
-import bannerDeviceDark from "../public/images/banking/banner-device-dark.png";
-import bannerShapeOneLight from "../public/images/banking/banner-shape-1.png";
-import bannerShapeOneDark from "../public/images/banking/banner-shape-1-dark.png";
-import bannerShapeTwoLight from "../public/images/banking/banner-shape-2.png";
-import bannerShapeTwoDark from "../public/images/banking/banner-shape-2-dark.png";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
+'use client';
+import Image from 'next/image';
+import React from 'react';
+import bannerLight from '../public/images/banking/banner.png';
+import bannerDark from '../public/images/banking/banner-dark.png';
+import bannerDeviceLight from '../public/images/banking/banner-device.png';
+import bannerDeviceDark from '../public/images/banking/banner-device-dark.png';
+import bannerShapeOneLight from '../public/images/banking/banner-shape-1.png';
+import bannerShapeOneDark from '../public/images/banking/banner-shape-1-dark.png';
+import bannerShapeTwoLight from '../public/images/banking/banner-shape-2.png';
+import bannerShapeTwoDark from '../public/images/banking/banner-shape-2-dark.png';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
 const BankingDetails = () => {
   return (
     <section className="relative">

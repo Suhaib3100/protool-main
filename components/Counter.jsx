@@ -1,6 +1,6 @@
-"use client";
-import { CounterData } from "@/data/data";
-import CounterAnimation from "@/utils/CounterAnimation";
+'use client';
+import { CounterData } from '@/data/data';
+import CounterAnimation from '@/utils/CounterAnimation';
 
 const Counter = () => {
   return (

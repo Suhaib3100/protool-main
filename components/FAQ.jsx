@@ -1,14 +1,14 @@
-"use client";
-import React, { useState } from "react";
-import { FAQData } from "@/data/data";
-import FaqItem from "./FaqItem";
+'use client';
+import React, { useState } from 'react';
+import { FAQData } from '@/data/data';
+import FaqItem from './FaqItem';
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleItemClick = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
   };
-  const generalFaq = FAQData.filter((faq) => faq.type.includes("general"));
+  const generalFaq = FAQData.filter((faq) => faq.type.includes('general'));
 
   return (
     <section className=" relative overflow-hidden bg-gray pb-[130px] pt-150 dark:bg-dark max-md:py-20">

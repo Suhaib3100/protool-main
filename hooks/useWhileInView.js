@@ -1,5 +1,5 @@
-import { useAnimation, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { useAnimation, useInView } from 'framer-motion';
+import { useEffect } from 'react';
 
 const useWhileInView = (ref) => {
   const inInView = useInView(ref, { once: true });
@@ -7,7 +7,7 @@ const useWhileInView = (ref) => {
 
   useEffect(() => {
     if (inInView) {
-      controlAnimation.start("animate");
+      controlAnimation.start('animate');
     }
   }, [inInView, controlAnimation]);
   return controlAnimation;

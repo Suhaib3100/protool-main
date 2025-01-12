@@ -1,18 +1,18 @@
-import PageHero from "@/components/heros/PageHero";
-import getMarkDownContent from "@/utils/getMarkDownContent";
-import getMarkDownData from "@/utils/getMarkDownData";
-import Image from "next/image";
-import ReactMarkdown from "react-markdown";
+import PageHero from '@/components/heros/PageHero';
+import getMarkDownContent from '@/utils/getMarkDownContent';
+import getMarkDownData from '@/utils/getMarkDownData';
+import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 
 export async function generateStaticParams() {
-  const blogs = getMarkDownData("data/blogs");
+  const blogs = getMarkDownData('data/blogs');
   return blogs.map((blog) => ({
     slug: blog.slug,
   }));
 }
 
 const BlogDetails = (props) => {
-  const dataFolder = "data/blogs/";
+  const dataFolder = 'data/blogs/';
   const slug = props.params.slug;
   const blog = getMarkDownContent(dataFolder, slug);
   const postParams = blog.data;

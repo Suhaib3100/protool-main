@@ -1,8 +1,8 @@
-"use client";
-import { fadeUpAnimation } from "@/data/animation";
-import useWhileInView from "@/hooks/useWhileInView";
-import { useRef } from "react";
-import { motion } from "framer-motion";
+'use client';
+import { fadeUpAnimation } from '@/data/animation';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
+import { motion } from 'framer-motion';
 const ContactForm = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);

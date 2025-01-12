@@ -1,7 +1,7 @@
-import { TestimonialData } from "@/data/data";
-import Image from "next/image";
-import Link from "next/link";
-import { RatingStars } from "./Rating";
+import { TestimonialData } from '@/data/data';
+import Image from 'next/image';
+import Link from 'next/link';
+import { RatingStars } from './Rating';
 const Testimonial = () => {
   return (
     <section className="relative bg-white  pb-150 pt-150 dark:bg-dark-300 max-md:py-20">
@@ -25,7 +25,7 @@ const Testimonial = () => {
               >
                 <div className="h-full rounded border border-dashed border-gray-100 p-7 dark:border-borderColor-dark ">
                   <span className="mb-6 inline-block dark:hidden text-2xl font-bold text-[#086c74]">
-                    Protool{" "}
+                    Protool{' '}
                   </span>
                   <span className="mb-6 hidden dark:inline-block text-2xl font-bold text-[#ffffff]">
                     Protool
@@ -37,8 +37,8 @@ const Testimonial = () => {
                   <div className="mb-7">
                     <RatingStars
                       rating={testimonial.rating}
-                      ratingColor={"text-paragraph dark:text-white"}
-                      ratingEmptyColor={"text-[#A7A7B4] dark:text-[#646463]"}
+                      ratingColor={'text-paragraph dark:text-white'}
+                      ratingEmptyColor={'text-[#A7A7B4] dark:text-[#646463]'}
                     />
                   </div>
 

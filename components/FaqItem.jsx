@@ -1,5 +1,5 @@
-"use client";
-import { useRef } from "react";
+'use client';
+import { useRef } from 'react';
 
 const FaqItem = ({ question, answer, isOpen, onClick }) => {
   const contentHeight = useRef();
@@ -58,7 +58,7 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
         style={
           isOpen
             ? { height: contentHeight?.current?.scrollHeight }
-            : { height: "0px" }
+            : { height: '0px' }
         }
       >
         <p

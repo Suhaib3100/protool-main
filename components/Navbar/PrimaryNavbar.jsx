@@ -1,14 +1,14 @@
-"use client";
-import { menuData } from "@/data/data";
-import { cn } from "@/utils/cn";
-import { faAngleDown, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+'use client';
+import { menuData } from '@/data/data';
+import { cn } from '@/utils/cn';
+import { faAngleDown, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
-import SearchOption from "../SearchOption";
-import { DemoForm } from "../requestDemo/demo-form";  // Import DemoForm
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
+import SearchOption from '../SearchOption';
+import { DemoForm } from '../requestDemo/demo-form'; // Import DemoForm
 const PrimaryNavbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -23,10 +23,10 @@ const PrimaryNavbar = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
+    window.addEventListener('scroll', handleStickyNavbar);
 
     return () => {
-      window.removeEventListener("scroll", handleStickyNavbar);
+      window.removeEventListener('scroll', handleStickyNavbar);
     };
   }, []);
 
@@ -34,8 +34,8 @@ const PrimaryNavbar = () => {
     <>
       <header
         className={cn(
-          "fixed left-0 z-50 w-full bg-transparent pt-8 transition-all duration-500 max-md:z-[500]",
-          sticky ? "nav-sticky" : "",
+          'fixed left-0 z-50 w-full bg-transparent pt-8 transition-all duration-500 max-md:z-[500]',
+          sticky ? 'nav-sticky' : '',
         )}
       >
         <nav className="container flex items-center">
@@ -50,14 +50,14 @@ const PrimaryNavbar = () => {
           <ul className="nav-list mx-auto hidden rounded-large bg-white p-2.5 shadow-nav dark:bg-dark-200 lg:flex [&>*:not(:last-child)]:me-1">
             {menuData.menuContent.map((menuItem) => (
               <li
-                className={`${menuItem.path ?? "group relative"}`}
+                className={`${menuItem.path ?? 'group relative'}`}
                 key={menuItem.id}
               >
                 {menuItem.path ? (
                   <Link
                     href={menuItem.path}
                     className={cn(
-                      "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
+                      'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                     )}
                   >
                     {menuItem.title}
@@ -67,8 +67,8 @@ const PrimaryNavbar = () => {
                     <Link
                       href="#"
                       className={cn(
-                        "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
-                        menuItem.title === "home" ? "active" : "",
+                        'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium capitalize leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
+                        menuItem.title === 'home' ? 'active' : '',
                       )}
                     >
                       {menuItem.title}
@@ -158,7 +158,7 @@ const PrimaryNavbar = () => {
           </ul>
 
           <div
-            className={`mobile-menu max-lg:overflow-y-auto ${showMobileMenu ? "open" : ""}`}
+            className={`mobile-menu max-lg:overflow-y-auto ${showMobileMenu ? 'open' : ''}`}
           >
             <button
               className="navbar-toggle-close absolute right-6 top-5 h-10 w-10 rounded-full bg-white outline-none dark:bg-dark-200 "
@@ -169,7 +169,7 @@ const PrimaryNavbar = () => {
             <ul className="nav-list flex w-full max-w-[500px] flex-col gap-5 landscape:h-full">
               {menuData.menuContent.map((menuItem) => (
                 <li
-                  className={cn(menuItem.path ? "" : "group relative")}
+                  className={cn(menuItem.path ? '' : 'group relative')}
                   key={menuItem.id}
                 >
                   {menuItem.path ? (
@@ -177,7 +177,7 @@ const PrimaryNavbar = () => {
                       <Link
                         href={menuItem.path}
                         className={cn(
-                          "flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5",
+                          'flex items-center rounded-large border border-transparent px-5 py-[5px] font-Inter text-base font-medium leading-8 text-paragraph transition-colors duration-500 hover:border-borderColor hover:bg-white hover:duration-500 dark:text-white dark:hover:border-borderColor/10 dark:hover:bg-dark-200 lg:px-4 xl:px-5',
                         )}
                         onClick={() => setShowMobileMenu(!showMobileMenu)}
                       >
@@ -218,7 +218,7 @@ const PrimaryNavbar = () => {
               ))}
 
               <li>
-              <DemoForm />
+                <DemoForm />
               </li>
             </ul>
           </div>

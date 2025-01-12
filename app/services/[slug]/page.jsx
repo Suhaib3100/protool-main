@@ -1,8 +1,8 @@
-import MembersCounter from "@/components/MembersCounter";
-import NewsLetter from "@/components/NewsLetter";
-import Pricing from "@/components/Pricing";
-import ServiceContent from "@/components/ServiceContent";
-import { ServiceData } from "@/data/data";
+import MembersCounter from '@/components/MembersCounter';
+import NewsLetter from '@/components/NewsLetter';
+import Pricing from '@/components/Pricing';
+import ServiceContent from '@/components/ServiceContent';
+import { ServiceData } from '@/data/data';
 
 export async function generateStaticParams() {
   return ServiceData.map((item) => ({
@@ -18,7 +18,7 @@ const ServiceDetails = (props) => {
     <>
       <ServiceContent data={data} />
       <MembersCounter />
-      <Pricing spacing={"pt-150 max-md:pt-20"} />
+      <Pricing spacing={'pt-150 max-md:pt-20'} />
       <NewsLetter />
     </>
   );

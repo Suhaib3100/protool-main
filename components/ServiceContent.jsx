@@ -1,11 +1,11 @@
-"use client";
-import { ServiceData } from "@/data/data";
-import { faAngleRight, faX } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import ReactPlayer from "react-player";
+'use client';
+import { ServiceData } from '@/data/data';
+import { faAngleRight, faX } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
+import ReactPlayer from 'react-player';
 
 const ServiceContent = ({ data }) => {
   const [modal, setModal] = useState(false);
@@ -51,7 +51,7 @@ const ServiceContent = ({ data }) => {
                 <ul className="[&>*:not(:last-child)]:border-b [&>*:not(:last-child)]:border-dashed  [&>*:not(:last-child)]:border-gray-100  dark:[&>*:not(:last-child)]:border-borderColor-dark">
                   {ServiceData?.map((services) => (
                     <li
-                      className={`group ${services.slug === data.slug ? "tabActive" : ""}`}
+                      className={`group ${services.slug === data.slug ? 'tabActive' : ''}`}
                       key={services.id}
                     >
                       <Link

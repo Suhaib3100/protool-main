@@ -1,8 +1,8 @@
-import getMarkDownData from "@/utils/getMarkDownData";
-import Link from "next/link";
+import getMarkDownData from '@/utils/getMarkDownData';
+import Link from 'next/link';
 
 const CareerList = () => {
-  const careerData = getMarkDownData("data/career");
+  const careerData = getMarkDownData('data/career');
   return (
     <section className="relative pb-150 max-md:overflow-hidden">
       <div className="absolute left-0 right-0 top-0 h-full w-full bg-[url('/images/core-gradient.png')] bg-cover bg-center bg-no-repeat opacity-70  md:hidden"></div>
@@ -30,7 +30,7 @@ const CareerList = () => {
                   <div className="col-span-full sm:col-span-full md:col-span-5 lg:col-span-3">
                     {carerItem.data.shortDesc && (
                       <p className="text-light font-jakarta_sans">
-                        {" "}
+                        {' '}
                         {carerItem.data.shortDesc}
                       </p>
                     )}

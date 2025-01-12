@@ -1,37 +1,37 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { X, Sparkles, Loader2 } from 'lucide-react'
-import { toast } from 'sonner'
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { X, Sparkles, Loader2 } from 'lucide-react';
+import { toast } from 'sonner';
 
 export function DemoForm() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [step, setStep] = useState(1)
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [step, setStep] = useState(1);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     budget: 5000,
     email: '',
     phone: '',
     countryCode: '+1',
-    preferredTime: ''
-  })
+    preferredTime: '',
+  });
 
   const handleNext = () => {
-    setStep(prev => prev + 1)
-  }
+    setStep((prev) => prev + 1);
+  };
 
   const handlePrevious = () => {
-    setStep(prev => prev - 1)
-  }
+    setStep((prev) => prev - 1);
+  };
 
   const updateFormData = (data) => {
-    setFormData(prev => ({ ...prev, ...data }))
-  }
+    setFormData((prev) => ({ ...prev, ...data }));
+  };
 
   const handleSubmit = async () => {
-    setIsSubmitting(true)
+    setIsSubmitting(true);
     try {
       const response = await fetch('/api/submit-demo', {
         method: 'POST',
@@ -45,38 +45,37 @@ export function DemoForm() {
           budget: formData.budget,
           preferredTime: formData.preferredTime,
         }),
-      })
+      });
 
-      const data = await response.json()
+      const data = await response.json();
 
       if (data.success) {
-        toast.success('Demo request submitted successfully! Check your email for confirmation.')
-        setIsOpen(false)
-        setStep(1)
+        toast.success(
+          'Demo request submitted successfully! Check your email for confirmation.',
+        );
+        setIsOpen(false);
+        setStep(1);
         setFormData({
           firstName: '',
           budget: 5000,
           email: '',
           phone: '',
           countryCode: '+1',
-          preferredTime: ''
-        })
+          preferredTime: '',
+        });
       } else {
-        toast.error(data.error || 'Something went wrong. Please try again.')
+        toast.error(data.error || 'Something went wrong. Please try again.');
       }
     } catch (error) {
-      toast.error('Failed to submit form. Please try again.')
+      toast.error('Failed to submit form. Please try again.');
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
-  }
+  };
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="btn btn-navbar btn-sm"
-      >
+      <button onClick={() => setIsOpen(true)} className="btn btn-navbar btn-sm">
         Request Demo
       </button>
 
@@ -93,7 +92,7 @@ export function DemoForm() {
               initial={{ scale: 0.95, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
-              onClick={e => e.stopPropagation()}
+              onClick={(e) => e.stopPropagation()}
               className="relative w-full max-w-lg mx-auto mt-20 bg-gradient-to-b from-[#1C1C1C] to-[#2A3B14] rounded-xl shadow-[0_0_50px_rgba(159,225,44,0.1)] overflow-hidden border border-zinc-800"
             >
               <button
@@ -108,18 +107,15 @@ export function DemoForm() {
                 <div className="relative overflow-hidden">
                   <motion.div
                     animate={{ x: `${(step - 1) * -100}%` }}
-                    transition={{ 
-                      type: "spring", 
-                      bounce: 0.2, 
+                    transition={{
+                      type: 'spring',
+                      bounce: 0.2,
                       duration: 0.8,
-                      damping: 20
+                      damping: 20,
                     }}
                     className="flex"
                   >
-                    <StepOne 
-                      onNext={handleNext}
-                      className="min-w-full"
-                    />
+                    <StepOne onNext={handleNext} className="min-w-full" />
                     <StepTwo
                       formData={formData}
                       updateFormData={updateFormData}
@@ -151,7 +147,7 @@ export function DemoForm() {
                   <motion.div
                     className="h-full bg-[#9FE12C] rounded-full"
                     animate={{ width: `${(step / 4) * 100}%` }}
-                    transition={{ type: "spring", bounce: 0.2 }}
+                    transition={{ type: 'spring', bounce: 0.2 }}
                   />
                 </div>
               </div>
@@ -160,7 +156,7 @@ export function DemoForm() {
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }
 
 function StepOne({ onNext, className = '' }) {
@@ -186,7 +182,8 @@ function StepOne({ onNext, className = '' }) {
             Are you interested in a demo?
           </h2>
           <p className="text-zinc-400 text-lg max-w-sm mx-auto">
-            Get a personalized walkthrough of our platform and discover how we can help transform your business
+            Get a personalized walkthrough of our platform and discover how we
+            can help transform your business
           </p>
         </div>
         <motion.div
@@ -203,10 +200,16 @@ function StepOne({ onNext, className = '' }) {
         </motion.div>
       </div>
     </motion.div>
-  )
+  );
 }
 
-function StepTwo({ formData, updateFormData, onNext, onPrevious, className = '' }) {
+function StepTwo({
+  formData,
+  updateFormData,
+  onNext,
+  onPrevious,
+  className = '',
+}) {
   return (
     <motion.div
       initial={{ opacity: 0, x: 100 }}
@@ -220,17 +223,17 @@ function StepTwo({ formData, updateFormData, onNext, onPrevious, className = '' 
           <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
             What&apos;s your name?
           </h2>
-          <p className="text-zinc-400">
-            Let us know how to address you
-          </p>
+          <p className="text-zinc-400">Let us know how to address you</p>
         </div>
 
         <div className="space-y-3">
-          <label htmlFor="firstName" className="text-zinc-300 block">First Name</label>
+          <label htmlFor="firstName" className="text-zinc-300 block">
+            First Name
+          </label>
           <input
             id="firstName"
             value={formData.firstName}
-            onChange={e => updateFormData({ firstName: e.target.value })}
+            onChange={(e) => updateFormData({ firstName: e.target.value })}
             placeholder="Enter your first name"
             className="w-full bg-zinc-800/50 border border-zinc-700/50 focus:border-[#9FE12C] text-white placeholder:text-zinc-500 h-12 px-4 rounded-lg outline-none"
           />
@@ -257,15 +260,21 @@ function StepTwo({ formData, updateFormData, onNext, onPrevious, className = '' 
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
 
-function StepThree({ formData, updateFormData, onNext, onPrevious, className = '' }) {
+function StepThree({
+  formData,
+  updateFormData,
+  onNext,
+  onPrevious,
+  className = '',
+}) {
   const countryCodes = [
     { value: '+1', label: 'US (+1)' },
     { value: '+44', label: 'UK (+44)' },
     { value: '+61', label: 'AU (+61)' },
-  ]
+  ];
 
   return (
     <motion.div
@@ -280,9 +289,7 @@ function StepThree({ formData, updateFormData, onNext, onPrevious, className = '
           <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
             Contact Details
           </h2>
-          <p className="text-zinc-400">
-            Tell us how to reach you
-          </p>
+          <p className="text-zinc-400">Tell us how to reach you</p>
         </div>
 
         <div className="space-y-6">
@@ -292,7 +299,9 @@ function StepThree({ formData, updateFormData, onNext, onPrevious, className = '
               <input
                 type="range"
                 value={formData.budget}
-                onChange={e => updateFormData({ budget: parseInt(e.target.value) })}
+                onChange={(e) =>
+                  updateFormData({ budget: parseInt(e.target.value) })
+                }
                 min="5000"
                 max="50000"
                 step="1000"
@@ -305,26 +314,32 @@ function StepThree({ formData, updateFormData, onNext, onPrevious, className = '
           </div>
 
           <div className="space-y-3">
-            <label htmlFor="email" className="text-zinc-300 block">Email Address</label>
+            <label htmlFor="email" className="text-zinc-300 block">
+              Email Address
+            </label>
             <input
               id="email"
               type="email"
               value={formData.email}
-              onChange={e => updateFormData({ email: e.target.value })}
+              onChange={(e) => updateFormData({ email: e.target.value })}
               placeholder="Enter your email"
               className="w-full bg-zinc-800/50 border border-zinc-700/50 focus:border-[#9FE12C] text-white placeholder:text-zinc-500 h-12 px-4 rounded-lg outline-none"
             />
           </div>
 
           <div className="space-y-3">
-            <label htmlFor="phone" className="text-zinc-300 block">Phone Number</label>
+            <label htmlFor="phone" className="text-zinc-300 block">
+              Phone Number
+            </label>
             <div className="flex gap-2">
               <select
                 value={formData.countryCode}
-                onChange={e => updateFormData({ countryCode: e.target.value })}
+                onChange={(e) =>
+                  updateFormData({ countryCode: e.target.value })
+                }
                 className="w-[140px] bg-zinc-800/50 border border-zinc-700/50 text-white h-12 px-4 rounded-lg outline-none"
               >
-                {countryCodes.map(code => (
+                {countryCodes.map((code) => (
                   <option key={code.value} value={code.value}>
                     {code.label}
                   </option>
@@ -334,7 +349,7 @@ function StepThree({ formData, updateFormData, onNext, onPrevious, className = '
                 id="phone"
                 type="tel"
                 value={formData.phone}
-                onChange={e => updateFormData({ phone: e.target.value })}
+                onChange={(e) => updateFormData({ phone: e.target.value })}
                 placeholder="Enter your phone number"
                 className="flex-1 bg-zinc-800/50 border border-zinc-700/50 focus:border-[#9FE12C] text-white placeholder:text-zinc-500 h-12 px-4 rounded-lg outline-none"
               />
@@ -363,10 +378,17 @@ function StepThree({ formData, updateFormData, onNext, onPrevious, className = '
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
 
-function StepFour({ formData, updateFormData, onSubmit, onPrevious, isSubmitting, className = '' }) {
+function StepFour({
+  formData,
+  updateFormData,
+  onSubmit,
+  onPrevious,
+  isSubmitting,
+  className = '',
+}) {
   const timeSlots = [
     '9:00 AM - 10:00 AM',
     '10:00 AM - 11:00 AM',
@@ -374,7 +396,7 @@ function StepFour({ formData, updateFormData, onSubmit, onPrevious, isSubmitting
     '2:00 PM - 3:00 PM',
     '3:00 PM - 4:00 PM',
     '4:00 PM - 5:00 PM',
-  ]
+  ];
 
   return (
     <motion.div
@@ -389,22 +411,22 @@ function StepFour({ formData, updateFormData, onSubmit, onPrevious, isSubmitting
           <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
             Choose Your Preferred Time
           </h2>
-          <p className="text-zinc-400">
-            Select a time slot for your demo
-          </p>
+          <p className="text-zinc-400">Select a time slot for your demo</p>
         </div>
 
         <div className="space-y-3">
-          <label htmlFor="time" className="text-zinc-300 block">Preferred Time</label>
+          <label htmlFor="time" className="text-zinc-300 block">
+            Preferred Time
+          </label>
           <select
             id="time"
             value={formData.preferredTime}
-            onChange={e => updateFormData({ preferredTime: e.target.value })}
+            onChange={(e) => updateFormData({ preferredTime: e.target.value })}
             className="w-full bg-zinc-800/50 border border-zinc-700/50 text-white h-12 px-4 rounded-lg outline-none"
             disabled={isSubmitting}
           >
             <option value="">Select a time slot</option>
-            {timeSlots.map(slot => (
+            {timeSlots.map((slot) => (
               <option key={slot} value={slot}>
                 {slot}
               </option>
@@ -441,6 +463,5 @@ function StepFour({ formData, updateFormData, onSubmit, onPrevious, isSubmitting
         </div>
       </div>
     </motion.div>
-  )
+  );
 }
-

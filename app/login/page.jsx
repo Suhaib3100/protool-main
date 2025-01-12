@@ -1,10 +1,10 @@
-"use client";
-import NewsLetter from "@/components/NewsLetter";
-import Link from "next/link";
-import { fadeUpAnimation } from "@/data/animation";
-import { motion } from "framer-motion";
-import useWhileInView from "@/hooks/useWhileInView";
-import { useRef } from "react";
+'use client';
+import NewsLetter from '@/components/NewsLetter';
+import Link from 'next/link';
+import { fadeUpAnimation } from '@/data/animation';
+import { motion } from 'framer-motion';
+import useWhileInView from '@/hooks/useWhileInView';
+import { useRef } from 'react';
 const Login = () => {
   const ref = useRef(null);
   const controlAnimation = useWhileInView(ref);
@@ -62,8 +62,8 @@ const Login = () => {
                       />
                     </svg>
                     <span className="font-jakarta_sans font-medium  ">
-                      {" "}
-                      Continue with Google{" "}
+                      {' '}
+                      Continue with Google{' '}
                     </span>
                   </button>
                   <button className=" group flex w-full items-center justify-center gap-2 rounded-[30px]  border border-borderColor bg-white px-[30px]  py-3.5 font-jakarta_sans text-sm font-medium -tracking-[0.3px] text-paragraph dark:border-borderColor-dark dark:bg-transparent dark:text-white max-md:px-5">
@@ -80,15 +80,15 @@ const Login = () => {
                       />
                     </svg>
                     <span className="font-jakarta_sans text-sm font-medium ">
-                      {" "}
-                      Continue with Facebook{" "}
+                      {' '}
+                      Continue with Facebook{' '}
                     </span>
                   </button>
                 </div>
                 <div className="relative py-8 after:absolute after:top-1/2 after:h-[1px] after:w-full after:-translate-y-1/2 after:border after:border-dashed after:border-borderColor dark:after:border-borderColor-dark">
                   <span className=" absolute left-1/2 top-1/2 z-10 inline-block w-10 -translate-x-1/2 -translate-y-1/2 bg-white text-center dark:bg-dark-200">
-                    {" "}
-                    Or{" "}
+                    {' '}
+                    Or{' '}
                   </span>
                 </div>
                 <form>
