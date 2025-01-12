@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import SearchOption from "../SearchOption";
-
+import { DemoForm } from "../requestDemo/demo-form";  // Import DemoForm
 const PrimaryNavbar = () => {
   const [showSearch, setShowSearch] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -218,9 +218,7 @@ const PrimaryNavbar = () => {
               ))}
 
               <li>
-                <Link href="/request-demo" className="btn btn-navbar btn-sm">
-                  Request Demo
-                </Link>
+              <DemoForm />
               </li>
             </ul>
           </div>
