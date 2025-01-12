@@ -38,14 +38,19 @@ const AboutDetails = () => {
           </div>
           <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
             <p>
-              At Protool, we bring over a decade of expertise in building powerful websites, apps, and digital marketing strategies. 
-              Our team is dedicated to providing you with the tools and support to drive your business forward with scalable and secure solutions.
+              At Protool, we bring over a decade of expertise in building
+              powerful websites, apps, and digital marketing strategies. Our
+              team is dedicated to providing you with the tools and support to
+              drive your business forward with scalable and secure solutions.
               <br />
               <br />
               <strong>What Makes Us Unique?</strong>
               <br />
-              At Protool, we focus on combining creativity and technology to craft seamless digital experiences. 
-              From building intuitive websites to driving impactful marketing campaigns, we are dedicated to empowering businesses in today’s competitive digital world.
+              At Protool, we focus on combining creativity and technology to
+              craft seamless digital experiences. From building intuitive
+              websites to driving impactful marketing campaigns, we are
+              dedicated to empowering businesses in today’s competitive digital
+              world.
             </p>
           </div>
         </div>
