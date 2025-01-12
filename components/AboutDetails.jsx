@@ -24,18 +24,16 @@ const AboutDetails = () => {
           <div className="max-md:col-span-full md:col-span-6">
             <div className="max-w-[550px]">
               <p className="section-tagline">Numbers</p>
-              <h2>More than 10 years experience in this industry</h2>
+              <h2> More than 5 years experience in this industry </h2>
             </div>
           </div>
           <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
             <p>
-              Lorem ipsum dolor sit amet consectetur. Nulla lobortis lacus nunc pulvinar amet. Id dignissim ipsum quis
-              varius. Accumsan ultricies dapibus rutrum parturient mauris at est habitasse.
+            For over five years, Protool has been delivering exceptional web development and digital marketing solutions. Our commitment to innovation and customer-centric strategies has helped numerous businesses achieve their digital goals.
               <br />
               <br />
-              Risus egestas neque. Nunc diam arcu purus egestas at dignissim nunc. In nec donec sed pretium donec eros
-              elementum. Nec bibendum vel odio convallis feugiat viverra rhoncus in risus. Pretium ante nibh morbi sed
-              consequat sem quam pharetra. Et cursus mattis senectus aliquet.
+              <h3><b>What Makes Us Unique?</b></h3>
+              At Protool, we focus on combining creativity and technology to craft seamless digital experiences. From building intuitive websites to driving impactful marketing campaigns, we are dedicated to empowering businesses in today’s competitive digital world.
             </p>
           </div>
         </div>
