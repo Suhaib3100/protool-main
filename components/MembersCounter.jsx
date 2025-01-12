@@ -15,7 +15,7 @@ const MembersCounter = ({ border = true }) => {
           <div className="max-lg:col-span-full lg:col-span-6">
             <div className="max-w-[550px]">
               <p className="section-tagline">Numbers</p>
-              <h2>More than 10 years experience in this industry</h2>
+              <h2>More Than 5 Years of Experience in the Industry</h2>
             </div>
           </div>
           <div className="py-5 max-md:col-span-full md:col-span-6 lg:col-span-3">

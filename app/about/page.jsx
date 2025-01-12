@@ -15,7 +15,7 @@ const About = () => {
     <>
       <PageHero
         subtitle="ABOUT PROTOOL"
-        title="Leading the Future of Web Development and Digital Marketing"
+        title="Leading the Future of Web Development and Digital Marketing Agency"
         paragraph="Protool, founded by Suhaib S Z, is dedicated to transforming businesses through innovative web solutions and strategic digital marketing."
       />
       <AboutDetails />
