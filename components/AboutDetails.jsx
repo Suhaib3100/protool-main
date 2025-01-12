@@ -24,12 +24,12 @@ const AboutDetails = () => {
           <div className="max-md:col-span-full md:col-span-6">
             <div className="max-w-[550px]">
               <p className="section-tagline">Numbers</p>
-              <h2> More than 5 years experience in this industry </h2>
+              <h2> More than 3 years experience in this industry </h2>
             </div>
           </div>
           <div className="max-w-[590px] py-10 max-md:col-span-full md:col-span-6">
             <p>
-            For over five years, Protool has been delivering exceptional web development and digital marketing solutions. Our commitment to innovation and customer-centric strategies has helped numerous businesses achieve their digital goals.
+            For over three years, Protool has been delivering exceptional web development and digital marketing solutions. Our commitment to innovation and customer-centric strategies has helped numerous businesses achieve their digital goals.
               <br />
               <br />
               <h3><b>What Makes Us Unique?</b></h3>
