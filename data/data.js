@@ -757,7 +757,7 @@ export const teamData = [
     linkedInLink: '#',
     image: '/images/team/team1.png',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
+      'The operational backbone of our company, Rehan ensures seamless execution and efficient workflows, keeping our projects on track.',
     email: 'rehan@protool.co.in',
     phone: '+3 230 705 5448',
   },
@@ -771,7 +771,7 @@ export const teamData = [
     linkedInLink: 'https://in.linkedin.com/in/suhaib-sz',
     image: '/images/team/team1.png',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
+      'A visionary leader, Suhaib drives our mission forward with creativity, innovation, and a commitment to excellence.',
     email: 'team@gmail.com',
     phone: '+3 230 705 5448',
   },
@@ -781,11 +781,11 @@ export const teamData = [
     designation: 'Chief Marketing Officer',
     fbLink: '#',
     dribbleInLink: '#',
-    gitHubLink: '#',
-    linkedInLink: '#',
-    image: '/images/team/team3.png',
+    gitHubLink: 'https://github.com/AnuraagR9251',
+    linkedInLink: 'https://www.linkedin.com/in/anuraagr9251/',
+    image: '/images/team/team7.png',
     details:
-      'Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est. <br /> <br /> Morbi lorem proin morbi tempor risus. Nisl lobortis diam id faucibus pretium vitae suspendisse sed accumsan. Sodales morbi tristique elit cursus gravida. Ullamcorper commodo eget pulvinar pretium. Condimentum rhoncus commodo amet nec auctor nibh vel mi blandit. <br /> <br />Neque ultrices nunc condimentum morbi risus tincidunt. Vel arcu lacus non ornare. Porttitor in rhoncus magna augue adipiscing.',
+      ' With a knack for strategy and communication, Anuraag spearheads our marketing efforts to connect with our audience and build meaningful relationships..',
     email: 'anuraag@protool.co.in',
     phone: '+91 8147148708',
   },
