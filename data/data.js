@@ -360,8 +360,8 @@ export const ServiceData = [
   },
   {
     id: 6,
-    slug: 'fund',
-    title: 'Fundraising Advice',
+    slug: 'fundraiser',
+    title: 'Fundraising Acts',
     excerpt:
       'Until recently, the prevailing view asumed lorem ipsum was born as nonsense text.',
     iconLight: '/images/services/fund.svg',
