@@ -1,11 +1,11 @@
 ---
 title: How to keep the enthusiasm till the end of a project
-thumbnail: "/images/blog/blog4.png"
-featureImage: "/images/blog/blogDetails.png"
+thumbnail: '/images/blog/blog4.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Kristin Watson
 featured: true
-categories: "Digital"
+categories: 'Digital'
 tags: Finance
 ---
 

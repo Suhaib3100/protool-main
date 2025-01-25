@@ -1,12 +1,11 @@
 ---
 title: We’ve been perfecting the art of running
-thumbnail: "/images/blog/blog2.png"
-featureImage: "/images/blog/blogDetails.png"
+thumbnail: '/images/blog/blog2.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Polish Armstrong
-categories: "Investment"
+categories: 'Investment'
 tags: Finance
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

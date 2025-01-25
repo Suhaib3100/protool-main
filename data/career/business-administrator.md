@@ -1,13 +1,13 @@
 ---
 title: Business Administrator
-publishDate: "December 20, 2023"
-expirationDate: "January 20, 2024"
+publishDate: 'December 20, 2023'
+expirationDate: 'January 20, 2024'
 shortDesc: The prevailing view asumed
-jobType: "Full-Time"
-location: "New York"
-address: "2464 Royal Ln. Mesa, New Jersey 45463"
-salary: "$170 - $200"
-experience: 4 
+jobType: 'Full-Time'
+location: 'New York'
+address: '2464 Royal Ln. Mesa, New Jersey 45463'
+salary: '$170 - $200'
+experience: 4
 qualification: Bachelor Degree
 skills: ['App', 'Design', 'Support', 'UI/UX', 'Brand']
 ---

@@ -1,12 +1,11 @@
 ---
-title:  Manage your online banking & get rewarded 
-thumbnail: "/images/blog/blog3.png"
-featureImage: "/images/blog/blogDetails.png"
+title: Manage your online banking & get rewarded
+thumbnail: '/images/blog/blog3.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Madison Watson
-categories: "Financial"
+categories: 'Financial'
 tags: Payment
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

@@ -1,13 +1,12 @@
 ---
 title: Adding Benefits in Marketing Sectors
-thumbnail: "/images/blog/blog2.png"
-featureImage: "/images/blog/blogDetails.png"
+thumbnail: '/images/blog/blog2.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Kelly Manson
 featured: true
-categories: "Marketing"
+categories: 'Marketing'
 tags: Benefits
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

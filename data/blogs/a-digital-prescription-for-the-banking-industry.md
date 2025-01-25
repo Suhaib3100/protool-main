@@ -1,13 +1,12 @@
 ---
 title: A digital prescription for the banking industry
-thumbnail: "/images/blog/blog1.png"
-featureImage: "/images/blog/blogDetails.png"
+thumbnail: '/images/blog/blog1.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Kristin Watson
 featured: true
-categories: "Sales & Finance"
-tags: Marketing 
-
+categories: 'Sales & Finance'
+tags: Marketing
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

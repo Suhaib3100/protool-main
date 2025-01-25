@@ -1,13 +1,12 @@
 ---
-title:  Documents required for business analysis
-thumbnail: "/images/blog/blog6.png"
-featureImage: "/images/blog/blogDetails.png"
+title: Documents required for business analysis
+thumbnail: '/images/blog/blog6.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Will Smith
 featured: true
-categories: "Research"
+categories: 'Research'
 tags: Research
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

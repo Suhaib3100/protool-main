@@ -1,12 +1,11 @@
 ---
 title: Top Investment Solutions In 2024
-thumbnail: "/images/blog/blog4.png"
-featureImage: "/images/blog/blogDetails.png"
+thumbnail: '/images/blog/blog4.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Anni Mathes
-categories: "Investment"
+categories: 'Investment'
 tags: Finance
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

@@ -1,12 +1,11 @@
 ---
 title: The Princples of Accounting
-thumbnail: "/images/blog/blog5.png"
-featureImage: "/images/blog/blogDetails.png"
+thumbnail: '/images/blog/blog5.png'
+featureImage: '/images/blog/blogDetails.png'
 date: Aug 30, 2024
 author: Kristin Watson
-categories: "Acounting"
+categories: 'Acounting'
 tags: Acounting
-
 ---
 
 Lorem ipsum dolor sit amet consectetur. Nullam blandit dui gravida aliquam enim eu. Adipiscing viverra vulputate curabitur est.

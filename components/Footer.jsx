@@ -28,7 +28,9 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-span-12 max-lg:col-span-1 max-sm:col-span-1 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">Explore</h3>
+            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">
+              Explore
+            </h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.expolre.map((items) => (
                 <li key={items.id}>
@@ -43,7 +45,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-span-12 max-lg:col-span-1 max-sm:col-span-1 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">Resources</h3>
+            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">
+              Resources
+            </h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.resources.map((items) => (
                 <li key={items.id}>
@@ -58,8 +62,12 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-span-12 max-lg:col-span-2 max-sm:col-span-1 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">Get In touch</h3>
-            <p className="text-base sm:text-lg md:text-xl lg:text-base mb-3">Need Support?</p>
+            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">
+              Get In touch
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl lg:text-base mb-3">
+              Need Support?
+            </p>
             <p className="mb-3">
               <Link
                 href={`mailto:${FooterData.email}`}
@@ -79,7 +87,10 @@ const Footer = () => {
             <ul className="social-link flex items-center gap-4 max-lg:justify-center">
               {FooterData.socialLinks.map((items) => (
                 <li key={items.id}>
-                  <Link href={items.link} className="text-base sm:text-lg md:text-xl lg:text-base transiton-all">
+                  <Link
+                    href={items.link}
+                    className="text-base sm:text-lg md:text-xl lg:text-base transiton-all"
+                  >
                     {items.name}
                   </Link>
                 </li>
@@ -109,7 +120,9 @@ const Footer = () => {
 
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
-            <p className="text-base sm:text-lg md:text-xl lg:text-base max-lg:mb-10">{FooterData.copyright}d</p>
+            <p className="text-base sm:text-lg md:text-xl lg:text-base max-lg:mb-10">
+              {FooterData.copyright}d
+            </p>
             <ul className="flex items-center gap-15 max-lg:justify-center lg:ml-auto">
               <li>
                 <Link
