@@ -2,12 +2,13 @@ import Image from 'next/image';
 import React from 'react';
 import { FooterData } from '@/data/data.js';
 import Link from 'next/link';
+
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-white pt-20 dark:bg-dark-300">
       <div className="container">
-        <div className="mb-20 grid grid-cols-12 max-lg:gap-y-10 max-lg:text-center">
-          <div className="col-span-12 lg:col-span-6">
+        <div className="mb-20 grid grid-cols-12 max-lg:grid-cols-2 max-lg:gap-y-10 max-sm:grid-cols-1 max-lg:text-center">
+          <div className="col-span-12 lg:col-span-6 max-lg:col-span-2 max-sm:col-span-1">
             <Image
               src={FooterData.logo}
               alt="logo"
@@ -22,18 +23,18 @@ const Footer = () => {
               width={70}
               height={29}
             />
-            <p className="max-w-[350px] max-lg:mx-auto">
+            <p className="max-w-[350px] text-base sm:text-lg md:text-xl lg:text-base max-lg:mx-auto">
               {FooterData.footerText}
             </p>
           </div>
-          <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Explore</h3>
+          <div className="col-span-12 max-lg:col-span-1 max-sm:col-span-1 max-lg:text-center lg:col-span-2">
+            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">Explore</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.expolre.map((items) => (
                 <li key={items.id}>
                   <Link
                     href={items.link}
-                    className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                    className="text-base sm:text-lg md:text-xl lg:text-base relative inline-block overflow-hidden capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
                   >
                     {items.name}
                   </Link>
@@ -41,14 +42,14 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Resources</h3>
+          <div className="col-span-12 max-lg:col-span-1 max-sm:col-span-1 max-lg:text-center lg:col-span-2">
+            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">Resources</h3>
             <ul className="[&>*:not(:last-child)]:mb-3">
               {FooterData.resources.map((items) => (
                 <li key={items.id}>
                   <Link
                     href={items.link}
-                    className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                    className="text-base sm:text-lg md:text-xl lg:text-base relative inline-block overflow-hidden capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
                   >
                     {items.name}
                   </Link>
@@ -56,22 +57,21 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className="col-span-12 max-lg:text-center lg:col-span-2">
-            <h3 className="mb-8 text-lg font-medium">Get In touch</h3>
-            <p className="mb-3">Need Support?</p>
+          <div className="col-span-12 max-lg:col-span-2 max-sm:col-span-1 max-lg:text-center lg:col-span-2">
+            <h3 className="mb-8 text-base sm:text-lg md:text-xl lg:text-lg font-medium">Get In touch</h3>
+            <p className="text-base sm:text-lg md:text-xl lg:text-base mb-3">Need Support?</p>
             <p className="mb-3">
               <Link
                 href={`mailto:${FooterData.email}`}
-                className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                className="text-base sm:text-lg md:text-xl lg:text-base relative inline-block overflow-hidden capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
               >
                 {FooterData.email}
               </Link>
             </p>
-
             <p className="mb-3">
               <Link
                 href={`tel:${FooterData.phone.split(' ').join('')}`}
-                className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                className="text-base sm:text-lg md:text-xl lg:text-base relative inline-block overflow-hidden capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
               >
                 {FooterData.phone}
               </Link>
@@ -79,7 +79,7 @@ const Footer = () => {
             <ul className="social-link flex items-center gap-4 max-lg:justify-center">
               {FooterData.socialLinks.map((items) => (
                 <li key={items.id}>
-                  <Link href={items.link} className="transiton-all">
+                  <Link href={items.link} className="text-base sm:text-lg md:text-xl lg:text-base transiton-all">
                     {items.name}
                   </Link>
                 </li>
@@ -109,12 +109,12 @@ const Footer = () => {
 
         <div className="py-10 max-lg:text-center">
           <div className="flex max-lg:flex-col lg:items-center">
-            <p className="max-lg:mb-10">{FooterData.copyright}d</p>
-            <ul className="flex items-center gap-15 max-lg:justify-center  lg:ml-auto">
+            <p className="text-base sm:text-lg md:text-xl lg:text-base max-lg:mb-10">{FooterData.copyright}d</p>
+            <ul className="flex items-center gap-15 max-lg:justify-center lg:ml-auto">
               <li>
                 <Link
                   href="/privacy"
-                  className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                  className="text-base sm:text-lg md:text-xl lg:text-base relative inline-block overflow-hidden capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
                 >
                   Privacy Policy
                 </Link>
@@ -122,7 +122,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/terms"
-                  className="relative inline-block overflow-hidden text-base capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500  before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
+                  className="text-base sm:text-lg md:text-xl lg:text-base relative inline-block overflow-hidden capitalize text-paragraph before:absolute before:bottom-0 before:left-0 before:h-[1px] before:w-full before:origin-right before:scale-x-0 before:bg-paragraph before:transition-transform before:duration-500 before:content-[''] before:hover:origin-left before:hover:scale-x-100 dark:text-white dark:before:bg-white"
                 >
                   Terms & Conditions
                 </Link>

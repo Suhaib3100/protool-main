@@ -921,8 +921,8 @@ export const FooterData = {
   logo: '/images/logo.svg',
   logoDark: '/images/logo-dark-1.svg',
   footerText:
-    'Turpis tortor nunc sed amet et faucibus vitae morbi congue sed id mauris.',
-  copyright: `${new Date().getFullYear()} Protool. All Rights Reserved`,
+    'Delivering exceptional web and app development services tailored to your needs. Our commitment is to ensure your satisfaction with every project.',
+  copyright: `©  ${new Date().getFullYear()} Protool. All Rights Reserved`,
   email: 'suhaib@protool.co.in',
   phone: '+91 8310090539',
   logoDarkStyle: {
