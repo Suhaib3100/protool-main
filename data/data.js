@@ -923,7 +923,7 @@ export const FooterData = {
   footerText:
     'Delivering exceptional web and app development services tailored to your needs. Our commitment is to ensure your satisfaction with every project.',
   copyright: `©  ${new Date().getFullYear()} Protool. All Rights Reserved`,
-  email: 'suhaib@protool.co.in',
+  email: 'support@protool.co.in',
   phone: '+91 8310090539',
   logoDarkStyle: {
     width: '200px', // Set your desired width
